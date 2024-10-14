@@ -1,11 +1,12 @@
-body{background-color:rgb(255, 0, 140)
+body{background-color:rgb(187, 189, 189)
 }
 
 main{
-    border: 2px solid green;
+    border: 0.2em solid green;
+    padding: 1em;
     display: grid;
     grid-template-columns: repeat(12, 1fr);
-    gap: 16px;
+    gap: 1em;
 }
 
 header{
@@ -18,7 +19,7 @@ header{
     .top, .bottom{
         display: grid;
         grid-template-columns: repeat(11, 1fr);
-        gap: 16px;
+        gap: 1em;
     }
 
     .top{
@@ -26,6 +27,7 @@ header{
             grid-column: span 4;
         }
         .text{
+            color: green;
             grid-column: span 7;
         }
     }
@@ -35,6 +37,7 @@ header{
             grid-column: span 5;
         }
         .text{
+            color: purple;
             grid-column: span 6;
         }
     }
