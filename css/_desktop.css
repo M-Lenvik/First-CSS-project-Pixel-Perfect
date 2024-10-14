@@ -1,8 +1,8 @@
-body{background-color:rgb(187, 189, 189)
+body{background-color:grey
 }
 
 main{
-    border: 0.2em solid green;
+
     display: grid;
     grid-template-columns: repeat(12, 1fr);
     gap: 1em;
@@ -34,7 +34,11 @@ header{
             grid-column: span 4;
         }
         .text{
-            color: green;
+            /*färgen är inte rätt, ändra när du vet hur
+            färgkoden ska vara 100%, 0%, 78%, 0%
+            Om tid finns; fundera på att tillgänglighetsanpassa detta och motivera mot kund*/
+            color:hsl(100, 78%, 50%);
+            color: rgb(0, 78, 0);
             padding: 0.5em;
             grid-column: span 7;
         }
@@ -48,6 +52,10 @@ header{
             background-color: bisque;
             color: purple;
             border-left: 0.5em solid yellow;
+            /*färgen är inte rätt, ändra när du vet hur
+            färgkoden ska vara 0%, 5%, 79%, 0%*/
+            border-color:hsl(63, 78%, 50%);
+            border-color: rgb(191, 224, 1);
             padding: 0.5em;
             grid-column: span 6;
         }
