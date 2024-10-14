@@ -1,1 +1,10 @@
-body{background-color:#ff0}
+@import 'normalize.scss';
+
+@import 'mobile.css';
+
+@media screen and (min-width:1200px) {
+    @import 'desktop';    
+}
+
+body{background-color:#ff0
+}
