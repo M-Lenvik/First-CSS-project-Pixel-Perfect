@@ -17,6 +17,11 @@ header{
     min-height: 100vh;
     border-right: 0.5em solid yellow;
     border-left: 0.5em solid yellow;
+
+    font-family: "Jockey One", sans-serif;
+    font-weight: 400;
+    font-style: normal;      
+    
     .top, .bottom{
         display: grid;
         grid-template-columns: repeat(11, 1fr);
