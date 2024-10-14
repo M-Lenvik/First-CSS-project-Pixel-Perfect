@@ -3,7 +3,6 @@ body{background-color:rgb(187, 189, 189)
 
 main{
     border: 0.2em solid green;
-    padding: 1em;
     display: grid;
     grid-template-columns: repeat(12, 1fr);
     gap: 1em;
@@ -16,10 +15,13 @@ header{
 .page1{
     grid-column: span 11;
     min-height: 100vh;
+    border-right: 0.5em solid yellow;
+    border-left: 0.5em solid yellow;
     .top, .bottom{
         display: grid;
         grid-template-columns: repeat(11, 1fr);
         gap: 1em;
+        padding: 1em;
     }
 
     .top{
@@ -28,6 +30,7 @@ header{
         }
         .text{
             color: green;
+            padding: 0.5em;
             grid-column: span 7;
         }
     }
@@ -37,7 +40,10 @@ header{
             grid-column: span 5;
         }
         .text{
+            background-color: bisque;
             color: purple;
+            border-left: 0.5em solid yellow;
+            padding: 0.5em;
             grid-column: span 6;
         }
     }
