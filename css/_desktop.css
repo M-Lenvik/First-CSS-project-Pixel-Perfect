@@ -11,6 +11,46 @@ header{
     flex-direction: column;
 }
 
+.page-title{
+
+        text-transform: uppercase;
+        font-family: "Roboto Condensed", sans-serif;
+        font-style: normal;
+        background-color: burlywood;
+        position: relative;
+        margin: 1em;
+
+    }
+    .logo_text_1{
+        position: absolute;
+        color: purple;
+        width: 20%;
+        height: 20%;
+        background-color: rgba(245, 222, 179, 0.2);
+        margin-top: 20%;
+        margin-left: 40%;
+        z-index: 1;
+    }
+    .logo_text_2{
+        position: absolute;
+        color: green;
+        width: 20%;
+        height: 20%;
+        background-color: rgba(128, 128, 128, 0.2);
+        margin-top: 16%;
+        margin-left: 50%;
+    }
+    .logo_text_3{
+        position: absolute;
+        color: yellow;
+        width: 20%;
+        height: 20%;
+        background-color: rgba(169, 169, 169, 0.2);
+        margin-top: 23%;
+        margin-left: 40%;
+    }
+}
+
 .side{
     width: 8.3%; /*griden är 12. 100% delar på 12 grids = 8.3*/
     background-color: rgb(107, 121, 121);
