@@ -10,4 +10,7 @@ body{background-color:#ff0
 }
 
 h1{color: beige;
+        text-transform: uppercase;
+        writing-mode: vertical-lr;
+        text-orientation: upright;
 }

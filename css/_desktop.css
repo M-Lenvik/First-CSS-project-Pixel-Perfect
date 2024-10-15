@@ -2,7 +2,6 @@ body{background-color:grey
 }
 
 main{
-
     display: grid;
     grid-template-columns: repeat(12, 1fr);
     gap: 1em;
@@ -11,6 +10,23 @@ main{
 header{
     flex-direction: column;
 }
+
+.side{
+    width: 8.3%; /*griden är 12. 100% delar på 12 grids = 8.3*/
+    background-color: rgb(107, 121, 121);
+    position: fixed;
+    text-align: center;
+}
+
+   .menuToggle span { /*Kod från https://medium.com/@mateus2050/hamburguer-menu-html-and-css-only-c06364fa9bfd*/
+    display: block; /* to ensure that each span element occupies its own line. */
+    width: 33px;
+    height: 4px;
+    margin-bottom: 5px; /* create some spacing between the span elements. */
+    position: relative; /* allow for positioning changes in relation to the parent div.*/
+    background: #cdcdcd;
+    border-radius: 3px;
+  }
 
 .page1{
     grid-column: span 11;
@@ -26,7 +42,8 @@ header{
         display: grid;
         grid-template-columns: repeat(11, 1fr);
         gap: 1em;
-        padding: 1em;
+        /*ta bort border*/
+/*        border: solid;*/
     }
 
     .top{
@@ -35,6 +52,7 @@ header{
         }
         .text{
             /*färgen är inte rätt, ändra när du vet hur
+            Jag förstår inte vilken typ av färgkod det är.
             färgkoden ska vara 100%, 0%, 78%, 0%
             Om tid finns; fundera på att tillgänglighetsanpassa detta och motivera mot kund*/
             color:hsl(100, 78%, 50%);
@@ -47,17 +65,27 @@ header{
     .bottom{
         .img{
             grid-column: span 5;
+            position: relative;
         }
         .text{
             background-color: bisque;
             color: purple;
             border-left: 0.5em solid yellow;
             /*färgen är inte rätt, ändra när du vet hur
+            Jag förstår inte vilken typ av färgkod det är.
             färgkoden ska vara 0%, 5%, 79%, 0%*/
             border-color:hsl(63, 78%, 50%);
             border-color: rgb(191, 224, 1);
             padding: 0.5em;
             grid-column: span 6;
         }
+    }
+
+    .arrow{
+        position: relative;
+        width: 1em;
+        height: 1em;
+        top: 0%;
+        z-index: 2;
     }
 }
