@@ -1,16 +1,28 @@
 body{
-    background-color: aqua;
+    background-color: rgb(255, 115, 0);
 }
 
+/* Menysidan*/
 header{
     display: flex;
     justify-content: space-between;
-    background-color: black;
-    color: antiquewhite;
+    background-color: blue;
+
     h1{
+        color: green;
+        text-orientation: sideways;
     }
 }
 
-.page1{
-    
+.side{
+    position: fixed;
+    background-color: blueviolet;
+    top: 1px;
+    left: 1px;
+    width: 100%;
 }
+
+/* SLUT Menysidan*/
+
+
+
