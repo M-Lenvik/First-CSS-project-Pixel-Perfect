@@ -114,6 +114,10 @@ header{
         .img{
             grid-column: span 5;
             position: relative;
+            img{ /*onödig. men ska bildstorleken sättas här eller i html?*/
+                width: 552px;
+                height: 440px;
+            }
 
             .arrow{
                 position: relative;
