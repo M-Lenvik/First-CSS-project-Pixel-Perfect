@@ -1,54 +1,60 @@
-@import 'normalize.scss';
+/*@import 'normalize.scss';
 
 @import 'mobile.css';
 
 @media screen and (min-width:1200px) {
-    @import 'desktop';    
-}
+    @import 'desktop';
+}*/
 
-body{background-color:#ff0
+body {
+    background-color: #ff0
 }
 
 /* Menysidan överst*/
-header{
+header {
     position: relative;
 
-    h1{
+    h1 {
         text-transform: uppercase;
     }
 }
 
-.side{
+.side {
     position: fixed;
     border: solid rgb(11, 11, 10) 1px;
     height: fit-content;
 
 }
 
-.menuToggle span { /*Kod från https://medium.com/@mateus2050/hamburguer-menu-html-and-css-only-c06364fa9bfd*/
-    display: block; /* to ensure that each span element occupies its own line. */
+.menuToggle span {
+    /*Kod från https://medium.com/@mateus2050/hamburguer-menu-html-and-css-only-c06364fa9bfd*/
+    display: block;
+    /* to ensure that each span element occupies its own line. */
     width: 33px;
     height: 4px;
-    margin-bottom: 5px; /* create some spacing between the span elements. */
-    position: relative; /* allow for positioning changes in relation to the parent div.*/
+    margin-bottom: 5px;
+    /* create some spacing between the span elements. */
+    position: relative;
+    /* allow for positioning changes in relation to the parent div.*/
     background: #e5ed08;
     border-radius: 3px;
-  }
+}
 
-  /* SLUT Menysidan överst*/
+/* SLUT Menysidan överst*/
 
-.page1{
+.page1 {
     background-color: gray;
 
     font-family: "Jockey One", sans-serif;
     font-weight: 400;
     font-style: normal;
 
-    .text{
+    .text {
         font-size: 1.5em;
     }
 
-    .top, .bottom{
+    .top,
+    .bottom {
         position: relative;
     }
 

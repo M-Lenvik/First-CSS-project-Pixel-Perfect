@@ -1,20 +1,22 @@
-body{
+body {
     background-color: rgb(255, 115, 0);
 }
 
 /* Menysidan*/
-header{
+header {
     display: flex;
     justify-content: space-between;
     background-color: blue;
     z-index: 999;
-    h1{
+
+    h1 {
         color: green;
         text-orientation: sideways;
     }
 }
+
 /* menyn ligger fixerad högs upp när jag krymper sidan på datorn, men när jag tittar på den i mobilen från Github så är den inte fixerad. Vad beror det på? Vad är fel?*/
-.side{
+.side {
     position: fixed;
     background-color: blueviolet;
     top: 1px;
@@ -24,22 +26,22 @@ header{
 
 /* SLUT Menysidan*/
 
-.page1{
+.page1 {
     background-color: bisque;
     margin-top: 5em;
 
-    .top{
-        position:relative;
-        .text{
-            color:hsl(100, 78%, 50%); /*fel färg*/
+    .top {
+        position: relative;
+
+        .text {
+            color: hsl(100, 78%, 50%);
+            /*fel färg*/
             position: relative;
         }
     }
 
-
-
-    /*Stycke för textlogon. Flyttas ner under första texten i mobile. När jag vet hur man gör.*/    
-    .page-title{
+    /*Stycke för textlogon. Flyttas ner under första texten i mobile. När jag vet hur man gör.*/
+    .page-title {
         text-transform: uppercase;
         font-family: "Roboto Condensed", sans-serif;
         font-style: normal;
@@ -50,22 +52,31 @@ header{
         margin: 1em;
     }
 
-    .bottom{
-        .img{ /*Jag väljer att ta bort bilden på salladen i mobilversionen. Jag vill  istället lägga logon mellan de två textblocken.*/
+    .bottom {
+        .img {
+            /*Jag väljer att ta bort bilden på salladen i mobilversionen. Jag vill  istället lägga logon mellan de två textblocken.*/
             display: none;
         }
-        .text{
-            color:purple; /*fel färg*/
+
+        .text {
+            color: purple;
+            /*fel färg*/
             position: relative;
 
-            nav{
+            .explore {
+                position: relative;
                 text-transform: uppercase;
                 color: black;
+                background-color: blue;
+                width: max-content;
+                
+                .explore_arrow{
+                    position: absolute;
+                    background-color: aliceblue;
+                    left: 0px;
+                }
             }
         }
     }
 
 }
-
-
-
