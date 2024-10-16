@@ -13,7 +13,7 @@ header{
         text-orientation: sideways;
     }
 }
-
+/* menyn ligger fixerad högs upp när jag krymper sidan på datorn, men när jag tittar på den i mobilen från Github så är den inte fixerad. Vad beror det på? Vad är fel?*/
 .side{
     position: fixed;
     background-color: blueviolet;
@@ -23,6 +23,15 @@ header{
 }
 
 /* SLUT Menysidan*/
+
+.page1{
+    background-color: bisque;
+    margin-top: 5em;
+
+    .top{
+
+    }
+}
 
 
 

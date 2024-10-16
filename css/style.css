@@ -39,5 +39,14 @@ header{
 
 .page1{
     background-color: gray;
-    margin-top: 3em;
+
+    font-family: "Jockey One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+
+    .top, .bottom{
+        position: relative;
+    }
+
+    
 }
