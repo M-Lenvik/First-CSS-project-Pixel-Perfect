@@ -7,7 +7,7 @@ header{
     display: flex;
     justify-content: space-between;
     background-color: blue;
-
+    z-index: 999;
     h1{
         color: green;
         text-orientation: sideways;
