@@ -29,8 +29,42 @@ header{
     margin-top: 5em;
 
     .top{
-
+        position:relative;
+        .text{
+            color:hsl(100, 78%, 50%); /*fel färg*/
+            position: relative;
+        }
     }
+
+
+
+    /*Stycke för textlogon. Flyttas ner under första texten i mobile. När jag vet hur man gör.*/    
+    .page-title{
+        text-transform: uppercase;
+        font-family: "Roboto Condensed", sans-serif;
+        font-style: normal;
+        background-color: rgb(144, 135, 222);
+        position: relative;
+        top: 0px;
+        left: 0px;
+        margin: 1em;
+    }
+
+    .bottom{
+        .img{ /*Jag väljer att ta bort bilden på salladen i mobilversionen. Jag vill  istället lägga logon mellan de två textblocken.*/
+            display: none;
+        }
+        .text{
+            color:purple; /*fel färg*/
+            position: relative;
+
+            nav{
+                text-transform: uppercase;
+                color: black;
+            }
+        }
+    }
+
 }
 
 

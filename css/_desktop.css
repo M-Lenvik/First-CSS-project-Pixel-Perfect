@@ -56,8 +56,8 @@ header{
             Jag förstår inte vilken typ av färgkod det är.
             färgkoden ska vara 100%, 0%, 78%, 0%
             Om tid finns; fundera på att tillgänglighetsanpassa detta och motivera mot kund*/
-            color:hsl(100, 78%, 50%);
             color: rgb(0, 78, 0);
+            color:hsl(100, 78%, 50%);
             padding: 0.5em;
             grid-column: span 7;
             position: relative;
@@ -140,6 +140,11 @@ header{
             border-color: rgb(191, 224, 1);
             padding: 0.5em;
             grid-column: span 6;
+            
+            nav{
+                text-transform: uppercase;
+                color: black;
+            }
         }
     }
 
