@@ -23,7 +23,6 @@ header {
     position: fixed;
     border: solid rgb(11, 11, 10) 1px;
     height: fit-content;
-
 }
 
 .menuToggle span {
@@ -53,10 +52,8 @@ header {
         font-size: 1.5em;
     }
 
-    .top,
-    .bottom {
+    .top, .bottom {
         position: relative;
     }
-
 
 }
