@@ -4,7 +4,7 @@ body {
 
 /* Menysidan*/
 header {
-    display: flex;
+    display: fixed;
     justify-content: space-between;
     background-color: blue;
     z-index: 999;
@@ -32,6 +32,16 @@ header {
 
     .top {
         position: relative;
+        display: flex;
+        flex-direction: column;
+    
+        .page-title:nth-child(1){
+            order: 2;
+        }
+    
+        .text:nth-child(2){
+            order: 1;
+        }
 
         .text {
             color: hsl(100, 78%, 50%);
@@ -68,12 +78,12 @@ header {
                 text-transform: uppercase;
                 color: black;
                 background-color: blue;
-                width: max-content;
+                width: 100px;
                 
                 .explore_arrow{
-                    position: absolute;
-                    background-color: aliceblue;
-                    left: 0px;
+                    position: relative;
+                    background-color: green;
+                    left: 120px;
                 }
             }
         }
