@@ -104,7 +104,7 @@ header {
     .bottom {
         position: absolute;
         background-color: rgb(42, 165, 61);
-        .img {
+        .picture {
             /*Jag väljer att ta bort bilden på salladen i mobilversionen. Jag vill  istället lägga logon mellan de två textblocken.*/
             display: none;
         }

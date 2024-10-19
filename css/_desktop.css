@@ -146,17 +146,14 @@ header {
 
     .bottom {
         position: relative;
-        .img {
+        .picture {
             grid-column: span 5;
             position: relative;
-
-            img {
-                /*onödig. men ska bildstorleken sättas här eller i html?*/
+                /*onödig eftersom det står samma i html. men ska bildstorleken sättas här eller i html?*/
                 width: 552px;
                 height: 440px;
-            }
 
-            .arrow {
+            .arrow { /*pilen i salladen*/
                 position: relative;
                 img {
                     position: absolute;
@@ -169,6 +166,7 @@ header {
         }
 
         .text {
+            position: relative;
             background-color: bisque;
             color: purple;
             border-left: 0.5em solid yellow;
@@ -186,14 +184,23 @@ header {
                 color: black;
                 background-color: red;
                 width: max-content;
+                height: max-content;
+            }
 
-                .explore_arrow {
-                    background-color: green;
+            .explore_arrow {
+                background-color: green;
+                position: relative;
+                width: max-content;
+                height: max-content;
+                bottom: 0px;
+                left: 0px;
+                
+                img {
                     position: absolute;
-                    width: max-content;
-                    height: max-content;
-                    bottom: 0px;
                     left: 0px;
+                    top: 0px;
+/*Hur jag än gör här hamnar inte pilen rätt.*/
+
                 }
             }
         }
