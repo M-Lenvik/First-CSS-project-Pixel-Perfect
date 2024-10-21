@@ -13,6 +13,7 @@ header {
     flex-direction: column;
     background-color: aqua;
 
+
     h1 {
         color: beige;
         writing-mode: vertical-lr;
@@ -154,13 +155,17 @@ header {
                 height: 440px;
 
             .arrow { /*pilen i salladen*/
-                position: relative;
-                img {
-                    position: absolute;
-                    transform: rotate(90deg);
-                    width: 75px;
-                    height: 75px;
-                    bottom: 0px;
+                position: absolute;
+                transform: rotate(90deg);
+                width: 50px;
+                height: 50px;
+                bottom: 30px;
+                left: 20px;
+                
+                img:hover {
+                    position: relative;
+                    left: 25px;
+                    cursor: pointer;
                 }
             }
         }
@@ -189,19 +194,17 @@ header {
 
             .explore_arrow {
                 background-color: green;
-                position: relative;
+                position: absolute;
                 width: max-content;
-                height: max-content;
-                bottom: 0px;
-                left: 0px;
-                
-                img {
-                    position: absolute;
-                    left: 0px;
-                    top: 0px;
-/*Hur jag än gör här hamnar inte pilen rätt.*/
+                height: 100%;
+                bottom: 0;
+                left:5.5em;
 
-                }
+                
+/*Hur jag än gör här hamnar inte pilen rätt.* /
+               /* img { positionering sker i .explore_arrow
+                }*/
+
             }
         }
     }
