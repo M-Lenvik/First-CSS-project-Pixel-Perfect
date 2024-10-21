@@ -11,27 +11,32 @@ main {
 /* Menysidan till vänster*/
 header {
     flex-direction: column;
-    background-color: aqua;
+    background-color: rgb(162, 255, 0);
 
+    .side {
+        position: fixed;
+        /*griden är 12. 100% delar på 12 grids = 8.3*/
+        background-color: rgb(215, 11, 11);
+        margin-left: 2%;
+        margin-top: 1%;
 
-    h1 {
-        color: beige;
-        writing-mode: vertical-lr;
-        text-orientation: upright;
-        margin-top: 45px;
+        h1 {
+            color: beige;
+            writing-mode: vertical-lr;
+            text-orientation: upright;
+            margin-top: 45px;
+        }
     }
 }
-
-.side {
-    position: fixed;
-    /*griden är 12. 100% delar på 12 grids = 8.3*/
-    background-color: rgb(215, 11, 11);
-    margin-left: 2%;
-    margin-top: 1%;
-}
-
 /* SLUT Menysidan till vänster*/
 
+.all_pages{
+    
+        background-color: rgb(255, 0, 170);
+        grid-column: span 11;
+        position: relative;
+        min-height: 100vh;
+}
 .page1 {
     background-color: aqua;
     grid-column: span 11;

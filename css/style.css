@@ -14,16 +14,19 @@ body {
 header {
     position: relative;
 
-    h1 {
-        text-transform: uppercase;
+    .side {
+        position: fixed;
+        border: solid rgb(11, 11, 10) 1px;
+        height: fit-content;
+    
+        h1 {
+            text-transform: uppercase;
+        }
+    
     }
 }
 
-.side {
-    position: fixed;
-    border: solid rgb(11, 11, 10) 1px;
-    height: fit-content;
-}
+
 
 .menuToggle span {
     /*Kod från https://medium.com/@mateus2050/hamburguer-menu-html-and-css-only-c06364fa9bfd*/
