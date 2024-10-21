@@ -19,12 +19,19 @@ header {
 .side {
     position: fixed;
     background-color: blueviolet;
+    display: flex;
+    align-items: center;
+    gap: 10px;
     top: 1px;
     left: 1px;
     width: 100%;
 }
 
 /* SLUT Menysidan*/
+
+
+
+.all_pages{
 
 .page1 {
     background-color: bisque;
@@ -48,61 +55,60 @@ header {
             /*fel färg*/
             position: relative;
         }
-    }
 
-    /*Stycke för textlogon. Flyttas ner under första texten i mobile. När jag vet hur man gör.*/
-    .page-title {
-        text-transform: uppercase;
-        font-family: "Roboto Condensed", sans-serif;
-        font-style: normal;
-        background-color: rgb(232, 8, 8);
-        position: relative;
-        display: flex;
-        height: auto;
-        top: 0px;
-        left: 0px;
-        margin: 0px;
-
-        .logo_text_1 {
-            background-color: rgba(37, 23, 188, 0.664);
-            font-size:3em;
-            font-weight: bold;
-            color: green;
-            width: auto;    
-            height: auto;
+            /*Stycke för textlogon. Flyttas ner under första texten i mobile. När jag vet hur man gör.*/
+        .page-title {
+            text-transform: uppercase;
+            font-family: "Roboto Condensed", sans-serif;
+            font-style: normal;
+            background-color: rgb(232, 8, 8);
             position: relative;
-            margin-top: 20px;
-            margin-left: 140px;
-            z-index: 1;
-        }
+            display: flex;
+            height: auto;
+            top: 0px;
+            left: 0px;
+            margin: 0px;
 
-        .logo_text_2 {
-            background-color: rgba(108, 103, 160, 0.664);
-            font-size:0.9em;
-            font-weight: bold;
-            color: rgb(128, 0, 102);
-            width: auto;    
-            height: auto;
-            position: absolute;
-            margin-top: 20px;
-            margin-left: 226px;
+            .logo_text_1 {
+                background-color: rgba(37, 23, 188, 0.664);
+                font-size:3em;
+                font-weight: bold;
+                color: green;
+                width: auto;    
+                height: auto;
+                position: relative;
+                margin-top: 20px;
+                margin-left: 140px;
+                z-index: 1;
+            }
+
+            .logo_text_2 {
+                background-color: rgba(108, 103, 160, 0.664);
+                font-size:0.9em;
+                font-weight: bold;
+                color: rgb(128, 0, 102);
+                width: auto;    
+                height: auto;
+                position: absolute;
+                margin-top: 20px;
+                margin-left: 226px;
+            }
+            .logo_text_3 {
+                background-color: rgba(108, 103, 160, 0.984);
+                font-size:1em;
+                font-weight: bold;
+                color: rgb(228, 242, 28);
+                width: auto;    
+                height: auto;
+                position: absolute;
+                margin-top: 65px;
+                margin-left: 148px;
+            }
         }
-        .logo_text_3 {
-            background-color: rgba(108, 103, 160, 0.984);
-            font-size:1em;
-            font-weight: bold;
-            color: rgb(228, 242, 28);
-            width: auto;    
-            height: auto;
-            position: absolute;
-            margin-top: 65px;
-            margin-left: 148px;
-        }
-        
     }
 
     .bottom {
-        position: absolute;
+        position: relative;
         background-color: rgb(42, 165, 61);
         .picture {
             /*Jag väljer att ta bort bilden på salladen i mobilversionen. Jag vill  istället lägga logon mellan de två textblocken.*/
@@ -119,14 +125,79 @@ header {
                 text-transform: uppercase;
                 color: black;
                 background-color: blue;
-                width: 100px;
-                
-                .explore_arrow{
-                    position: relative;
-                    background-color: green;
-                    left: 120px;
-                }
+                width: max-content;
+                min-height: 100%;
+                display: flex;
+                align-items: center;
+                gap: 5px;
             }
         }
     }
+}
+
+
+.page2{
+    margin-top: 5px;
+    background-color: yellow;
+    grid-column: span 3;
+    position: relative;
+    min-height: 100vh;
+    border-right: 0.5em solid yellow;
+    border-left: 0.5em solid yellow;
+    margin-bottom: 10px;
+
+    .pictures {
+        position: relative;
+        background-color: rgb(97, 99, 99);
+
+        .pic1{
+            background-color: blueviolet;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            width: 50%;
+        }
+        .pic2, .pic3{
+            display: none;
+        }
+    }
+
+    .dish_menu {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 0; /*0.5em om ej .dishes*/
+        /*ta bort border*/
+        /*border: solid;*/
+        position: relative;
+        background-color: rgb(0, 238, 255);
+/*        border: solid 1px black;*/
+        padding-top: 0.5em;
+
+        /* Ta bort om du tar bort i html*/
+        .line{
+            color: blue;
+            display: grid;
+            grid-column: span 3;
+            height: 0.5em;
+            border-bottom: solid 1px black;
+            border-top: solid 1px black;
+        }
+            /***************************/
+
+        .dish{
+            font-weight: bold;
+            grid-column: span 3;
+            background-color: rgb(180, 174, 174);
+            text-transform: uppercase;
+        }
+        .description{
+            grid-column: span 2;
+            background-color: rgb(183, 147, 147);
+        }
+        .cost{
+            grid-column: span 1;
+            background-color: rgb(180, 143, 143);
+            text-align: right;
+        }
+    }
+}
 }
