@@ -4,8 +4,7 @@
   @use 'desktop';
 }
 
-
-@media screen and (min-width:600px) {
+@media screen and (min-width:300px) {
   @use 'mobile';
 }
 
@@ -17,16 +16,9 @@ background-color: aliceblue;
 /* Menysidan överst*/
 header {
     .side {
-
-        border: solid rgb(11, 11, 10) 1px;
-        
-
+        border: solid rgb(11, 11, 10) 1px; 
     }
 }
-
-
-
-
 
 /* SLUT Menysidan överst*/
 
