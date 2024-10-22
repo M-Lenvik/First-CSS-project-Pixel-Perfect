@@ -1,5 +1,48 @@
-@import 'mobile';
+@use 'normalize';
+/*@use 'base';*/
+@media screen and (min-width:1000px) {
+  @use 'desktop';
+}
+
+
+@media screen and (min-width:600px) {
+  @use 'mobile';
+}
+
 
 body {
-  background-color: yellow;
+background-color: aliceblue;
+}
+
+/* Menysidan överst*/
+header {
+    .side {
+
+        border: solid rgb(11, 11, 10) 1px;
+        
+
+    }
+}
+
+
+
+
+
+/* SLUT Menysidan överst*/
+
+.page1 {
+    background-color: gray;
+
+    font-family: "Jockey One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+
+    .text {
+        font-size: 1.5em;
+    }
+
+    .top, .bottom {
+        position: relative;
+    }
+
 }

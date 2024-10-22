@@ -4,20 +4,24 @@ body {
 
 /* Menysidan*/
 header {
+    position: relative;
     display: fixed;
     justify-content: space-between;
-    background-color: blue;
+    background-color: rgb(0, 255, 55);
     z-index: 999;
 
     h1 {
         color: green;
         text-orientation: sideways;
+        text-transform: uppercase;
     }
 }
 
 /* menyn ligger fixerad högs upp när jag krymper sidan på datorn, men när jag tittar på den i mobilen från Github så är den inte fixerad. Vad beror det på? Vad är fel?*/
 .side {
     position: fixed;
+    height: fit-content;
+    align-items: center;
     background-color: blueviolet;
     display: flex;
     align-items: center;

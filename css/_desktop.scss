@@ -1,34 +1,57 @@
 body {
-    background-color: grey
+    background-color: rgb(30, 66, 212)
 }
 
 main {
+    margin-top: 10px; /*TA BORT, bara som hjälpmedel nu*/
+    margin-bottom: 10px; /*TA BORT, bara som hjälpmedel nu*/
     display: grid;
     grid-template-columns: repeat(12, 1fr);
     gap: 1em;
-}
+    background-color: aqua;
 
-/* Menysidan till vänster*/
-header {
-    flex-direction: column;
-    background-color: rgb(162, 255, 0);
 
-    .side {
-        position: fixed;
-        /*griden är 12. 100% delar på 12 grids = 8.3*/
-        background-color: rgb(215, 11, 11);
-        margin-left: 2%;
-        margin-top: 1%;
+    /* Menysidan till vänster*/
+    header {
+        position: relative;
+        display: block;
+        flex-direction: column;
+        background-color: rgb(207, 31, 31);
 
-        h1 {
-            color: beige;
-            writing-mode: vertical-lr;
-            text-orientation: upright;
-            margin-top: 45px;
+        .side {
+            position: fixed;
+            height: fit-content;
+            align-items: center;
+            /*griden är 12. 100% delar på 12 grids = 8.3*/
+            background-color: rgb(219, 11, 11);
+            margin-left: 2%;
+            margin-top: 1%;
+
+            h1 {
+                color: rgb(255, 255, 255);
+                writing-mode: vertical-lr;
+                text-orientation: upright;
+                margin-top: 45px;
+                text-transform: uppercase;
+            }
+
+            .menuToggle span {
+                /*Kod från https://medium.com/@mateus2050/hamburguer-menu-html-and-css-only-c06364fa9bfd*/
+                display: block;
+                /* to ensure that each span element occupies its own line. */
+                width: 33px;
+                height: 4px;
+                margin-bottom: 5px;
+                /* create some spacing between the span elements. */
+                position: relative;
+                /* allow for positioning changes in relation to the parent div.*/
+                background: #e5ed08;
+                border-radius: 3px;
+            }
+    
         }
     }
-}
-/* SLUT Menysidan till vänster*/
+    /* SLUT Menysidan till vänster*/
 
 .all_pages{
     
@@ -279,4 +302,4 @@ header {
         }
     }
 
-}
+}}
