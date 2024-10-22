@@ -10,26 +10,41 @@ header {
     background-color: rgb(0, 255, 55);
     z-index: 999;
 
+    .side {
+        position: fixed;
+        height: fit-content;
+        align-items: center;
+        background-color: blueviolet;
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        top: 1px;
+        left: 1px;
+        width: 100%;
+    }
+    
     h1 {
         color: green;
         text-orientation: sideways;
         text-transform: uppercase;
     }
+    .menuToggle span {
+        /*Kod från https://medium.com/@mateus2050/hamburguer-menu-html-and-css-only-c06364fa9bfd*/
+        display: block;
+        /* to ensure that each span element occupies its own line. */
+        width: 33px;
+        height: 4px;
+        margin-bottom: 5px;
+        /* create some spacing between the span elements. */
+        position: relative;
+        /* allow for positioning changes in relation to the parent div.*/
+        background: #e5ed08;
+        border-radius: 3px;
+    }
 }
 
 /* menyn ligger fixerad högs upp när jag krymper sidan på datorn, men när jag tittar på den i mobilen från Github så är den inte fixerad. Vad beror det på? Vad är fel?*/
-.side {
-    position: fixed;
-    height: fit-content;
-    align-items: center;
-    background-color: blueviolet;
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    top: 1px;
-    left: 1px;
-    width: 100%;
-}
+
 /* SLUT Menysidan*/
 
 

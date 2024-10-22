@@ -1,12 +1,15 @@
-@use 'normalize';
+@import 'normalize';
 /*@use 'base';*/
-@media screen and (min-width:1000px) {
-  @use 'desktop';
-}
 
 @media screen and (min-width:300px) {
-  @use 'mobile';
+    @import 'mobile';
 }
+
+@media screen and (min-width:800px) {
+    @import 'desktop';
+}
+
+
 
 
 body {
