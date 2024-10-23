@@ -1,9 +1,9 @@
 @import 'normalize';
 /*@use 'base';*/
 
-@media screen and (min-width:300px) {
-    @import 'mobile';
+@media screen and (min-width:500px) {
 }
+@import 'mobile';
 
 @media screen and (min-width:800px) {
     @import 'desktop';

@@ -2,6 +2,12 @@ body {
     background-color: rgb(255, 115, 0);
 }
 
+main {
+    margin-top: 1px; /*TA BORT, bara som hjälpmedel nu*/
+    margin-bottom: 1px; /*TA BORT, bara som hjälpmedel nu*/
+    display: block;
+}
+
 /* Menysidan*/
 header {
     position: relative;
@@ -16,30 +22,31 @@ header {
         align-items: center;
         background-color: blueviolet;
         display: flex;
-        align-items: center;
+
         gap: 10px;
         top: 1px;
         left: 1px;
         width: 100%;
-    }
+
     
-    h1 {
-        color: green;
-        text-orientation: sideways;
-        text-transform: uppercase;
-    }
-    .menuToggle span {
-        /*Kod från https://medium.com/@mateus2050/hamburguer-menu-html-and-css-only-c06364fa9bfd*/
-        display: block;
-        /* to ensure that each span element occupies its own line. */
-        width: 33px;
-        height: 4px;
-        margin-bottom: 5px;
-        /* create some spacing between the span elements. */
-        position: relative;
-        /* allow for positioning changes in relation to the parent div.*/
-        background: #e5ed08;
-        border-radius: 3px;
+        h1 {
+            color: green;
+            text-orientation: sideways;
+            text-transform: uppercase;
+        }
+        .menuToggle span {
+            /*Kod från https://medium.com/@mateus2050/hamburguer-menu-html-and-css-only-c06364fa9bfd*/
+            display: block;
+            /* to ensure that each span element occupies its own line. */
+            width: 33px;
+            height: 4px;
+            margin-bottom: 5px;
+            /* create some spacing between the span elements. */
+            position: relative;
+            /* allow for positioning changes in relation to the parent div.*/
+            background: #e5ed08;
+            border-radius: 3px;
+        }
     }
 }
 
@@ -61,15 +68,9 @@ header {
             .page-title:nth-child(1){
                 order: 2;
             }
-        
+
             .text:nth-child(2){
                 order: 1;
-            }
-
-            .text {
-                color: hsl(100, 78%, 50%);
-                /*fel färg*/
-                position: relative;
             }
 
             /*Stycke för textlogon. Flyttas ner under första texten i mobile. När jag vet hur man gör.*/
@@ -120,6 +121,12 @@ header {
                     margin-top: 65px;
                     margin-left: 148px;
                 }
+            }
+
+            .text {
+                color: hsl(100, 78%, 50%);
+                /*fel färg*/
+                position: relative;
             }
         }
 
