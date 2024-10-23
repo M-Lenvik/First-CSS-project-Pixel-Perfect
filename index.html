@@ -8,11 +8,11 @@
   <link rel="stylesheet" href="css/style.css" type="text/css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
 
-  <!--<link rel="stylesheet" href="css/_normalize.css" type="text/css">
-  --> 
-  <!-- <link rel="stylesheet" href="css/_mobile.css" media="only screen and (max-width: 999px)">
-  <link rel="stylesheet" href="css/_desktop.css" media="screen and (min-width: 1000px)">
-  -->
+  <link rel="stylesheet" href="css/normalize.css" type="text/css">
+  
+  <link rel="stylesheet" href="css/mobile.css" media="only screen and (max-width: 999px)">
+  <link rel="stylesheet" href="css/desktop.css" media="screen and (min-width: 1000px)">
+  
 
 
   <!--<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -30,11 +30,11 @@ SLÄNG DETTA NÄR DU VET ATT NEDAN FUNKAR FÖR BÄGGE FONTERNA-->
     <header>
       <div class="side"> <!--kolla om taggen side finns istället för div här-->
         <nav>
-          <div class="menuToggle">
+          <button class="burger_menu">
             <span></span>
             <span></span>
             <span></span>
-          </div>
+          </button>
         </nav>
         <h1> Tough Cookie</h1>
       </div>
@@ -42,17 +42,18 @@ SLÄNG DETTA NÄR DU VET ATT NEDAN FUNKAR FÖR BÄGGE FONTERNA-->
 
 
     <div class="all_pages">
+      <!-------------SIDA 1 --------------->
       <div class="page1">
         <section class="top">
-          <div class="page-title">
+          <article class="page-title">
             <div class="logo_text_1">Tahini</div>
             <div class="logo_text_2">drizzle</div>
             <div class="logo_text_3">chickpeas</div>
-          </div>
-          <div class="text">Main course hemp seeds Southern Italian shiitake mushrooms a delicious meal banana bread lemon
+          </article>
+          <article class="text">Main course hemp seeds Southern Italian shiitake mushrooms a delicious meal banana bread lemon
             tahini dressing apple vinaigrette veggie burgers cool cucumbers coconut sugar. Seasonal edamame hummus asian
             pear kale bite sized ghost pepper one bowl mediterranean luxury bowl cayenne Thai sun pepper.
-          </div>
+          </article>
         </section>
 
         <section class="bottom"> <!--gör bilden responsiv-->
@@ -63,17 +64,18 @@ SLÄNG DETTA NÄR DU VET ATT NEDAN FUNKAR FÖR BÄGGE FONTERNA-->
             </div>
           </div>
 
-          <div class="text">Crispy iceberg lettuce Caribbean red habanero blueberry chia seed jam overflowing berries
+          <article class="text">Crispy iceberg lettuce Caribbean red habanero blueberry chia seed jam overflowing berries
             roasted butternut squash basmati thyme hummus falafel bowl cozy butternut cilantro lime vinaigrette heat mint
             potato chocolate cookie seeds samosa walnut mushroom tart.
             <div class="explore">Explore menu
                 <img src="assets/icons/arrow2.svg">
             </div>
-          </div>
+          </article>
         </section>
       </div>
-
+      <!-------------SLUT SIDA 1 --------------->
       
+      <!-------------SIDA 2 --------------->
       <div class="page2">
         <section class="pictures">
           <div class="pic1"><img src="pictures/salld_kikartor.jpg" width="303" height="auto" loading="lazy" alt="head of salad"></div>
@@ -82,55 +84,125 @@ SLÄNG DETTA NÄR DU VET ATT NEDAN FUNKAR FÖR BÄGGE FONTERNA-->
         </section>
 
         <section class="dish_menu">
-          <section class="line"></section>
+          <div class="line_top"></div>
           <!--    <section class="dishes"> Försök till att göra linjer runt varje maträtt. Ta bort i css också om du inte får det att funka-->
           <section class="dish">Halloumi moklieh</section>
           <section class="description">Deep-fried halloumi</section>
           <section class="cost">195 kr</section>
           <!--    </section>-->
 
-          <section class="line"></section>
+          <div class="line_bottom"></div>
+          <div class="line_top"></div>
           
           <section class="dish">Mojaddara</section>
           <section class="description">Green lentis with rice and fried onion</section>
           <section class="cost">135 kr</section>
 
-          <section class="line"></section>
+          <div class="line_bottom"></div>
+          <div class="line_top"></div>
 
           <section class="dish">Chiar & laban</section>
           <section class="description">Lebanese spicy yoghurt with chopped cucumber</section>
           <section class="cost">95 kr</section>
 
-          <section class="line"></section>
+          <div class="line_bottom"></div>
+          <div class="line_top"></div>
 
           <section class="dish">Warak inab</section>
           <section class="description">Rice- and veggie-filled dolma with mint and lemon</section>
           <section class="cost">85 kr</section>
 
-          <section class="line"></section>
+          <div class="line_bottom"></div>
+          <div class="line_top"></div>
 
           <section class="dish">Moutabbal batinzian</section>
           <section class="description">Smoked chopped aubergine, sesame paste, garlic and lemon</section>
           <section class="cost">175 kr</section>
 
-          <section class="line"></section>
+          <div class="line_bottom"></div>
+          <div class="line_top"></div>
 
           <section class="dish">Ardishoki</section>
           <section class="description">Artichoke with lemon and garlic marinade</section>
           <section class="cost">99 kr</section>
 
-          <section class="line"></section>
+          <div class="line_bottom"></div>
+          <div class="line_top"></div>
 
           <section class="dish">Mhamara</section>
           <section class="description">Spicy bell pepper relish with crushed walnuts and pomegranate syrup</section>
           <section class="cost">123 kr</section>
 
-          <section class="line"></section>
+          <div class="line_bottom"></div>
         </section>
+      </div>
+      <!-------------SLUT SIDA 1 --------------->
+
+      <!-------------SIDA 3 --------------->
+      <div class="page3">
+        <div class="test">
+          <section class="booking">
+            <!--<h2>Book your table</h2>-->
+            <form>
+
+              <label>
+                  Name
+                  <input type="text" placeholder="Please enter your name"><br>
+              </label>
+
+              <label>
+                  Email
+                  <input type="email" placeholder="Email"><br>
+              </label>
+
+              <label>
+                Phone
+                <input type="number" placeholder="Phone number"><br>
+              </label>
+
+              <label>
+                Phone
+                <input type="date" placeholder="Date"><br>
+              </label>
+
+              <label>
+                Phone
+                <input type="number" placeholder="Partysize"><br>
+              </label>
+
+              <label>
+                Allergies
+                <textarea name="meddelande"></textarea><br>
+              </label>
+    
+              <input type="submit" value="Skicka meddelande">
+            </form>
+          </section>
+
+          <section class="bookinginformation">
+            <img src="pictures/table.jpg" width="552" height="440" loading="lazy" alt="head of salad">
+            <div class="arrow">
+              <a href="tel:+4681234567">+46 8 123 45 67</a>
+              <a href="mailto:book@toughcookie.com">book@toughcookie.com</a>
+              <a href="adress:Brända Tomten 111 31 Stockholm">Brända Tomten 111 31 Stockholm</a>
+            </div>
+          </section>
+
+          <section class="cookie">
+            Accept cookies
+            <button class="cookie_button">
+              Declide
+            </button>
+            <button class="cookie_button">
+              Accept
+            </button>
+          </section>
+        </div>
 
       </div>
-    </div>
+      <!-------------SLUT SIDA 3 --------------->
 
+    </div>
   </main>
 
 </body>

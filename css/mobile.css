@@ -34,7 +34,7 @@ header {
             text-orientation: sideways;
             text-transform: uppercase;
         }
-        .menuToggle span {
+        .burger_menu span {
             /*Kod från https://medium.com/@mateus2050/hamburguer-menu-html-and-css-only-c06364fa9bfd*/
             display: block;
             /* to ensure that each span element occupies its own line. */

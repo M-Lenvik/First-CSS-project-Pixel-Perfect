@@ -1,46 +1,65 @@
 body {
-    background-color: aliceblue;
-    }
-    
-    /* Menysidan överst*/
+    background-color: rgb(30, 66, 212)
+}
+
+main {
+    /*TA BORT, bara som hjälpmedel nu*/margin-top: 10px; /*TA BORT, bara som hjälpmedel nu*/
+    /*TA BORT, bara som hjälpmedel nu*/margin-bottom: 10px; /*TA BORT, bara som hjälpmedel nu*/
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    gap: 1em;
+    background-color: rgb(0, 0, 0);
+
+
+
+    /*************HEADER****Menysidan till vänster******/
     header {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+
+
         .side {
-            border: solid rgb(11, 11, 10) 1px; 
+            position: fixed;
+            display: inline;
+            height: fit-content;
+            width: 5%;
+            /*griden är 12. 100% delar på 12 grids = 8.3*/
+            margin-left: 2%;
+            margin-top: 1%;
+
+            border: solid white 2px;
+
+            h1 {
+                color: rgb(220, 220, 220);
+                writing-mode: vertical-lr;
+                text-orientation: upright;
+                margin-top: 5px;
+                text-transform: uppercase;
+                font-family: "Jockey One", sans-serif;
+
+                font-size:xx-large;
+            }
+            
+            .burger_menu { 
+                background-color: black;
+                span {
+                    /*Kod från https://medium.com/@mateus2050/hamburguer-menu-html-and-css-only-c06364fa9bfd*/
+                    display: block;
+                    /* to ensure that each span element occupies its own line. */
+                    width: 33px;
+                    height: 4px;
+                    margin-bottom: 5px;
+                    /* create some spacing between the span elements. */
+                    position: relative;
+                    /* allow for positioning changes in relation to the parent div.*/
+                    background: rgb(255, 242, 54);
+                    border-radius: 3px;
+                }
+            }
         }
     }
-    
-    /* SLUT Menysidan överst*/
-    
-    .page1 {
-
-    
-        font-family: "Jockey One", sans-serif;
-        font-weight: 400;
-        font-style: normal;
-    
-        .text {
-            font-size: 1.5em;
-        }
-    
-    
-    }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    /*************SLASK***************/
+    /***********SLUT HEADER Menysidan till vänster*********/
 
     .all_pages{
         grid-column: span 11;
@@ -234,3 +253,69 @@ body {
                 }
             } /*************SLUT MATRÄTTER**************/
         } /****************SLUT SIDA 2******************/
+
+        /****************SIDA 3******************/
+        .page3{
+            grid-column: span 11;
+            position: relative;
+            min-height: 100vh;
+            background-color: rgb(33, 232, 56);
+            border-left: 0.5em solid rgb(255, 242, 54);
+            border-top: 0.5em solid rgb(255, 242, 54);
+
+            .test{
+                position: relative;
+                display: grid;
+                grid-template-columns: repeat(11, 1fr);
+                gap: 0.5em;
+                margin-top: 8%;
+
+
+                .booking {
+                    position: relative;
+                    grid-column: span 5;
+                    background-color: rgb(43, 43, 42);
+                }
+
+                .bookinginformation {
+                    position: relative;
+                    grid-column: span 6;
+                    gap: 0.5em;
+                    font-size: xx-large;
+
+                    background-color: rgb(52, 51, 51);
+
+                    .arrow{
+                        position: absolute;
+                        opacity:100%;
+                        width: 50%;
+                        height: 50%;
+                        bottom: 30%;
+                        left: 15%;
+                        background-color: aliceblue;
+                        
+                        a:hover {
+                            position: relative;
+                            left: 25px;
+                            cursor: pointer;
+                        }
+                    }
+                }
+
+                .cookie {
+                    position: relative;
+                    grid-column: span 11;
+                    gap: 0.5em;
+                    font-size: xx-large;
+                    margin-top: 5%;
+
+                    background-color: rgb(52, 51, 51);
+
+                    button{
+                        
+                    }
+                }
+            }
+        }
+    }
+}
