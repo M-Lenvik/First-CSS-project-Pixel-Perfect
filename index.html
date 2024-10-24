@@ -23,6 +23,9 @@
 SLÄNG DETTA NÄR DU VET ATT NEDAN FUNKAR FÖR BÄGGE FONTERNA-->
   <link href="https://fonts.googleapis.com/css2?family=Jockey+One&family=Roboto+Condensed&display=swap"
     rel="stylesheet">
+
+  <script src="https://kit.fontawesome.com/ea0b116861.js" crossorigin="anonymous"></script>
+
 </head>
 
 <body>
@@ -136,66 +139,106 @@ SLÄNG DETTA NÄR DU VET ATT NEDAN FUNKAR FÖR BÄGGE FONTERNA-->
           <div class="line_bottom"></div>
         </section>
       </div>
-      <!-------------SLUT SIDA 1 --------------->
+      <!-------------SLUT SIDA 2 --------------->
 
       <!-------------SIDA 3 --------------->
       <div class="page3">
-        <div class="test">
+        <div class="grid">
           <section class="booking">
-            <!--<h2>Book your table</h2>-->
-            <form>
 
-              <label>
-                  Name
-                  <input type="text" placeholder="Please enter your name"><br>
-              </label>
+            <h2>Book your table</h2>
 
-              <label>
-                  Email
-                  <input type="email" placeholder="Email"><br>
-              </label>
+            <div class="guest_info">
+              Name           
+              <span class="guest_input">
+                <input type="text" placeholder="Please enter your name"><br>
+              </span>
+            </div>
 
-              <label>
-                Phone
+          
+            <div class="guest_info">
+              Email           
+              <span class="guest_input">
+                <input type="email" placeholder="Email"><br>
+              </span>
+            </div>
+
+          
+            <div class="guest_info">
+              Phone           
+              <span class="guest_input">
                 <input type="number" placeholder="Phone number"><br>
-              </label>
+              </span>
+            </div>
 
-              <label>
-                Phone
+          
+            <div class="guest_info">
+              Date           
+              <span class="guest_input">
                 <input type="date" placeholder="Date"><br>
-              </label>
+              </span>
+            </div>
 
-              <label>
-                Phone
+          
+            <div class="guest_info">
+              Party size           
+              <span class="guest_input">
                 <input type="number" placeholder="Partysize"><br>
-              </label>
+              </span>
+            </div>
 
-              <label>
-                Allergies
-                <textarea name="meddelande"></textarea><br>
-              </label>
-    
-              <input type="submit" value="Skicka meddelande">
-            </form>
+          
+            <div class="guest_info">
+              Allergies           
+              <span class="guest_input">
+                <input type="text" placeholder="Allergies"><br>
+              </span>
+            </div>
+
+            <section class="buttons">
+              <input class="cancel_button"type="button" value="Cancel">
+              </input>
+
+              <input class="submit_button"type="button" value="Request">
+              </input>
+            </section>
+            
           </section>
 
-          <section class="bookinginformation">
+
+          
+          <section class="contakt_information">
             <img src="pictures/table.jpg" width="552" height="440" loading="lazy" alt="head of salad">
+            
             <div class="arrow">
-              <a href="tel:+4681234567">+46 8 123 45 67</a>
-              <a href="mailto:book@toughcookie.com">book@toughcookie.com</a>
-              <a href="adress:Brända Tomten 111 31 Stockholm">Brända Tomten 111 31 Stockholm</a>
+              <p>
+                <a href="tel:+4681234567">
+                  <i class="fa-solid fa-phone"></i>
+                  +46 8 123 45 67</a><br>
+
+                  
+                    <a href="mailto:book@toughcookie.com">
+                      <i class="fa-solid fa-at"></i>
+                    book@toughcookie.com</a><br>
+
+                  
+                    <a href="adress:Brända Tomten 111 31 Stockholm">
+                      <i class="fa-solid fa-location-dot"></i>
+                    Brända Tomten 111 31 Stockholm</a>
+              </p>
             </div>
+
           </section>
 
           <section class="cookie">
-            Accept cookies
-            <button class="cookie_button">
-              Declide
-            </button>
-            <button class="cookie_button">
-              Accept
-            </button>
+            <p>You should accept cookies.</p>
+            <section class="buttons">
+              <input class="cancel_button"type="button" value="Decline">
+              </input>
+
+              <input class="submit_button"type="button" value="Accept">
+              </input>
+            </section>
           </section>
         </div>
 

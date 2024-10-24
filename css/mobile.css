@@ -224,3 +224,60 @@ header {
         }
     }
 }
+
+
+
+
+
+<div class="page3">
+        <div class="grid">
+          <section class="booking">
+
+            <div class="guest_info">
+              Name
+            </div>
+      
+            <div class="guest_input">
+              formulär ruta
+            </div>
+            
+          </section>
+
+
+          
+          <section class="bookinginformation">
+            <img src="pictures/table.jpg" width="552" height="440" loading="lazy" alt="head of salad">
+            
+            <div class="arrow">
+              <p>
+                <a href="tel:+4681234567">
+                  <i class="fa-solid fa-phone"></i>
+                  +46 8 123 45 67</a><br>
+
+                  
+                    <a href="mailto:book@toughcookie.com">
+                      <i class="fa-solid fa-at"></i>
+                    book@toughcookie.com</a><br>
+
+                  
+                    <a href="adress:Brända Tomten 111 31 Stockholm">
+                      <i class="fa-solid fa-location-dot"></i>
+                    Brända Tomten 111 31 Stockholm</a>
+              </p>
+            </div>
+
+          </section>
+
+          <section class="cookie">
+            Accept cookies
+            <button class="cookie_button">
+              Declide
+            </button>
+            <button class="cookie_button">
+              Accept
+            </button>
+          </section>
+        </div>
+
+      </div>
+      

@@ -236,6 +236,7 @@ main {
                     grid-column: span 4;
                     background-color: rgb(255, 220, 220);
                     text-transform: uppercase;
+                    font-family: "Jockey One", sans-serif;
                     font-weight: bold;
                     padding-left: 0.25em;
                 }
@@ -256,44 +257,110 @@ main {
 
         /****************SIDA 3******************/
         .page3{
-            grid-column: span 11;
             position: relative;
+            grid-column: span 11;
             min-height: 100vh;
             background-color: rgb(33, 232, 56);
             border-left: 0.5em solid rgb(255, 242, 54);
             border-top: 0.5em solid rgb(255, 242, 54);
 
-            .test{
+            h2{
+                margin-top: 5%;
+                margin-bottom: 2%;
+            }
+
+            .grid{
                 position: relative;
                 display: grid;
                 grid-template-columns: repeat(11, 1fr);
                 gap: 0.5em;
                 margin-top: 8%;
+                padding-left: 1%;
 
+                .buttons{
+                    .submit_button, .cancel_button{
+                        /*omarbetad kod från: 
+                        https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/button*/
+                        border: 0;
+                        line-height: 2.5;
+                        padding: 0 20px;
+                        margin: 1%;
+                        font-size: 1rem;
+                        width: 10em;
+                        text-align: center;
+                        color: #000000;
+                        border-radius: 10px;
+                        background-image: linear-gradient(
+                          to top left,
+                          rgb(0 0 0 / 20%),
+                          rgb(0 0 0 / 20%) 30%,
+                          rgb(0 0 0 / 0%)
+                        );
+                        box-shadow:
+                        inset 2px 2px 3px rgb(255 255 255 / 60%),
+                        inset -2px -2px 3px rgb(0 0 0 / 60%);
+                        
+                        text-transform: uppercase;
+                    }
+                }
 
                 .booking {
                     position: relative;
                     grid-column: span 5;
-                    background-color: rgb(43, 43, 42);
+                    gap: 0.5em;
+                    text-transform: uppercase;
+                    font-family: "Jockey One", sans-serif;
+
+                        .cancel_button{
+                            background-color: rgb(225, 41, 146);
+                        }
+
+                        .submit_button{
+                            background-color: rgb(255, 242, 54);
+                        }
+                    }
                 }
 
-                .bookinginformation {
+                .guest_info{
+                    grid-column: span 2;
+                    position: relative;
+                    padding-bottom: 1em;
+                }
+
+                .guest_input{
+                    grid-column: span 3;
+                    position: relative;
+                    float: right;
+                    margin-right: 50%;
+                    width: 6em;
+                    input{
+                        width: 12em;
+                        border-radius: 10px;
+                    }
+                }
+
+                .contakt_information {
                     position: relative;
                     grid-column: span 6;
                     gap: 0.5em;
                     font-size: xx-large;
 
-                    background-color: rgb(52, 51, 51);
-
                     .arrow{
                         position: absolute;
                         opacity:100%;
-                        width: 50%;
+                        width: fit-content%;
                         height: 50%;
                         bottom: 30%;
-                        left: 15%;
-                        background-color: aliceblue;
-                        
+                        left: 8%;
+                        text-shadow: -2px -2px 1px rgba(0,0,0);
+
+                        background-color: rgba(240, 248, 255, 0.332);
+
+                        a{
+                            color: #74C0FC;
+                            font-family: "Jockey One", sans-serif;
+                        }
+
                         a:hover {
                             position: relative;
                             left: 25px;
@@ -304,15 +371,30 @@ main {
 
                 .cookie {
                     position: relative;
-                    grid-column: span 11;
+                    grid-column: span 12;
                     gap: 0.5em;
                     font-size: xx-large;
                     margin-top: 5%;
+                    color: antiquewhite;
+                    background-color: rgb(225, 41, 146);
+                    
+                    .buttons{
+                        position: relative;
+                        display: flex;
+                        align-items: center;
+                        gap: 10px;
 
-                    background-color: rgb(52, 51, 51);
+                        color: black;
+                        font-family: "Jockey One", sans-serif;
+                        text-transform: uppercase;
+    
+                        .cancel_button{
+                            background-color: rgb(255, 242, 54);
+                        }
 
-                    button{
-                        
+                        .submit_button{
+                            background-color: rgb(33, 232, 56);
+                        }
                     }
                 }
             }
