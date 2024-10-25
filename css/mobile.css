@@ -30,7 +30,7 @@ header {
 
     
         h1 {
-            color: green;
+            color: rgb(220, 220, 220);
             text-orientation: sideways;
             text-transform: uppercase;
         }
@@ -218,6 +218,57 @@ header {
                 grid-column: span 1;
                 background-color: rgb(255, 220, 220);
             }
+
+            .sales_marker_new{
+                display: inline-block;
+                padding-inline: 5px;  
+                text-transform: uppercase;
+                font-size: 10px;
+                align-items: center;
+                height: 1,1em;
+                background-color: rgb(197, 30, 144);
+                transform: rotate(3deg);
+                padding-left: 5px;
+                padding-right: 5px;
+                width: 4em;
+                span{
+                    display: inline-block;
+                }
+            }
+
+            .sales_marker_vegan{
+                display: inline-block;
+                padding-inline: 5px;  
+                text-transform: uppercase;
+                font-size: 10px;
+                align-items: center;
+                height: 1,1em;
+                background-color: green;
+                transform: rotate(-3deg);
+                padding-left: 5px;
+                padding-right: 5px;
+                width: 4em;
+                span{
+                    transform: rotate(3deg);
+                    display: inline-block;
+                }
+            }
+                
+                .sales_marker_popular{
+                    display: inline-block;
+                    padding-inline: 5px;  
+                    text-transform: uppercase;
+                    font-size: 10px;
+                    align-items: center;
+                    height: 1,1em;
+                    background-color: rgb(172, 225, 25);
+                    padding-left: 5px;
+                    padding-right: 5px;
+                    width: 4em;
+                    span{
+                        display: inline-block;
+                    }
+                }
             .cost{
                 grid-column: span 1;
                 background-color: rgb(255, 220, 220);
@@ -229,7 +280,173 @@ header {
     }/****************SLUT SIDA 2******************/
 
 
+            /****************SIDA 3******************/
+        .page3{
+            position: relative;
+            grid-column: span 11;
+            min-height: 100vh;
+            background-color: rgb(33, 232, 56);
+            border-left: 0.5em solid rgb(255, 242, 54);
+            border-top: 0.5em solid rgb(255, 242, 54);
+
+            h2{
+                margin-top: 5%;
+                margin-bottom: 2%;
+            }
+
+            .grid{
+                position: relative;
+                display: flex;
+                flex-direction: column;
+                margin-top: 8%;
+                padding-left: 1%;
+                padding-right: 1%;
+                margin-bottom: 1%;
+
+                .booking:nth-child(1){
+                    order:2;
+                }
     
+                .contakt_information:nth-child(2){
+                    order:1;
+                }
+
+                .cookie:nth-child(3){
+                    order:3;
+                }
+
+                .buttons{
+                    .submit_button, .cancel_button{
+                        /*omarbetad kod från: 
+                        https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/button*/
+                        border: 0;
+                        line-height: 2.5;
+                        padding: 0 20px;
+                        margin: 1%;
+                        font-size: 1rem;
+                        width: 10em;
+                        text-align: center;
+                        color: #000000;
+                        border-radius: 10px;
+                        background-image: linear-gradient(
+                          to top left,
+                          rgb(0 0 0 / 20%),
+                          rgb(0 0 0 / 20%) 30%,
+                          rgb(0 0 0 / 0%)
+                        );
+                        box-shadow:
+                        inset 2px 2px 3px rgb(255 255 255 / 60%),
+                        inset -2px -2px 3px rgb(0 0 0 / 60%);
+                        
+                        text-transform: uppercase;
+                    }
+                }
+
+                .booking {
+                    position: relative;
+                    grid-column: span 5;
+                    gap: 0.5em;
+                    text-transform: uppercase;
+                    font-family: "Jockey One", sans-serif;
+
+                    .cancel_button{
+                        background-color: rgb(225, 41, 146);
+                    }
+
+                    .submit_button{
+                        background-color: rgb(255, 242, 54);
+                    }
+                }
+                
+                .guest_info{
+                    grid-column: span 2;
+                    position: relative;
+                    padding-bottom: 1em;
+                }
+
+                .guest_input{
+                    grid-column: span 3;
+                    position: relative;
+                    float: right;
+                    margin-right: 50%;
+                    width: 6em;
+                    input{
+                        width: 12em;
+                        border-radius: 10px;
+                    }
+                }
+
+                .contakt_information {
+                    position: relative;
+                    grid-column: span 6;
+                    gap: 0.5em;
+                    font-size: xx-large;
+
+                    .arrow{
+                        position: absolute;
+                        opacity:100%;
+                        width: fit-content%;
+                        height: 50%;
+                        bottom: 30%;
+                        left: 8%;
+                        text-shadow: -2px -2px 1px rgba(0,0,0);
+
+                        background-color: rgba(240, 248, 255, 0.332);
+
+                        a{
+                            color: #74C0FC;
+                            font-family: "Jockey One", sans-serif;
+                        }
+
+                        a:hover {
+                            position: relative;
+                            left: 25px;
+                            cursor: pointer;
+                        }
+                    }
+                }
+
+                .cookie {
+                    position: relative;
+                    grid-column: span 1;
+                    margin-top: 5%;
+                    background-color: rgb(225, 41, 146);
+                }
+
+                .cookie_text{
+                    position: relative;
+                    grid-column: span 1;
+                    align-items: center;
+                    gap: 45%;
+                }
+            
+                .buttons{
+                    position: relative;
+                    grid-column: span 1;
+                    align-items: center;
+                    color: black;
+                    font-family: "Jockey One", sans-serif;
+                    text-transform: uppercase;
+
+                    .cancel_button{
+                        background-color: rgb(255, 242, 54);
+                    }
+
+                    .submit_button{
+                        background-color: rgb(33, 232, 56);
+                    }
+                }                
+            }
+        }/****************SLUT SIDA 3******************/
+
+    /****************SIDA 4******************/
+    .page4{
+        height: 100vh;
+        background-color: purple;
+        text-align: center;
+        padding-top: 20%;
+    }
+        /****************SLUT SIDA 3******************/    
 }
 
 
