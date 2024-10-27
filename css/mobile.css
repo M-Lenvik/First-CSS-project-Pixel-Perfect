@@ -34,19 +34,21 @@ header {
             text-orientation: sideways;
             text-transform: uppercase;
         }
-        .burger_menu span {
+        .burger_menu {
             background-color: rgb(0, 0, 0);
-            /*Kod från https://medium.com/@mateus2050/hamburguer-menu-html-and-css-only-c06364fa9bfd*/
-            display: block;
-            /* to ensure that each span element occupies its own line. */
-            width: 33px;
-            height: 4px;
-            margin-bottom: 5px;
-            /* create some spacing between the span elements. */
-            position: relative;
-            /* allow for positioning changes in relation to the parent div.*/
-            background: #e5ed08;
-            border-radius: 3px;
+            span{
+                /*Kod från https://medium.com/@mateus2050/hamburguer-menu-html-and-css-only-c06364fa9bfd*/
+                display: block;
+                /* to ensure that each span element occupies its own line. */
+                width: 33px;
+                height: 4px;
+                margin-bottom: 5px;
+                /* create some spacing between the span elements. */
+                position: relative;
+                /* allow for positioning changes in relation to the parent div.*/
+                background: #e5ed08;
+                border-radius: 3px;
+            }
         }
     }
 }
@@ -169,14 +171,21 @@ header {
 
         .pictures {
             position: relative;
+            
+            div{
+                height: 200px;
+            }
+            
+            img{
+                object-fit: cover;
+                width: 100%;
+                height: 100%;
+            }
 
             .pic1{
                 display: block;
-                margin-left: auto;
-                margin-right: auto;
-                width: 50%;
+                width: 100%;
             }
-
             .pic2, .pic3{
                 display: none;
             }
@@ -289,7 +298,7 @@ header {
             border-left: 0.5em solid rgb(255, 242, 54);
             border-top: 0.5em solid rgb(255, 242, 54);
 
-            h2{
+            h3{
                 margin-top: 5%;
                 margin-bottom: 2%;
             }
@@ -411,31 +420,33 @@ header {
                     grid-column: span 1;
                     margin-top: 5%;
                     background-color: rgb(225, 41, 146);
+
+                    .cookie_text{
+                        position: relative;
+                        grid-column: span 1;
+                        align-items: center;
+                        gap: 45%;
+                    }  
+
+                    .buttons{
+                        position: relative;
+                        grid-column: span 1;
+                        align-items: center;
+                        color: black;
+                        font-family: "Jockey One", sans-serif;
+                        text-transform: uppercase;
+    
+                        .cancel_button{
+                            background-color: rgb(255, 242, 54);
+                        }
+    
+                        .submit_button{
+                            background-color: rgb(33, 232, 56);
+                        }
+                    }
                 }
 
-                .cookie_text{
-                    position: relative;
-                    grid-column: span 1;
-                    align-items: center;
-                    gap: 45%;
-                }
-            
-                .buttons{
-                    position: relative;
-                    grid-column: span 1;
-                    align-items: center;
-                    color: black;
-                    font-family: "Jockey One", sans-serif;
-                    text-transform: uppercase;
-
-                    .cancel_button{
-                        background-color: rgb(255, 242, 54);
-                    }
-
-                    .submit_button{
-                        background-color: rgb(33, 232, 56);
-                    }
-                }                
+              
             }
         }/****************SLUT SIDA 3******************/
 
@@ -444,7 +455,23 @@ header {
         height: 100vh;
         background-color: purple;
         text-align: center;
-        padding-top: 20%;
+        padding-top: 10%;
+
+
+        a:link {
+            color: rgb(255, 255, 255);
+            font-size: 3em;
+            text-decoration: none;
+            text-transform: uppercase;
+            font-family: "Jockey One", sans-serif;
+            margin-bottom: 5%;
+        }
+        a:visited {
+            color: rgb(255, 255, 255);
+        }
+        a:hover {
+            font-size:5em;
+        }
     }
         /****************SLUT SIDA 3******************/    
 }

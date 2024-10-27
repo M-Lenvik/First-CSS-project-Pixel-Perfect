@@ -8,7 +8,6 @@ main {
     display: grid;
     grid-template-columns: repeat(12, 1fr);
     gap: 1em;
-    background-color: rgb(0, 0, 0);
 
 
 
@@ -19,13 +18,14 @@ main {
         flex-direction: column;
 
         width: auto;
-        border: solid white 2px;
+        border: solid rgb(240, 226, 226) 2px;
         /*justify-content: space-between; i mobilversionen*/
         background-color: rgb(0, 0, 0);
 
 
         .side {
             position: fixed;
+            grid-column: span 1;
             display: inline;
             height: 100vh;
             width: 5%;
@@ -48,23 +48,44 @@ main {
                 font-size:xx-large;
             }
             
-            .burger_menu { 
-                background-color: black;
+            button { 
+                width: 35px;
+                height: 35px;
+                background-color: rgb(255, 255, 255);
+                border: 0;
+            }
+
+            button span{
+                display: block;
+                width: 25px;
+                height: 3px;
+                background-color: rgb(194, 205, 41);
+                border-radius: 6px;
+                margin-bottom: 4px;
+            }
+            
+            input:checked + button{
+                border: 3px solid red;
+            }
+    
+            /*    background-color: black;
                 span {
-                    /*Kod från https://medium.com/@mateus2050/hamburguer-menu-html-and-css-only-c06364fa9bfd*/
+                    /*Kod från https://medium.com/@mateus2050/hamburguer-menu-html-and-css-only-c06364fa9bfd* /
                     display: block;
-                    /* to ensure that each span element occupies its own line. */
+                    /* to ensure that each span element occupies its own line. * /
                     width: 33px;
                     height: 4px;
                     margin-bottom: 5px;
-                    /* create some spacing between the span elements. */
+                    /* create some spacing between the span elements. * /
                     position: relative;
-                    /* allow for positioning changes in relation to the parent div.*/
+                    /* allow for positioning changes in relation to the parent div.* /
                     background: rgb(255, 242, 54);
                     border-radius: 3px;
                 }
-            }
+                */
+            
         }
+
     }
     /***********SLUT HEADER Menysidan till vänster*********/
 
@@ -120,7 +141,9 @@ main {
 
                     /*display: flex; i mobilversionen kanske påverkar?*/
                     background-color: rgb(0, 0, 0);
-                    border: solid rgb(255, 255, 255) 2px;       
+                    border: solid rgb(255, 255, 255) 2px;
+                    
+                   
             
                     .logo_text_1 {
                         font-size:5em;
@@ -130,7 +153,7 @@ main {
                         width: auto;    
                         height: auto;
                         margin-top: 35px;
-                        margin-left: 80px;
+                        margin-right: 80px;
                         z-index: 1;
                     }
 
@@ -166,17 +189,22 @@ main {
                     display:block;
                     
                     /*Ska bildstorleken sättas här eller i html?*/
+                   
+                   img{
+                    object-fit: cover;
                     width: 100%;
                     height: 100%;
+                }
 
                     
                     .arrow { /*pilen i salladen*/
                         position: absolute;
                         transform: rotate(90deg);
-                        width: 50px;
-                        height: 50px;
-                        bottom: 30px;
-                        left: 20px;
+                        object-fit: cover;
+                        width: 10%;
+                        height: 10%;
+                        bottom: 10%;
+                        left: 5%;
                         
                         img:hover {
                             position: relative;
@@ -217,24 +245,31 @@ main {
             border-left: 0.5em solid rgb(255, 242, 54);
             border-top: 0.5em solid rgb(255, 242, 54);
 
-            /*************BILDER**************/
             .pictures {
                 display: grid;
                 grid-template-columns: repeat(11, 1fr);
                 gap: 0.5em;
                 position: relative;
+                
+                div{
+                    height: 300px;
+                }
+                
+                img{
+                    object-fit: cover;
+                    width: 100%;
+                    height: 100%;
+                }
 
                 .pic1{
                     grid-column: span 3;
                     display: block;
                     width: 100%;
                 }
+
                 .pic2, .pic3{
                     grid-column: span 4;
                     display: block;
-                    width: 100%;
-
-                    background-color: blue;
                 }
             }
             /*************SLUT BILDER**************/
@@ -343,7 +378,7 @@ main {
             border-left: 0.5em solid rgb(255, 242, 54);
             border-top: 0.5em solid rgb(255, 242, 54);
 
-            h2{
+            h3{
                 margin-top: 5%;
                 margin-bottom: 2%;
             }
@@ -484,7 +519,6 @@ main {
                         .cancel_button{
                             background-color: rgb(255, 242, 54);
                             float: right;
-                            margin-right: 2em;
                         }
 
                         .submit_button{
@@ -500,7 +534,23 @@ main {
             height: 100vh;
             background-color: purple;
             text-align: center;
-            padding-top: 20%;
+            padding-top: 10%;
+
+
+            a:link {
+                color: rgb(255, 255, 255);
+                font-size: 3em;
+                text-decoration: none;
+                text-transform: uppercase;
+                font-family: "Jockey One", sans-serif;
+                margin-bottom: 5%;
+            }
+            a:visited {
+                color: rgb(255, 255, 255);
+            }
+            a:hover {
+                font-size:5em;
+            }
         }
         /****************SLUT SIDA 3******************/
     

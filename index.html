@@ -5,13 +5,15 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Tough Cookie</title>
-  <link rel="stylesheet" href="css/style.css" type="text/css">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-
   <link rel="stylesheet" href="css/normalize.css" type="text/css">
-  
+  <link rel="stylesheet" href="css/style.css" type="text/css">
   <link rel="stylesheet" href="css/mobile.css" media="only screen and (min-width: 300px)">
   <link rel="stylesheet" href="css/desktop.css" media="screen and (min-width: 700px)">
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+
+
+  
   
 
 
@@ -32,13 +34,13 @@ SLÄNG DETTA NÄR DU VET ATT NEDAN FUNKAR FÖR BÄGGE FONTERNA-->
   <main>
     <header>
       <div class="side"> <!--kolla om taggen side finns istället för div här-->
-        <nav>
-          <button class="burger_menu">
+        
+          <input type="checkbox"/>
+          <button>
             <span></span>
             <span></span>
             <span></span>
           </button>
-        </nav>
         <h1> Tough Cookie</h1>
       </div>
     </header>
@@ -46,7 +48,7 @@ SLÄNG DETTA NÄR DU VET ATT NEDAN FUNKAR FÖR BÄGGE FONTERNA-->
 
     <div class="all_pages">
       <!-------------SIDA 1 --------------->
-      <div class="page1">
+      <a class="page1" id="page1">
         <section class="top">
           <article class="page-title">
             <div class="logo_text_1">Tahini</div>
@@ -75,15 +77,15 @@ SLÄNG DETTA NÄR DU VET ATT NEDAN FUNKAR FÖR BÄGGE FONTERNA-->
             </div>
           </article>
         </section>
-      </div>
+      </a>
       <!-------------SLUT SIDA 1 --------------->
       
       <!-------------SIDA 2 --------------->
-      <div class="page2">
+      <div class="page2" id="page2">
         <section class="pictures">
-          <div class="pic1"><img src="pictures/salld_kikartor.jpg" width="303" height="auto" loading="lazy" alt="head of salad"></div>
-          <div class="pic2"><img src="pictures/soppa.jpg" width="411" height="auto" loading="lazy" alt="head of salad"></div>
-          <div class="pic3"><img src="pictures/roror.jpg" width="411" height="auto" loading="lazy" alt="head of salad"></div>
+          <div class="pic1"><img src="pictures/salld_kikartor_2.jpg" width="303" height="auto" loading="lazy" alt="head of salad"></div>
+          <div class="pic2"><img src="pictures/soppa_2.jpg" width="411" height="auto" loading="lazy" alt="head of salad"></div>
+          <div class="pic3"><img src="pictures/roror_2.jpg" width="411" height="auto" loading="lazy" alt="head of salad"></div>
         </section>
 
         <section class="dish_menu">
@@ -153,7 +155,7 @@ SLÄNG DETTA NÄR DU VET ATT NEDAN FUNKAR FÖR BÄGGE FONTERNA-->
       <!-------------SLUT SIDA 2 --------------->
 
       <!-------------SIDA 3 --------------->
-      <div class="page3">
+      <div class="page3" id="page3">
         <div class="grid">
           <section class="booking">
 
@@ -245,13 +247,13 @@ SLÄNG DETTA NÄR DU VET ATT NEDAN FUNKAR FÖR BÄGGE FONTERNA-->
             <section class="cookie_text">
               <p>You should accept cookies.</p>
             
-              <section class="buttons">
+              <span class="buttons">
                 <input class="cancel_button"type="button" value="Decline">
                 </input>
 
                 <input class="submit_button"type="button" value="Accept">
                 </input>
-              </section>
+              </span>
             </section>
           </section>
         </div>
@@ -259,11 +261,11 @@ SLÄNG DETTA NÄR DU VET ATT NEDAN FUNKAR FÖR BÄGGE FONTERNA-->
       <!-------------SLUT SIDA 3 --------------->
       <!-------------SIDA 4 --------------->
       <div class="page4">
-        Home<br>
-        Menu<br>
-        Book table
-      </div>
+        <a href="#page1">Home</a><br />
+        <a href="#page2">Menu</a><br />
+        <a href="#page3">Book table</a><br />
 
+      </div>
       <!-------------SLUT SIDA 4 --------------->
 
     </div>
