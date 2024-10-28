@@ -48,8 +48,8 @@ main {
                 margin-left: 0;
                 text-transform: uppercase;
                 font-family: "Jockey One", sans-serif;
+                font-size: 25px;
 
-                font-size:xx-large;
             }
             
             /***************************MENYKNAPP***************************/
@@ -105,7 +105,7 @@ main {
                 position: fixed;
                 top:0;
                 left: 0;
-                background-color: aqua;
+                background-color: purple;
                 width: 100vw;
                 height: 100vh;
                 opacity: 0;
@@ -127,6 +127,12 @@ main {
                 height: 100%;
                 justify-content: space-evenly;
                 text-align: center;
+
+                font-size: 3em;
+                text-decoration: none;
+                text-transform: uppercase;
+                font-family: "Jockey One", sans-serif;
+                color: antiquewhite;
             }
 
             /***************************SLUT MENYKNAPP***************************/
@@ -186,7 +192,6 @@ main {
                     color: rgb(0, 255, 56);
                     padding: 0.5em;
                     margin-top: 0px;
-                    margin-left: 0px;
                     top: 0;
                 }
 
@@ -214,17 +219,14 @@ main {
                     background-color: rgb(0, 0, 0);
                     border: solid rgb(255, 255, 255) 2px;
                     
-                   
             
                     .logo_text_1 {
                         font-size:5em;
                         font-weight: bold;
                         position: absolute;
                         color: rgb(0, 255, 56);
-                        width: auto;    
-                        height: auto;
-                        margin-top: 35px;
-                        margin-right: 80px;
+                        right: 35px;
+                        top: 20px;
                         z-index: 1;
                     }
 
@@ -233,10 +235,8 @@ main {
                         font-weight: bold;
                         position: absolute;
                         color: rgb(170, 117, 255);
-                        width: auto;    
-                        height: auto;
-                        margin-top: 32px;
-                        margin-left: 202px;
+                        right: 39px;
+                        top: 15px;
                     }
 
                     .logo_text_3 {
@@ -244,10 +244,9 @@ main {
                         font-weight: bold;
                         position: absolute;
                         color: rgb(255, 242, 54);
-                        margin-top: 105px;
-                        margin-left: 95px;
-                        width: auto;    
-                        height: auto;
+                        right: 103px;
+                        top: 45px;
+
                     }
                 }
                 /******************SLUT Stycke för textlogon******************/
@@ -261,11 +260,11 @@ main {
                     
                     /*Ska bildstorleken sättas här eller i html?*/
                    
-                   img{
+                   img {
                     object-fit: cover;
                     width: 100%;
                     height: 100%;
-                }
+                    }
 
                     
                     .arrow { /*pilen i salladen*/
@@ -291,14 +290,32 @@ main {
                     color: rgb(170, 117, 255);
                     border-left: 0.5em solid rgb(255, 242, 54);
                     background-color: rgb(255, 220, 220);
-
+                    
                     .explore {
                         position: relative;
                         display: flex;
                         align-items: center;
-                        gap: 10px;
                         text-transform: uppercase;
                         color: black;
+
+                        padding-left: 0.5em;
+                        padding-right: 0.5em;
+                        font-family: "Jockey One", sans-serif;
+                        font-size: 26px;
+
+                        a {
+                            color: black;
+                            text-decoration: none;
+                        }
+        
+                        a:hover {
+                            font-size:40px;
+                        }
+
+                        img{
+                            display: inline;
+                            align-items: center;
+                        }
                     }
                 }
             }
@@ -443,7 +460,7 @@ main {
         /****************SIDA 3******************/
         .page3{
             position: relative;
-            grid-column: span 11;
+            grid-column: span 12;
             min-height: 100vh;
             background-color: rgb(33, 232, 56);
             border-left: 0.5em solid rgb(255, 242, 54);
@@ -475,32 +492,7 @@ main {
                     order:3;
                 }
 
-                .buttons{
-                    .submit_button, .cancel_button{
-                        /*omarbetad kod från: 
-                        https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/button*/
-                        border: 0;
-                        line-height: 2.5;
-                        padding: 0 20px;
-                        margin: 1%;
-                        font-size: 1rem;
-                        width: 10em;
-                        text-align: center;
-                        color: #000000;
-                        border-radius: 10px;
-                        background-image: linear-gradient(
-                          to top left,
-                          rgb(0 0 0 / 20%),
-                          rgb(0 0 0 / 20%) 30%,
-                          rgb(0 0 0 / 0%)
-                        );
-                        box-shadow:
-                        inset 2px 2px 3px rgb(255 255 255 / 60%),
-                        inset -2px -2px 3px rgb(0 0 0 / 60%);
-                        
-                        text-transform: uppercase;
-                    }
-                }
+
 
                 .booking {
                     position: relative;
@@ -563,50 +555,94 @@ main {
                             left: 25px;
                             cursor: pointer;
                         }
-                    }
-                }
 
-                .cookie {
-                    grid-column: span 12;
-                    position: relative;
-                    margin-top: 5%;
-                    background-color: rgb(225, 41, 146);
-
-                    .cookie_text{
-                        position: relative;
-                        display: flex;
-                        align-items: center;
-                        gap: 45%;
-                    }
-            
-                    .buttons{
-                        position: relative;
-                        display: flex;
-                        align-items: center;
-                        color: black;
-                        font-family: "Jockey One", sans-serif;
-                        text-transform: uppercase;
-
-                        .cancel_button{
-                            background-color: rgb(255, 242, 54);
-                            float: right;
+                        img{
+                            display: inline;
+                            align-items: center;
                         }
-
-                        .submit_button{
-                            background-color: rgb(33, 232, 56);
-                            float: right;
-                        }
-                    }                
+                    }
                 }
             }
+            
+            .cookie {
+                grid-column: span 12;
+                position: relative;
+                margin-top: 5%;
+                background-color: rgb(225, 41, 146);
+                width: 100vw;
+                left: 0;
+                z-index: 1;
+                
+                .cookie_text{
+                    position: relative;
+                    display: flex;
+                    align-items: center;
+                    gap: 45%;
+                }
+        
+                .buttons{
+                    position: relative;
+                    display: flex;
+                    align-items: center;
+                    color: black;
+                    font-family: "Jockey One", sans-serif;
+                    text-transform: uppercase;
+
+
+                    border: #000000 solid 3px;
+                    right: 20px;
+
+                    .cancel_button{
+                        background-color: rgb(255, 242, 54);
+                        
+                    }
+
+                    .submit_button{
+                        background-color: rgb(33, 232, 56);
+                        
+                    }
+                }                
+            }
         }/****************SLUT SIDA 3******************/
+        
+        .buttons{
+            .submit_button, .cancel_button{
+                /*omarbetad kod från: 
+                https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/button*/
+                border: 0;
+                line-height: 2.5;
+                padding: 0 20px;
+                margin: 1%;
+                font-size: 1rem;
+                width: 10em;
+                text-align: center;
+                color: #000000;
+                border-radius: 10px;
+                background-image: linear-gradient(
+                  to top left,
+                  rgb(0 0 0 / 20%),
+                  rgb(0 0 0 / 20%) 30%,
+                  rgb(0 0 0 / 0%)
+                );
+                box-shadow:
+                inset 2px 2px 3px rgb(255 255 255 / 60%),
+                inset -2px -2px 3px rgb(0 0 0 / 60%);
+                
+                text-transform: uppercase;
+            }
+        }
         /****************SIDA 4******************/
         .page4{
             height: 100vh;
             background-color: purple;
-            text-align: center;
-            padding-top: 10%;
 
+            margin: 0;
+            padding-top: 5%;
+            list-style-type: none;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+            text-align: center;
 
             a:link {
                 color: rgb(255, 255, 255);
@@ -622,8 +658,7 @@ main {
             a:hover {
                 font-size:5em;
             }
-        }
-        /****************SLUT SIDA 4******************/
+        }/****************SLUT SIDA 4******************/
     
     }
 }

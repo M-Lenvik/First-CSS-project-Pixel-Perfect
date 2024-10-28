@@ -8,7 +8,7 @@
   <link rel="stylesheet" href="css/normalize.css" type="text/css">
   <link rel="stylesheet" href="css/style.css" type="text/css">
   <link rel="stylesheet" href="css/mobile.css" media="only screen and (min-width: 300px)">
-  <link rel="stylesheet" href="css/desktop.css" media="screen and (min-width: 700px)">
+  <link rel="stylesheet" href="css/desktop.css" media="screen and (min-width: 900px)">
   
   <link rel="preconnect" href="https://fonts.googleapis.com">
 
@@ -26,8 +26,7 @@ SLÄNG DETTA NÄR DU VET ATT NEDAN FUNKAR FÖR BÄGGE FONTERNA-->
   <link href="https://fonts.googleapis.com/css2?family=Jockey+One&family=Roboto+Condensed&display=swap"
     rel="stylesheet">
 
-  <script src="https://kit.fontawesome.com/ea0b116861.js" crossorigin="anonymous"></script>
-
+  
 </head>
 
 <body>
@@ -50,6 +49,17 @@ SLÄNG DETTA NÄR DU VET ATT NEDAN FUNKAR FÖR BÄGGE FONTERNA-->
               <li>Book table</li>
             </ul>
           </nav>
+
+          <!--
+          <nav class="page4">
+            <ul>
+              <li><a href="#page1">Home</a></li>
+              <li><a href="#page2">Menu</a></li>
+              <li><a href="#page3">Book table</a></li>
+            </ul>
+          </nav>
+          -->
+
         </div>
         <h1> Tough Cookie</h1>
       </div>
@@ -58,36 +68,42 @@ SLÄNG DETTA NÄR DU VET ATT NEDAN FUNKAR FÖR BÄGGE FONTERNA-->
 
     <div class="all_pages">
       <!-------------SIDA 1 --------------->
-      <a class="page1" id="page1">
+      <div class="page1" id="page1">
         <section class="top">
           <article class="page-title">
             <div class="logo_text_1">Tahini</div>
             <div class="logo_text_2">drizzle</div>
             <div class="logo_text_3">chickpeas</div>
           </article>
-          <article class="text">Main course hemp seeds Southern Italian shiitake mushrooms a delicious meal banana bread lemon
+          <article class="text"><p class="font_style">Main course hemp seeds Southern Italian shiitake mushrooms a delicious meal banana bread lemon
             tahini dressing apple vinaigrette veggie burgers cool cucumbers coconut sugar. Seasonal edamame hummus asian
             pear kale bite sized ghost pepper one bowl mediterranean luxury bowl cayenne Thai sun pepper.
-          </article>
+          </p></article>
         </section>
 
         <section class="bottom"> <!--gör bilden responsiv-->
           <div class="picture">
             <img src="pictures/lettuce.jpg" width="552" height="440" loading="lazy" alt="head of salad">
             <div class="arrow">
-              <img src="assets/icons/arrow.svg">
+              <a href="#page2">
+                <img src="assets/icons/arrow.svg">
+              </a>
             </div>
           </div>
 
-          <article class="text">Crispy iceberg lettuce Caribbean red habanero blueberry chia seed jam overflowing berries
+          <article class="text">
+            <p class="font_style">Crispy iceberg lettuce Caribbean red habanero blueberry chia seed jam overflowing berries
             roasted butternut squash basmati thyme hummus falafel bowl cozy butternut cilantro lime vinaigrette heat mint
             potato chocolate cookie seeds samosa walnut mushroom tart.
-            <div class="explore">Explore menu
+            </p>
+            <span class="explore">
+              <a href="#page2">Explore menu
                 <img src="assets/icons/arrow2.svg">
-            </div>
+              </a>
+            </span>
           </article>
         </section>
-      </a>
+      </div>
       <!-------------SLUT SIDA 1 --------------->
       
       <!-------------SIDA 2 --------------->
@@ -225,48 +241,45 @@ SLÄNG DETTA NÄR DU VET ATT NEDAN FUNKAR FÖR BÄGGE FONTERNA-->
               <input class="submit_button"type="button" value="Request">
               </input>
             </section>
-            
           </section>
 
-
-          
           <section class="contakt_information">
-            <img src="pictures/table.jpg" width="552" height="440" loading="lazy" alt="head of salad">
+            <img src="pictures/table.jpg" width="552" height="440" loading="lazy" alt="dinnertable with glasses, silverware and menues">
             
             <div class="arrow">
               <p>
                 <a href="tel:+4681234567">
-                  <i class="fa-solid fa-phone"></i>
-                  +46 8 123 45 67</a><br>
-
+                  <img src="pictures/phone.png" width="30" height="auto" loading="lazy">
+                  +46 8 123 45 67
+                </a><br>
                   
-                    <a href="mailto:book@toughcookie.com">
-                      <i class="fa-solid fa-at"></i>
-                    book@toughcookie.com</a><br>
+                <a href="mailto:book@toughcookie.com">
+                  <img src="pictures/email.png" width="30" height="auto" loading="lazy">
+                  book@toughcookie.com
+                </a><br>
 
-                  
-                    <a href="adress:Brända Tomten 111 31 Stockholm">
-                      <i class="fa-solid fa-location-dot"></i>
-                    Brända Tomten 111 31 Stockholm</a>
+                <a href="adress:Brända Tomten 111 31 Stockholm">
+                  <img src="pictures/location.png" width="30" height="auto" loading="lazy">
+                  Brända Tomten 111 31 Stockholm
+                </a>
               </p>
             </div>
-
-          </section>
-
-          <section class="cookie"> <!--Ta bort class cookie så lägger sig knapparna bakom..-->
-            <section class="cookie_text">
-              <p>You should accept cookies.</p>
-            
-              <span class="buttons">
-                <input class="cancel_button"type="button" value="Decline">
-                </input>
-
-                <input class="submit_button"type="button" value="Accept">
-                </input>
-              </span>
-            </section>
           </section>
         </div>
+
+        <section class="cookie"> <!--Ta bort class cookie så lägger sig knapparna bakom..-->
+          <section class="cookie_text">
+            <p>You should accept cookies.</p>
+          
+            <span class="buttons">
+              <input class="cancel_button"type="button" value="Decline">
+              </input>
+
+              <input class="submit_button"type="button" value="Accept">
+              </input>
+            </span>
+          </section>
+        </section>
       </div>
       <!-------------SLUT SIDA 3 --------------->
       <!-------------SIDA 4 --------------->
@@ -274,7 +287,6 @@ SLÄNG DETTA NÄR DU VET ATT NEDAN FUNKAR FÖR BÄGGE FONTERNA-->
         <a href="#page1">Home</a><br />
         <a href="#page2">Menu</a><br />
         <a href="#page3">Book table</a><br />
-
       </div>
       <!-------------SLUT SIDA 4 --------------->
 

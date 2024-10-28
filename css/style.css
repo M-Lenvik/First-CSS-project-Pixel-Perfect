@@ -2,6 +2,16 @@ body {
     background-color: rgb(0, 0, 0);
     }
     
+    .font_style{
+        padding-left: 0.5em;
+        padding-right: 0.5em;
+        font-family: "Jockey One", sans-serif;
+        font-size: 26px;
+        width: 20em;
+        line-height: 1.5;
+        }
+
+
     .pictures {
         display: grid;
         grid-template-columns: repeat(11, 1fr);
@@ -24,7 +34,7 @@ body {
             width: 100%;
         }
 
-        
+
 
 
     
@@ -56,3 +66,6 @@ img{
     
     
     }
+
+
+

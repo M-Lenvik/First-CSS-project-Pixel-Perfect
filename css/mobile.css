@@ -3,8 +3,10 @@ body {
 }
 
 main {
-    margin-top: 1px; /*TA BORT, bara som hjälpmedel nu*/
-    margin-bottom: 1px; /*TA BORT, bara som hjälpmedel nu*/
+    margin-top: 1px;
+    /*TA BORT, bara som hjälpmedel nu*/
+    margin-bottom: 1px;
+    /*TA BORT, bara som hjälpmedel nu*/
     display: block;
 }
 
@@ -28,93 +30,102 @@ header {
         left: 1px;
         width: 100%;
 
-    
+
         h1 {
             color: rgb(220, 220, 220);
             text-orientation: sideways;
             text-transform: uppercase;
             margin-left: 40px;
+            font-family: "Jockey One", sans-serif;
+            font-size: 25px;
         }
-                    /***************************MENYKNAPP***************************/
-                    button { 
-                        width: 35px;
-                        height: 35px;
-                        background-color: rgb(0, 0, 0);
-                        border: 0;
-                        position: fixed;
-                        left:2px;
-                        top:2px;
-                        z-index: 2;
-                        pointer-events: none;
-                    }
-        
-                    button span{
-                        display: block;
-                        width: 25px;
-                        height: 3px;
-                        background-color: rgb(194, 205, 41);
-                        border-radius: 6px;
-                        margin-bottom: 4px;
-                    }
-        
-                    input{
-                        position: fixed;
-                        top: 2px;
-                        left: 2px;
-                        z-index: 1;
-                        width: 35px;
-                        height: 35px;
-                        opacity: 0;
-                    }
-                    
-                    input:checked + .meny button span{
-                        position: absolute;
-                        transition: all 0.3s ease-in-out;
-                    }
-        
-        
-                    input:checked + .meny button span:nth-child(2){
-                        opacity: 0;            
-                    }
-        
-                    input:checked + .meny button span:nth-child(1){
-                        transform: rotate(45deg);
-                    }
-        
-                    input:checked + .meny button span:nth-child(3){
-                        transform: rotate(-45deg);           
-                    }
-        
-                    nav{
-                        position: fixed;
-                        top:0;
-                        left: 0;
-                        background-color: aqua;
-                        width: 100vw;
-                        height: 100vh;
-                        opacity: 0;
-                        transition: all 1s cubic-bezier(0.075, 0.82, 0.165, 1);
-                        visibility: hidden;
-                    }
-        
-                    input:checked + .meny nav{
-                        visibility: visible;
-                        opacity: 1;
-                    }
-        
-                    ul{
-                        margin: 0;
-                        padding: 0;
-                        list-style-type: none;
-                        display: flex;
-                        flex-direction: column;
-                        height: 100%;
-                        justify-content: space-evenly;
-                        text-align: center;
-                    }
-        
-                    /***************************SLUT MENYKNAPP***************************/
-        
+
+        /***************************MENYKNAPP***************************/
+        button {
+            width: 35px;
+            height: 35px;
+            background-color: rgb(0, 0, 0);
+            border: 0;
+            position: fixed;
+            left: 2px;
+            top: 2px;
+            z-index: 2;
+            pointer-events: none;
+        }
+
+        button span {
+            display: block;
+            width: 25px;
+            height: 3px;
+            background-color: rgb(194, 205, 41);
+            border-radius: 6px;
+            margin-bottom: 4px;
+        }
+
+        input {
+            position: fixed;
+            top: 2px;
+            left: 2px;
+            z-index: 1;
+            width: 35px;
+            height: 35px;
+            opacity: 0;
+        }
+
+        input:checked+.meny button span {
+            position: absolute;
+            transition: all 0.3s ease-in-out;
+        }
+
+
+        input:checked+.meny button span:nth-child(2) {
+            opacity: 0;
+        }
+
+        input:checked+.meny button span:nth-child(1) {
+            transform: rotate(45deg);
+        }
+
+        input:checked+.meny button span:nth-child(3) {
+            transform: rotate(-45deg);
+        }
+
+        nav {
+            position: fixed;
+            top: 0;
+            left: 0;
+            background-color: purple;
+            width: 100vw;
+            height: 100vh;
+            opacity: 0;
+            transition: all 1s cubic-bezier(0.075, 0.82, 0.165, 1);
+            visibility: hidden;
+        }
+
+        input:checked+.meny nav {
+            visibility: visible;
+            opacity: 1;
+        }
+
+        ul {
+            margin: 0;
+            padding: 0;
+            list-style-type: none;
+            display: flex;
+            flex-direction: column;
+            height: 100%;
+            justify-content: space-evenly;
+            text-align: center;
+
+            font-size: 3em;
+            text-decoration: none;
+            text-transform: uppercase;
+            font-family: "Jockey One", sans-serif;
+            color: antiquewhite;
+        }
+
+        /***************************SLUT MENYKNAPP***************************/
+
     }
 }
 
@@ -123,7 +134,7 @@ header {
 /* SLUT Menysidan*/
 
 
-.all_pages{
+.all_pages {
 
     /****************SIDA 1******************/
     .page1 {
@@ -133,13 +144,13 @@ header {
             position: relative;
             display: flex;
             flex-direction: column;
-    
-        
-            .page-title:nth-child(1){
+
+
+            .page-title:nth-child(1) {
                 order: 2;
             }
 
-            .text:nth-child(2){
+            .text:nth-child(2) {
                 order: 1;
             }
 
@@ -156,10 +167,10 @@ header {
                 margin: 50px 0 50px 0;
 
                 .logo_text_1 {
-                    font-size:3em;
+                    font-size: 3em;
                     font-weight: bold;
                     color: rgb(0, 255, 56);
-                    width: auto;    
+                    width: auto;
                     height: auto;
                     position: relative;
                     margin-top: 20px;
@@ -168,20 +179,21 @@ header {
                 }
 
                 .logo_text_2 {
-                    font-size:0.9em;
+                    font-size: 0.9em;
                     font-weight: bold;
                     color: rgb(170, 117, 255);
-                    width: auto;    
+                    width: auto;
                     height: auto;
                     position: absolute;
                     margin-top: 20px;
                     margin-left: 226px;
                 }
+
                 .logo_text_3 {
-                    font-size:1em;
+                    font-size: 1em;
                     font-weight: bold;
                     color: rgb(255, 242, 54);
-                    width: auto;    
+                    width: auto;
                     height: auto;
                     position: absolute;
                     margin-top: 65px;
@@ -192,7 +204,8 @@ header {
             .text {
                 color: rgb(0, 255, 56);
                 position: relative;
-                top: 50px;}
+                top: 50px;
+            }
         }
 
         .bottom {
@@ -213,54 +226,75 @@ header {
                     text-transform: uppercase;
                     color: black;
                     width: max-content;
-                    min-height: 1em;
+                    height: 1em;
                     display: flex;
                     align-items: center;
                     gap: 5px;
+
+                    padding-left: 0.5em;
+                    padding-right: 0.5em;
+                    font-family: "Jockey One", sans-serif;
+                    font-size: 26px;
+
+                    a {
+                        color: black;
+                        text-decoration: none;
+                    }
+
+                    img {
+                        display: inline;
+                        align-items: center;
+                        height: 0.8em;
+                    }
                 }
             }
         }
     }
-        /****************SLUT SIDA 1******************/
-        
-        /****************SIDA 2******************/
 
-    .page2{
+    /****************SLUT SIDA 1******************/
+
+    /****************SIDA 2******************/
+    .page2 {
         grid-column: span 3;
         position: relative;
         min-height: 100vh;
         margin-top: 5px;
-        background-color:  rgb(255, 242, 54);
-        border-right: 0.5em solid  rgb(255, 242, 54);
-        border-left: 0.5em solid  rgb(255, 242, 54);
+        background-color: rgb(255, 242, 54);
+        border-right: 0.5em solid rgb(255, 242, 54);
+        border-left: 0.5em solid rgb(255, 242, 54);
         margin-bottom: 10px;
 
         .pictures {
+            display: block;
             position: relative;
-            
-            div{
+
+            div {
                 height: 200px;
             }
-            
-            img{
+
+            img {
                 object-fit: cover;
                 width: 100%;
                 height: 100%;
             }
 
-            .pic1{
+            .pic1 {
                 display: block;
                 width: 100%;
             }
-            .pic2, .pic3{
+
+            .pic2,
+            .pic3 {
                 display: none;
             }
         }
 
+        /*************MATRÄTTER**************/
         .dish_menu {
             grid-template-columns: 30% 60% 10%;
             display: grid;
-            gap: 0; /*0.5em om ej .dishes*/
+            gap: 0;
+            /*0.5em om ej .dishes*/
             /*ta bort border*/
             /*border: solid;*/
             position: relative;
@@ -268,260 +302,272 @@ header {
             padding-top: 0.5em;
 
             /* Ta bort om du tar bort i html*/
-            .line_top, .line_bottom{
+            .line_top,
+            .line_bottom {
                 display: grid;
                 grid-column: span 3;
                 height: 0.25em;
             }
-                /***************************/
 
-            .line_top{
+            /***************************/
+
+            .line_top {
                 border-bottom: solid 1px black;
             }
-            .line_bottom{                    
+
+            .line_bottom {
                 border-top: solid 1px black;
             }
-            
-            .dish{
+
+            .dish {
                 grid-column: span 1;
                 background-color: rgb(255, 220, 220);
                 text-transform: uppercase;
                 font-family: "Jockey One", sans-serif;
                 font-weight: bold;
             }
-            .description{
+
+            .description {
                 grid-column: span 1;
                 background-color: rgb(255, 220, 220);
             }
 
-            .sales_marker_new{
+            .sales_marker_new {
                 display: inline-block;
-                padding-inline: 5px;  
+                padding-inline: 5px;
                 text-transform: uppercase;
                 font-size: 10px;
                 align-items: center;
-                height: 1,1em;
+                height: 1, 1em;
                 background-color: rgb(197, 30, 144);
                 transform: rotate(3deg);
                 padding-left: 5px;
                 padding-right: 5px;
                 width: 4em;
-                span{
+
+                span {
                     display: inline-block;
                 }
             }
 
-            .sales_marker_vegan{
+            .sales_marker_vegan {
                 display: inline-block;
-                padding-inline: 5px;  
+                padding-inline: 5px;
                 text-transform: uppercase;
                 font-size: 10px;
                 align-items: center;
-                height: 1,1em;
+                height: 1, 1em;
                 background-color: green;
                 transform: rotate(-3deg);
                 padding-left: 5px;
                 padding-right: 5px;
                 width: 4em;
-                span{
+
+                span {
                     transform: rotate(3deg);
                     display: inline-block;
                 }
             }
-                
-                .sales_marker_popular{
+
+            .sales_marker_popular {
+                display: inline-block;
+                padding-inline: 5px;
+                text-transform: uppercase;
+                font-size: 10px;
+                align-items: center;
+                height: 1, 1em;
+                background-color: rgb(172, 225, 25);
+                padding-left: 5px;
+                padding-right: 5px;
+                width: 4em;
+
+                span {
                     display: inline-block;
-                    padding-inline: 5px;  
-                    text-transform: uppercase;
-                    font-size: 10px;
-                    align-items: center;
-                    height: 1,1em;
-                    background-color: rgb(172, 225, 25);
-                    padding-left: 5px;
-                    padding-right: 5px;
-                    width: 4em;
-                    span{
-                        display: inline-block;
-                    }
                 }
-            .cost{
+            }
+
+            .cost {
                 grid-column: span 1;
                 background-color: rgb(255, 220, 220);
                 font-family: "Jockey One", sans-serif;
                 font-weight: bold;
                 text-align: right;
             }
-        }
+        }/*************SLUT MATRÄTTER**************/
     }/****************SLUT SIDA 2******************/
 
 
-            /****************SIDA 3******************/
-        .page3{
+    /****************SIDA 3******************/
+    .page3 {
+        position: relative;
+        grid-column: span 11;
+        min-height: 100vh;
+        background-color: rgb(33, 232, 56);
+        border-left: 0.5em solid rgb(255, 242, 54);
+        border-top: 0.5em solid rgb(255, 242, 54);
+
+        h3 {
+            margin-top: 5%;
+            margin-bottom: 2%;
+        }
+
+        .grid {
             position: relative;
-            grid-column: span 11;
-            min-height: 100vh;
-            background-color: rgb(33, 232, 56);
-            border-left: 0.5em solid rgb(255, 242, 54);
-            border-top: 0.5em solid rgb(255, 242, 54);
+            display: flex;
+            flex-direction: column;
+            margin-top: 8%;
+            padding-left: 1%;
+            padding-right: 1%;
+            margin-bottom: 1%;
 
-            h3{
-                margin-top: 5%;
-                margin-bottom: 2%;
+            .booking:nth-child(1) {
+                order: 2;
             }
 
-            .grid{
+            .contakt_information:nth-child(2) {
+                order: 1;
+            }
+
+            .cookie:nth-child(3) {
+                order: 3;
+            }
+
+            .booking {
                 position: relative;
-                display: flex;
-                flex-direction: column;
-                margin-top: 8%;
-                padding-left: 1%;
-                padding-right: 1%;
-                margin-bottom: 1%;
+                grid-column: span 5;
+                gap: 0.5em;
+                text-transform: uppercase;
+                font-family: "Jockey One", sans-serif;
 
-                .booking:nth-child(1){
-                    order:2;
-                }
-    
-                .contakt_information:nth-child(2){
-                    order:1;
-                }
-
-                .cookie:nth-child(3){
-                    order:3;
-                }
-
-                .buttons{
-                    .submit_button, .cancel_button{
-                        /*omarbetad kod från: 
-                        https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/button*/
-                        border: 0;
-                        line-height: 2.5;
-                        padding: 0 20px;
-                        margin: 1%;
-                        font-size: 1rem;
-                        width: 10em;
-                        text-align: center;
-                        color: #000000;
-                        border-radius: 10px;
-                        background-image: linear-gradient(
-                          to top left,
-                          rgb(0 0 0 / 20%),
-                          rgb(0 0 0 / 20%) 30%,
-                          rgb(0 0 0 / 0%)
-                        );
-                        box-shadow:
-                        inset 2px 2px 3px rgb(255 255 255 / 60%),
-                        inset -2px -2px 3px rgb(0 0 0 / 60%);
-                        
-                        text-transform: uppercase;
-                    }
-                }
-
-                .booking {
-                    position: relative;
-                    grid-column: span 5;
-                    gap: 0.5em;
-                    text-transform: uppercase;
-                    font-family: "Jockey One", sans-serif;
-
-                    .cancel_button{
-                        background-color: rgb(225, 41, 146);
-                    }
-
-                    .submit_button{
-                        background-color: rgb(255, 242, 54);
-                    }
-                }
-                
-                .guest_info{
-                    grid-column: span 2;
-                    position: relative;
-                    padding-bottom: 1em;
-                }
-
-                .guest_input{
-                    grid-column: span 3;
-                    position: relative;
-                    float: right;
-                    margin-right: 50%;
-                    width: 6em;
-                    input{
-                        width: 12em;
-                        border-radius: 10px;
-                    }
-                }
-
-                .contakt_information {
-                    position: relative;
-                    grid-column: span 6;
-                    gap: 0.5em;
-                    font-size: xx-large;
-
-                    .arrow{
-                        position: absolute;
-                        opacity:100%;
-                        width: fit-content%;
-                        height: 50%;
-                        bottom: 30%;
-                        left: 8%;
-                        text-shadow: -2px -2px 1px rgba(0,0,0);
-
-                        background-color: rgba(240, 248, 255, 0.332);
-
-                        a{
-                            color: #74C0FC;
-                            font-family: "Jockey One", sans-serif;
-                        }
-
-                        a:hover {
-                            position: relative;
-                            left: 25px;
-                            cursor: pointer;
-                        }
-                    }
-                }
-
-                .cookie {
-                    position: relative;
-                    grid-column: span 1;
-                    margin-top: 5%;
+                .cancel_button {
                     background-color: rgb(225, 41, 146);
-
-                    .cookie_text{
-                        position: relative;
-                        grid-column: span 1;
-                        align-items: center;
-                        gap: 45%;
-                    }  
-
-                    .buttons{
-                        position: relative;
-                        grid-column: span 1;
-                        align-items: center;
-                        color: black;
-                        font-family: "Jockey One", sans-serif;
-                        text-transform: uppercase;
-    
-                        .cancel_button{
-                            background-color: rgb(255, 242, 54);
-                        }
-    
-                        .submit_button{
-                            background-color: rgb(33, 232, 56);
-                        }
-                    }
                 }
 
-              
+                .submit_button {
+                    background-color: rgb(255, 242, 54);
+                }
             }
-        }/****************SLUT SIDA 3******************/
 
-    /****************SIDA 4******************/
-    .page4{
+            .guest_info {
+                grid-column: span 2;
+                position: relative;
+                padding-bottom: 1em;
+            }
+
+            .guest_input {
+                grid-column: span 3;
+                position: relative;
+                float: right;
+                margin-right: 50%;
+                width: 6em;
+
+                input {
+                    width: 12em;
+                    border-radius: 10px;
+                }
+            }
+
+            .contakt_information {
+                position: relative;
+                grid-column: span 6;
+                gap: 0.5em;
+                font-size: xx-large;
+
+                .arrow {
+                    position: absolute;
+                    opacity: 100%;
+                    width: fit-content%;
+                    height: 50%;
+                    bottom: 30%;
+                    left: 8%;
+                    text-shadow: -2px -2px 1px rgba(0, 0, 0);
+
+                    background-color: rgba(240, 248, 255, 0.332);
+
+                    a {
+                        color: #74C0FC;
+                        font-family: "Jockey One", sans-serif;
+                    }
+
+                    img{
+                        display: inline;
+                        align-items: center;
+                    }
+                }
+            }
+        }
+
+        .cookie {
+            position: relative;
+            grid-column: span 1;
+            margin-top: 5%;
+            background-color: rgb(225, 41, 146);
+
+            .cookie_text {
+                position: relative;
+                grid-column: span 1;
+                align-items: center;
+                gap: 45%;
+            }
+
+            .buttons {
+                position: relative;
+                grid-column: span 1;
+                align-items: center;
+                color: black;
+                font-family: "Jockey One", sans-serif;
+                text-transform: uppercase;
+
+                .cancel_button {
+                    background-color: rgb(255, 242, 54);
+                }
+
+                .submit_button {
+                    background-color: rgb(33, 232, 56);
+                }
+            }
+        }
+    }
+    /****************SLUT SIDA 3******************/
+    .buttons {
+
+        .submit_button,
+        .cancel_button {
+            /*omarbetad kod från: 
+                https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/button*/
+            border: 0;
+            line-height: 2.5;
+            padding: 0 20px;
+            margin: 1%;
+            font-size: 1rem;
+            width: 10em;
+            text-align: center;
+            color: #000000;
+            border-radius: 10px;
+            background-image: linear-gradient(to top left,
+                    rgb(0 0 0 / 20%),
+                    rgb(0 0 0 / 20%) 30%,
+                    rgb(0 0 0 / 0%));
+            box-shadow:
+                inset 2px 2px 3px rgb(255 255 255 / 60%),
+                inset -2px -2px 3px rgb(0 0 0 / 60%);
+
+            text-transform: uppercase;
+        }
+    }
+    /******************SIDA 4********************/
+    .page4 {
         height: 100vh;
         background-color: purple;
+        
+        margin: 0;
+        padding-top: 5%;
+        list-style-type: none;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
         text-align: center;
-        padding-top: 10%;
+
 
 
         a:link {
@@ -532,15 +578,10 @@ header {
             font-family: "Jockey One", sans-serif;
             margin-bottom: 5%;
         }
+
         a:visited {
             color: rgb(255, 255, 255);
         }
-        a:hover {
-            font-size:5em;
-        }
-    }
-        /****************SLUT SIDA 3******************/    
+
+    }/****************SLUT SIDA 3******************/
 }
-
-
-
