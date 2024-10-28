@@ -1,43 +1,24 @@
 @import 'normalize';
 /*@use 'base';*/
 
-@media screen and (min-width:500px) {
+@media screen and (min-width:300px) {
 }
 @import 'mobile';
 
-@media screen and (min-width:800px) {
+@media screen and (min-width:900px) {
     @import 'desktop';
 }
 
-
-
-
 body {
-background-color: aliceblue;
-}
-
-/* Menysidan överst*/
-header {
-    .side {
-        border: solid rgb(11, 11, 10) 1px; 
+    background-color: rgb(0, 0, 0);
     }
-}
-
-/* SLUT Menysidan överst*/
-
-.page1 {
-    background-color: rgb(175, 15, 15);
-
-    font-family: "Jockey One", sans-serif;
-    font-weight: 400;
-    font-style: normal;
-
-    .text {
-        font-size: 1.5em;
-    }
-
-    .top, .bottom {
-        position: relative;
-    }
-
-}
+    
+    .font_style{
+        padding-left: 0.5em;
+        padding-right: 0.5em;
+        font-family: "Jockey One", sans-serif;
+        font-size: 26px;
+        width: 20em;
+        line-height: 1.5;
+        }
+        

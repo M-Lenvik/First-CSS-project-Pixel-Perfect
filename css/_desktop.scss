@@ -9,8 +9,6 @@ main {
     grid-template-columns: repeat(12, 1fr);
     gap: 1em;
 
-
-
     /*************HEADER****Menysidan till vänster******/
     header {
         position: relative;
@@ -37,8 +35,6 @@ main {
             gap: 0;
             top: 0;
             left: 0;
-
-
 
             h1 {
                 color: rgb(220, 220, 220);
@@ -217,7 +213,7 @@ main {
 
                     /*display: flex; i mobilversionen kanske påverkar?*/
                     background-color: rgb(0, 0, 0);
-                    border: solid rgb(255, 255, 255) 2px;
+                    
                     
             
                     .logo_text_1 {
@@ -244,8 +240,8 @@ main {
                         font-weight: bold;
                         position: absolute;
                         color: rgb(255, 242, 54);
-                        right: 103px;
-                        top: 45px;
+                        right: 101px;
+                        top: 88px;
 
                     }
                 }
@@ -537,7 +533,7 @@ main {
                     .arrow{
                         position: absolute;
                         opacity:100%;
-                        width: fit-content%;
+                        width: fit-content;
                         height: 50%;
                         bottom: 30%;
                         left: 8%;

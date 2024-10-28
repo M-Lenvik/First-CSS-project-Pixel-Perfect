@@ -138,7 +138,7 @@ header {
 
     /****************SIDA 1******************/
     .page1 {
-        margin-top: 5em;
+        margin-top: 0;
 
         .top {
             position: relative;
@@ -154,7 +154,6 @@ header {
                 order: 1;
             }
 
-            /*Stycke för textlogon. Flyttas ner under första texten i mobile. När jag vet hur man gör.*/
             .page-title {
                 text-transform: uppercase;
                 font-family: "Roboto Condensed", sans-serif;
@@ -173,7 +172,7 @@ header {
                     width: auto;
                     height: auto;
                     position: relative;
-                    margin-top: 20px;
+                    top: 20px;
                     margin-left: 140px;
                     z-index: 1;
                 }
@@ -185,7 +184,7 @@ header {
                     width: auto;
                     height: auto;
                     position: absolute;
-                    margin-top: 20px;
+                    top: 20px;
                     margin-left: 226px;
                 }
 
@@ -196,7 +195,7 @@ header {
                     width: auto;
                     height: auto;
                     position: absolute;
-                    margin-top: 65px;
+                    top: 65px;
                     margin-left: 148px;
                 }
             }
@@ -476,7 +475,7 @@ header {
                 .arrow {
                     position: absolute;
                     opacity: 100%;
-                    width: fit-content%;
+                    width: fit-content;
                     height: 50%;
                     bottom: 30%;
                     left: 8%;
