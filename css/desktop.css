@@ -1,5 +1,5 @@
 body {
-    background-color: rgb(30, 66, 212)
+    background-color: rgb(0, 0, 0)
 }
 
 main {
@@ -18,10 +18,11 @@ main {
         flex-direction: column;
 
         width: auto;
-        border: solid rgb(240, 226, 226) 2px;
+
         /*justify-content: space-between; i mobilversionen*/
         background-color: rgb(0, 0, 0);
 
+        border: solid red 2px;
 
         .side {
             position: fixed;
@@ -37,22 +38,30 @@ main {
             top: 0;
             left: 0;
 
+
+
             h1 {
                 color: rgb(220, 220, 220);
                 writing-mode: vertical-lr;
                 text-orientation: upright;
-                margin-top: 5px;
+                margin-top: 70px;
+                margin-left: 0;
                 text-transform: uppercase;
                 font-family: "Jockey One", sans-serif;
 
                 font-size:xx-large;
             }
             
+            /***************************MENYKNAPP***************************/
             button { 
                 width: 35px;
                 height: 35px;
-                background-color: rgb(255, 255, 255);
                 border: 0;
+                position: fixed;
+                left:20px;
+                top:20px;
+                z-index: 2;
+                pointer-events: none;
             }
 
             button span{
@@ -63,11 +72,65 @@ main {
                 border-radius: 6px;
                 margin-bottom: 4px;
             }
-            
-            input:checked + button{
-                border: 3px solid red;
+
+            input{
+                position: fixed;
+                top: 20px;
+                left: 20px;
+                z-index: 1;
+                width: 35px;
+                height: 35px;
+                opacity: 0;
             }
-    
+            
+            input:checked + .meny button span{
+                position: absolute;
+                transition: all 0.3s ease-in-out;
+            }
+
+
+            input:checked + .meny button span:nth-child(2){
+                opacity: 0;            
+            }
+
+            input:checked + .meny button span:nth-child(1){
+                transform: rotate(45deg);
+            }
+
+            input:checked + .meny button span:nth-child(3){
+                transform: rotate(-45deg);           
+            }
+
+            nav{
+                position: fixed;
+                top:0;
+                left: 0;
+                background-color: aqua;
+                width: 100vw;
+                height: 100vh;
+                opacity: 0;
+                transition: all 1s cubic-bezier(0.075, 0.82, 0.165, 1);
+                visibility: hidden;
+            }
+
+            input:checked + .meny nav{
+                visibility: visible;
+                opacity: 1;
+            }
+
+            ul{
+                margin: 0;
+                padding: 0;
+                list-style-type: none;
+                display: flex;
+                flex-direction: column;
+                height: 100%;
+                justify-content: space-evenly;
+                text-align: center;
+            }
+
+            /***************************SLUT MENYKNAPP***************************/
+
             /*    background-color: black;
                 span {
                     /*Kod från https://medium.com/@mateus2050/hamburguer-menu-html-and-css-only-c06364fa9bfd* /
@@ -93,13 +156,16 @@ main {
         grid-column: span 11;
         position: relative;
         min-height: 100vh;
+        width: auto;
 
         /****************SIDA 1******************/
         .page1 {
             grid-column: span 11;
             position: relative;
             min-height: 100vh;
+            display: block;
             margin-top: 0;
+            padding: 10px;
             border-right: 0.5em solid rgb(255, 242, 54);
             border-left: 0.5em solid rgb(255, 242, 54);
 
@@ -108,9 +174,11 @@ main {
                 display: grid;
                 grid-template-columns: repeat(11, 1fr);
                 gap: 1em;
+                left: 10px;
             }
 
             .top {
+                top: 0;
                 .text {
                     grid-column: span 7;
                     position: relative;
@@ -119,6 +187,7 @@ main {
                     padding: 0.5em;
                     margin-top: 0px;
                     margin-left: 0px;
+                    top: 0;
                 }
 
                 .page-title:nth-child(1){
@@ -133,10 +202,12 @@ main {
                 .page-title {
                     grid-column: span 4;
                     position: relative;
+                    display: block;
                     text-transform: uppercase;
                     font-family: "Roboto Condensed", sans-serif;
                     font-style: normal;
                     margin: 0px;
+                    height: 200px;
 
 
                     /*display: flex; i mobilversionen kanske påverkar?*/
@@ -552,7 +623,7 @@ main {
                 font-size:5em;
             }
         }
-        /****************SLUT SIDA 3******************/
+        /****************SLUT SIDA 4******************/
     
     }
 }

@@ -33,23 +33,88 @@ header {
             color: rgb(220, 220, 220);
             text-orientation: sideways;
             text-transform: uppercase;
+            margin-left: 40px;
         }
-        .burger_menu {
-            background-color: rgb(0, 0, 0);
-            span{
-                /*Kod från https://medium.com/@mateus2050/hamburguer-menu-html-and-css-only-c06364fa9bfd*/
-                display: block;
-                /* to ensure that each span element occupies its own line. */
-                width: 33px;
-                height: 4px;
-                margin-bottom: 5px;
-                /* create some spacing between the span elements. */
-                position: relative;
-                /* allow for positioning changes in relation to the parent div.*/
-                background: #e5ed08;
-                border-radius: 3px;
-            }
-        }
+                    /***************************MENYKNAPP***************************/
+                    button { 
+                        width: 35px;
+                        height: 35px;
+                        background-color: rgb(0, 0, 0);
+                        border: 0;
+                        position: fixed;
+                        left:2px;
+                        top:2px;
+                        z-index: 2;
+                        pointer-events: none;
+                    }
+        
+                    button span{
+                        display: block;
+                        width: 25px;
+                        height: 3px;
+                        background-color: rgb(194, 205, 41);
+                        border-radius: 6px;
+                        margin-bottom: 4px;
+                    }
+        
+                    input{
+                        position: fixed;
+                        top: 2px;
+                        left: 2px;
+                        z-index: 1;
+                        width: 35px;
+                        height: 35px;
+                        opacity: 0;
+                    }
+                    
+                    input:checked + .meny button span{
+                        position: absolute;
+                        transition: all 0.3s ease-in-out;
+                    }
+        
+        
+                    input:checked + .meny button span:nth-child(2){
+                        opacity: 0;            
+                    }
+        
+                    input:checked + .meny button span:nth-child(1){
+                        transform: rotate(45deg);
+                    }
+        
+                    input:checked + .meny button span:nth-child(3){
+                        transform: rotate(-45deg);           
+                    }
+        
+                    nav{
+                        position: fixed;
+                        top:0;
+                        left: 0;
+                        background-color: aqua;
+                        width: 100vw;
+                        height: 100vh;
+                        opacity: 0;
+                        transition: all 1s cubic-bezier(0.075, 0.82, 0.165, 1);
+                        visibility: hidden;
+                    }
+        
+                    input:checked + .meny nav{
+                        visibility: visible;
+                        opacity: 1;
+                    }
+        
+                    ul{
+                        margin: 0;
+                        padding: 0;
+                        list-style-type: none;
+                        display: flex;
+                        flex-direction: column;
+                        height: 100%;
+                        justify-content: space-evenly;
+                        text-align: center;
+                    }
+        
+                    /***************************SLUT MENYKNAPP***************************/
+        
     }
 }
 
@@ -68,6 +133,7 @@ header {
             position: relative;
             display: flex;
             flex-direction: column;
+    
         
             .page-title:nth-child(1){
                 order: 2;
@@ -87,7 +153,7 @@ header {
                 height: auto;
                 top: 0px;
                 left: 0px;
-                margin: 0px;
+                margin: 50px 0 50px 0;
 
                 .logo_text_1 {
                     font-size:3em;
@@ -126,7 +192,7 @@ header {
             .text {
                 color: rgb(0, 255, 56);
                 position: relative;
-            }
+                top: 50px;}
         }
 
         .bottom {
