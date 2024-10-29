@@ -2,7 +2,6 @@ $client-yellow: rgb(255, 242, 54);
 $client-green: rgb(0, 255, 56);
 $client-yellow-green: rgb(172, 225, 25);
 $client-purple: rgb(170, 117, 255);
-$client-hot-pink: rgb(225, 41, 146);
 $client-pink: rgb(255, 220, 220);
 $client-light-blue: rgb(116, 192, 252);
 $client-white: rgb(250, 235, 215);
@@ -16,7 +15,7 @@ body {
     background-color: $client-black;
 }
 
-main {
+.base {
     display: grid;
     grid-template-columns: repeat(12, 1fr);
     gap: 1em;
@@ -459,6 +458,7 @@ main {
             h3 {
                 margin-top: 5%;
                 margin-bottom: 2%;
+                font-size: 30px;
             }
 
             .grid {
@@ -527,7 +527,6 @@ main {
 
                     .arrow {
                         position: absolute;
-                        opacity: 100%;
                         width: fit-content;
                         height: 50%;
                         bottom: 30%;
@@ -658,37 +657,3 @@ main {
     }
 }
 
-
-/*
-
-                .cookie_text{
-                    grid-column: span 6;
-                    position: relative;
-                    color: antiquewhite;
-                    border: solid black 1px;
-                    padding-top: 1em;
-                }
-
-                .buttons{
-                    grid-column: span 5;
-                    position: relative;
-                    background-color: #74C0FC;
-
-                    position: relative;
-
-                    color: black;
-                    font-family: "Jockey One", sans-serif;
-                    text-transform: uppercase;
-
-                    .cancel_button{
-                        background-color: rgb(255, 242, 54);
-                        float: right;
-                        margin-right: 2em;
-                    }
-
-                    .submit_button{
-                        background-color: rgb(33, 232, 56);
-                        float: right;
-                    }
-                }
-                    */

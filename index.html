@@ -23,57 +23,45 @@
 SLÄNG DETTA NÄR DU VET ATT NEDAN FUNKAR FÖR BÄGGE FONTERNA-->
   <link href="https://fonts.googleapis.com/css2?family=Jockey+One&family=Roboto+Condensed&display=swap"
     rel="stylesheet">
-
   
 </head>
 
 <body>
-  <main>
+  <div class="base">
     <header>
-      <div class="side"> <!--kolla om taggen side finns istället för div här-->
-        
-          <input type="checkbox"/>
-          <div class="meny">
+      <div class="side">
+        <input type="checkbox"/>
+          <menu class="meny">
             <!--KOM IHÅG TILLGÄNGLIGHET-->
-          <button>
-            <span></span>
-            <span></span>
-            <span></span>
-          </button>
+            <button>
+              <span></span>
+              <span></span>
+              <span></span>
+            </button>
 
-          <nav>
-            <ul>
-              <li>Home</li>
-              <li>Menu</li>
-              <li>Book table</li>
-            </ul>
-          </nav>
-
-          <!--
-          <nav class="page4">
-            <ul>
-              <li><a href="#page1">Home</a></li>
-              <li><a href="#page2">Menu</a></li>
-              <li><a href="#page3">Book table</a></li>
-            </ul>
-          </nav>
-          -->
-
-        </div>
+            <nav>
+              <ul>
+                <li>Home</li>
+                <li>Menu</li>
+                <li>Book table</li>
+              </ul>
+            </nav>
+          </menu>
         <h1> Tough Cookie</h1>
       </div>
     </header>
 
-
     <div class="all_pages">
       <!-------------SIDA 1 --------------->
-      <div class="page1" id="page1">
+      <main class="page1" id="page1">
         <section class="top">
+          
           <article class="page-title">
-            <div class="logo_text_1">Tahini</div>
-            <div class="logo_text_2">drizzle</div>
-            <div class="logo_text_3">chickpeas</div>
+            <h2 class="logo_text_1">Tahini</h2>
+            <h2 class="logo_text_2">drizzle</h2>
+            <h2 class="logo_text_3">chickpeas</h2>
           </article>
+          
           <article class="text">
             <p class="font_style">Main course hemp seeds Southern Italian shiitake mushrooms a delicious meal banana bread lemon
             tahini dressing apple vinaigrette veggie burgers cool cucumbers coconut sugar. Seasonal edamame hummus asian
@@ -83,14 +71,14 @@ SLÄNG DETTA NÄR DU VET ATT NEDAN FUNKAR FÖR BÄGGE FONTERNA-->
         </section>
 
         <section class="bottom"> <!--gör bilden responsiv-->
-          <div class="picture">
+          <picture class="picture">
             <img src="pictures/lettuce.jpg" width="552" height="440" loading="lazy" alt="head of salad">
             <div class="arrow">
               <a href="#page2">
                 <img src="assets/icons/arrow.svg">
               </a>
             </div>
-          </div>
+          </picture>
 
           <article class="text">
             <p class="font_style">Crispy iceberg lettuce Caribbean red habanero blueberry chia seed jam overflowing berries
@@ -104,10 +92,10 @@ SLÄNG DETTA NÄR DU VET ATT NEDAN FUNKAR FÖR BÄGGE FONTERNA-->
             </span>
           </article>
         </section>
-      </div>
-      <!-------------SLUT SIDA 1 --------------->
+      </main>
+      <!---------------SLUT SIDA 1--------------->
       
-      <!-------------SIDA 2 --------------->
+      <!-----------------SIDA 2------------------>
       <div class="page2" id="page2">
         <section class="pictures">
           <div class="pic1"><img src="pictures/salld_kikartor_2.jpg" width="303" height="auto" loading="lazy" alt="plate with chickpeas, vegetables and bread"></div>
@@ -122,6 +110,7 @@ SLÄNG DETTA NÄR DU VET ATT NEDAN FUNKAR FÖR BÄGGE FONTERNA-->
               <span>New!</span>
             </span>
           </section>
+
           <section class="description">Deep-fried halloumi</section>
           <section class="cost">195 kr</section>
 
@@ -179,67 +168,62 @@ SLÄNG DETTA NÄR DU VET ATT NEDAN FUNKAR FÖR BÄGGE FONTERNA-->
           <div class="line_bottom"></div>
         </section>
       </div>
-      <!-------------SLUT SIDA 2 --------------->
-
-      <!-------------SIDA 3 --------------->
+      <!---------------SLUT SIDA 2--------------->
+      
+      <!-----------------SIDA 3------------------>
       <div class="page3" id="page3">
         <div class="grid">
-          <section class="booking">
 
-            <h2>Book your table</h2>
+          <section class="booking">
+            <h3>Book your table</h3>
 
             <div class="guest_info">
-              Name           
+              <label> Name </label>          
               <span class="guest_input">
                 <input type="text" placeholder="Please enter your name"><br>
               </span>
             </div>
-
           
             <div class="guest_info">
-              Email           
+              <label> Email </label>            
               <span class="guest_input">
                 <input type="email" placeholder="Email"><br>
               </span>
             </div>
-
           
             <div class="guest_info">
-              Phone           
+              <label> Phone </label>             
               <span class="guest_input">
                 <input type="tel" placeholder="Phone number"><br>
               </span>
             </div>
-
           
             <div class="guest_info">
-              Date           
+              <label> Date </label>             
               <span class="guest_input">
                 <input type="date" placeholder="Date"><br>
               </span>
             </div>
-
           
             <div class="guest_info">
-              Party size           
+              <label> Party size </label>
               <span class="guest_input">
                 <input type="number" placeholder="Partysize"><br>
               </span>
             </div>
-
           
             <div class="guest_info">
-              Allergies           
+              <label> Allergies </label>             
               <span class="guest_input">
                 <input type="text" placeholder="Allergies"><br>
               </span>
             </div>
 
             <section class="buttons">
-              <input class="cancel_button"type="button" value="Cancel">
+              <input class="cancel_button" type="button" value="Cancel">
               </input>
 
-              <input class="submit_button"type="button" value="Request">
+              <input class="submit_button" type="button" value="Request">
               </input>
             </section>
           </section>
@@ -268,7 +252,7 @@ SLÄNG DETTA NÄR DU VET ATT NEDAN FUNKAR FÖR BÄGGE FONTERNA-->
           </section>
         </div>
 
-        <section class="cookie"> <!--Ta bort class cookie så lägger sig knapparna bakom..-->
+        <section class="cookie">
           <section class="cookie_text">
             <p>You should accept cookies.</p>
           
@@ -282,17 +266,18 @@ SLÄNG DETTA NÄR DU VET ATT NEDAN FUNKAR FÖR BÄGGE FONTERNA-->
           </section>
         </section>
       </div>
-      <!-------------SLUT SIDA 3 --------------->
-      <!-------------SIDA 4 --------------->
-      <div class="page4">
+      <!---------------SLUT SIDA 3--------------->
+      
+      <!-----------------SIDA 4------------------>
+      <menu class="page4">
         <a href="#page1">Home</a><br />
         <a href="#page2">Menu</a><br />
         <a href="#page3">Book table</a><br />
-      </div>
-      <!-------------SLUT SIDA 4 --------------->
+      </menu>
+      <!---------------SLUT SIDA 4--------------->
 
     </div>
-  </main>
+  </div>
 
 </body>
 </html>
