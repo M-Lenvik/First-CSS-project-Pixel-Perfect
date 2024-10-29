@@ -185,7 +185,7 @@ body {
                     position: relative;
                     display: block;
                     text-transform: uppercase;
-                    font-family: "Roboto Condensed", sans-serif;
+                    font-family: "Jockey One", sans-serif;
                     font-style: normal;
                     margin: 0px;
                     height: 200px;
@@ -220,8 +220,8 @@ body {
                         font-weight: bold;
                         position: absolute;
                         color: $client-yellow;
-                        right: 101px;
-                        top: 88px;
+                        right: 95px;
+                        top: 92px;
                     }
                 }/**********SLUT Stycke för textlogon**********/
             
@@ -350,7 +350,6 @@ body {
                 display: grid;
                 grid-template-columns: repeat(11, 1fr);
                 padding-top: 0.5em;
-                font-family: "Roboto Condensed", sans-serif;
 
                 .line_top,
                 .line_bottom {
@@ -378,6 +377,7 @@ body {
 
                 .description {
                     grid-column: span 6;
+                    font-family: "Roboto Condensed", sans-serif;
                     background-color: $client-pink;
                 }
 
@@ -385,6 +385,7 @@ body {
                     display: inline-block;
                     padding-inline: 5px;
                     text-transform: uppercase;
+                    font-family: serif;
                     font-size: 10px;
                     align-items: center;
                     height: 1, 1em;
@@ -403,6 +404,7 @@ body {
                     display: inline-block;
                     padding-inline: 5px;
                     text-transform: uppercase;
+                    font-family: serif;
                     font-size: 10px;
                     align-items: center;
                     height: 1, 1em;
@@ -410,7 +412,7 @@ body {
                     transform: rotate(-3deg);
                     padding-left: 5px;
                     padding-right: 5px;
-                    width: 4em;
+                    width: 4.5em;
 
                     span {
                         transform: rotate(3deg);
@@ -422,13 +424,14 @@ body {
                     display: inline-block;
                     padding-inline: 5px;
                     text-transform: uppercase;
+                    font-family: serif;
                     font-size: 10px;
                     align-items: center;
                     height: 1, 1em;
                     background-color: $client-yellow-green;
                     padding-left: 5px;
                     padding-right: 5px;
-                    width: 4em;
+                    width: 6em;
 
                     span {
                         display: inline-block;
@@ -650,9 +653,7 @@ body {
             a:hover {
                 font-size: 5em;
             }
-        }
-
-        /****************SLUT SIDA 4******************/
+        }/****************SLUT SIDA 4******************/
 
     }
 }
