@@ -135,7 +135,7 @@ header {
 .all_pages {
 
     /****************SIDA 1******************/
-    .page1 {
+    .page_1 {
         margin-top: 0;
 
         .top {
@@ -144,7 +144,7 @@ header {
             flex-direction: column;
 
 
-            .page-title:nth-child(1) {
+            .page_title:nth-child(1) {
                 order: 2;
             }
 
@@ -152,7 +152,7 @@ header {
                 order: 1;
             }
 
-            .page-title {
+            .page_title {
                 text-transform: uppercase;
                 font-family: "Roboto Condensed", sans-serif;
                 font-style: normal;
@@ -251,7 +251,7 @@ header {
     /****************SLUT SIDA 1******************/
 
     /****************SIDA 2******************/
-    .page2 {
+    .page_2 {
         grid-column: span 3;
         position: relative;
         min-height: 100vh;
@@ -275,13 +275,13 @@ header {
                 height: 100%;
             }
 
-            .pic1 {
+            .pic_1 {
                 display: block;
                 width: 100%;
             }
 
-            .pic2,
-            .pic3 {
+            .pic_2,
+            .pic_3 {
                 display: none;
             }
         }
@@ -390,7 +390,7 @@ header {
 
 
     /****************SIDA 3******************/
-    .page3 {
+    .page_3 {
         position: relative;
         grid-column: span 11;
         min-height: 100vh;
@@ -548,7 +548,7 @@ header {
         }
     }
     /******************SIDA 4********************/
-    .page4 {
+    .page_4 {
         height: 100vh;
         background-color: $client-purple;
         

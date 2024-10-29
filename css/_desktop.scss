@@ -148,7 +148,7 @@ body {
         width: auto;
 
         /****************SIDA 1******************/
-        .page1 {
+        .page_1 {
             grid-column: span 11;
             position: relative;
             min-height: 100vh;
@@ -180,7 +180,7 @@ body {
                 }
 
                 /************Stycke för textlogon******************/
-                .page-title {
+                .page_title {
                     grid-column: span 4;
                     position: relative;
                     display: block;
@@ -225,7 +225,7 @@ body {
                     }
                 }/**********SLUT Stycke för textlogon**********/
             
-                .page-title:nth-child(1) {
+                .page_title:nth-child(1) {
                     order: 1;
                 }
 
@@ -305,7 +305,7 @@ body {
         }/**********SLUT SIDA 1**********/
 
         /**********SIDA 2**********/
-        .page2 {
+        .page_2 {
             position: relative;
             grid-column: span 11;
             min-height: 100vh;
@@ -331,14 +331,14 @@ body {
                     height: 100%;
                 }
 
-                .pic1 {
+                .pic_1 {
                     grid-column: span 3;
                     display: block;
                     width: 100%;
                 }
 
-                .pic2,
-                .pic3 {
+                .pic_2,
+                .pic_3 {
                     grid-column: span 4;
                     display: block;
                 }
@@ -388,7 +388,7 @@ body {
                     font-size: 10px;
                     align-items: center;
                     height: 1, 1em;
-                    background-color: $client-hot-pink;
+                    background-color: $client-purple;
                     transform: rotate(3deg);
                     padding-left: 5px;
                     padding-right: 5px;
@@ -447,7 +447,7 @@ body {
         }/****************SLUT SIDA 2******************/
 
         /****************SIDA 3******************/
-        .page3 {
+        .page_3 {
             position: relative;
             grid-column: span 12;
             min-height: 100vh;
@@ -622,7 +622,7 @@ body {
         }
 
         /****************SIDA 4******************/
-        .page4 {
+        .page_4 {
             height: 100vh;
             background-color: $client-purple;
 
@@ -656,4 +656,3 @@ body {
 
     }
 }
-
