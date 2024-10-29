@@ -1,38 +1,42 @@
+$client-yellow: rgb(255, 242, 54);
+$client-green: rgb(0, 255, 56);
+$client-yellow-green: rgb(172, 225, 25);
+$client-purple: rgb(170, 117, 255);
+$client-pink: rgb(255, 220, 220);
+$client-light-blue: rgb(116, 192, 252);
+$client-white: rgb(250, 235, 215);
+$client-black: rgb(0, 0, 0);
+
+
 body {
-    background-color: rgb(0, 0, 0);
+    background-color: $client-black;
 }
 
 main {
-    margin-top: 1px;
-    /*TA BORT, bara som hjälpmedel nu*/
-    margin-bottom: 1px;
-    /*TA BORT, bara som hjälpmedel nu*/
     display: block;
 }
 
-/* Menysidan*/
+/**********HEADER & Menysidan till vänster**********/
 header {
     position: relative;
     display: fixed;
     z-index: 999;
-
     justify-content: space-between;
-    background-color: rgb(0, 255, 55);
 
     .side {
         position: fixed;
         height: fit-content;
-        align-items: center;
-        background-color: rgb(0, 0, 0);
         display: flex;
+        align-items: center;
+        width: 100%;
         gap: 10px;
         top: 1px;
         left: 1px;
-        width: 100%;
+        background-color: $client-black;
 
 
         h1 {
-            color: rgb(220, 220, 220);
+            color: $client-white;
             text-orientation: sideways;
             text-transform: uppercase;
             margin-left: 40px;
@@ -44,7 +48,7 @@ header {
         button {
             width: 35px;
             height: 35px;
-            background-color: rgb(0, 0, 0);
+            background-color: $client-black;
             border: 0;
             position: fixed;
             left: 2px;
@@ -57,7 +61,7 @@ header {
             display: block;
             width: 25px;
             height: 3px;
-            background-color: rgb(194, 205, 41);
+            background-color: $client-yellow;
             border-radius: 6px;
             margin-bottom: 4px;
         }
@@ -94,7 +98,7 @@ header {
             position: fixed;
             top: 0;
             left: 0;
-            background-color: purple;
+            background-color: $client-purple;
             width: 100vw;
             height: 100vh;
             opacity: 0;
@@ -121,17 +125,11 @@ header {
             text-decoration: none;
             text-transform: uppercase;
             font-family: "Jockey One", sans-serif;
-            color: antiquewhite;
+            color: $client-white;
         }
+    }/**********SLUT MENYKNAPP**********/
+}/**********SLUT HEADER & Menysidan till vänster**********/
 
-        /***************************SLUT MENYKNAPP***************************/
-
-    }
-}
-
-/* menyn ligger fixerad högs upp när jag krymper sidan på datorn, men när jag tittar på den i mobilen från Github så är den inte fixerad. Vad beror det på? Vad är fel?*/
-
-/* SLUT Menysidan*/
 
 
 .all_pages {
@@ -168,7 +166,7 @@ header {
                 .logo_text_1 {
                     font-size: 3em;
                     font-weight: bold;
-                    color: rgb(0, 255, 56);
+                    color: $client-green;
                     width: auto;
                     height: auto;
                     position: relative;
@@ -180,7 +178,7 @@ header {
                 .logo_text_2 {
                     font-size: 0.9em;
                     font-weight: bold;
-                    color: rgb(170, 117, 255);
+                    color: $client-purple;
                     width: auto;
                     height: auto;
                     position: absolute;
@@ -191,7 +189,7 @@ header {
                 .logo_text_3 {
                     font-size: 1em;
                     font-weight: bold;
-                    color: rgb(255, 242, 54);
+                    color: $client-yellow;
                     width: auto;
                     height: auto;
                     position: absolute;
@@ -201,7 +199,7 @@ header {
             }
 
             .text {
-                color: rgb(0, 255, 56);
+                color: $client-green;
                 position: relative;
                 top: 50px;
             }
@@ -217,7 +215,7 @@ header {
 
             .text {
                 position: relative;
-                background-color: rgb(255, 220, 220);
+                background-color: $client-pink;
                 color: rgb(170, 117, 255);
 
                 .explore {
@@ -258,9 +256,9 @@ header {
         position: relative;
         min-height: 100vh;
         margin-top: 5px;
-        background-color: rgb(255, 242, 54);
-        border-right: 0.5em solid rgb(255, 242, 54);
-        border-left: 0.5em solid rgb(255, 242, 54);
+        background-color: $client-yellow;
+        border-right: 0.5em solid $client-yellow;
+        border-left: 0.5em solid $client-yellow;
         margin-bottom: 10px;
 
         .pictures {
@@ -293,14 +291,9 @@ header {
             grid-template-columns: 30% 60% 10%;
             display: grid;
             gap: 0;
-            /*0.5em om ej .dishes*/
-            /*ta bort border*/
-            /*border: solid;*/
             position: relative;
-            /*border: solid 1px black;*/
             padding-top: 0.5em;
 
-            /* Ta bort om du tar bort i html*/
             .line_top,
             .line_bottom {
                 display: grid;
@@ -320,7 +313,7 @@ header {
 
             .dish {
                 grid-column: span 1;
-                background-color: rgb(255, 220, 220);
+                background-color: $client-pink;
                 text-transform: uppercase;
                 font-family: "Jockey One", sans-serif;
                 font-weight: bold;
@@ -328,7 +321,7 @@ header {
 
             .description {
                 grid-column: span 1;
-                background-color: rgb(255, 220, 220);
+                background-color: $client-pink;
             }
 
             .sales_marker_new {
@@ -338,7 +331,7 @@ header {
                 font-size: 10px;
                 align-items: center;
                 height: 1, 1em;
-                background-color: rgb(197, 30, 144);
+                background-color: $client-purple;
                 transform: rotate(3deg);
                 padding-left: 5px;
                 padding-right: 5px;
@@ -356,7 +349,7 @@ header {
                 font-size: 10px;
                 align-items: center;
                 height: 1, 1em;
-                background-color: green;
+                background-color: $client-green;
                 transform: rotate(-3deg);
                 padding-left: 5px;
                 padding-right: 5px;
@@ -375,7 +368,7 @@ header {
                 font-size: 10px;
                 align-items: center;
                 height: 1, 1em;
-                background-color: rgb(172, 225, 25);
+                background-color: $client-yellow-green;
                 padding-left: 5px;
                 padding-right: 5px;
                 width: 4em;
@@ -387,7 +380,7 @@ header {
 
             .cost {
                 grid-column: span 1;
-                background-color: rgb(255, 220, 220);
+                background-color: $client-pink;
                 font-family: "Jockey One", sans-serif;
                 font-weight: bold;
                 text-align: right;
@@ -401,9 +394,9 @@ header {
         position: relative;
         grid-column: span 11;
         min-height: 100vh;
-        background-color: rgb(33, 232, 56);
-        border-left: 0.5em solid rgb(255, 242, 54);
-        border-top: 0.5em solid rgb(255, 242, 54);
+        background-color: $client-green;
+        border-left: 0.5em solid $client-yellow;
+        border-top: 0.5em solid $client-yellow;
 
         h3 {
             margin-top: 5%;
@@ -439,11 +432,11 @@ header {
                 font-family: "Jockey One", sans-serif;
 
                 .cancel_button {
-                    background-color: rgb(225, 41, 146);
+                    background-color: $client-purple;
                 }
 
                 .submit_button {
-                    background-color: rgb(255, 242, 54);
+                    background-color: $client-yellow;
                 }
             }
 
@@ -481,10 +474,8 @@ header {
                     left: 8%;
                     text-shadow: -2px -2px 1px rgba(0, 0, 0);
 
-                    background-color: rgba(240, 248, 255, 0.332);
-
                     a {
-                        color: #74C0FC;
+                        color: $client-light-blue;
                         font-family: "Jockey One", sans-serif;
                     }
 
@@ -500,7 +491,7 @@ header {
             position: relative;
             grid-column: span 1;
             margin-top: 5%;
-            background-color: rgb(225, 41, 146);
+            background-color: $client-purple;
 
             .cookie_text {
                 position: relative;
@@ -518,11 +509,11 @@ header {
                 text-transform: uppercase;
 
                 .cancel_button {
-                    background-color: rgb(255, 242, 54);
+                    background-color: $client-yellow;
                 }
 
                 .submit_button {
-                    background-color: rgb(33, 232, 56);
+                    background-color: $client-green;
                 }
             }
         }
@@ -557,7 +548,7 @@ header {
     /******************SIDA 4********************/
     .page4 {
         height: 100vh;
-        background-color: purple;
+        background-color: $client-purple;
         
         margin: 0;
         padding-top: 5%;
@@ -570,7 +561,7 @@ header {
 
 
         a:link {
-            color: rgb(255, 255, 255);
+            color: $client-white;
             font-size: 3em;
             text-decoration: none;
             text-transform: uppercase;
@@ -579,8 +570,7 @@ header {
         }
 
         a:visited {
-            color: rgb(255, 255, 255);
+            color: $client-white;
         }
-
     }/****************SLUT SIDA 3******************/
 }
