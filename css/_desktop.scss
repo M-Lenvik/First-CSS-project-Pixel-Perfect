@@ -26,53 +26,40 @@ body {
         display: flex;
         flex-direction: column;
 
-        border: solid red 2px;
+        border: solid red 2px; /*TAS BORT*/
 
         .side {
-            /*grid i head ist?*/
             grid-column: span 1;
             position: fixed;
             display: inline;
             height: 100vh;
-            width: 6.5%;
+            width: 6%;
             /*griden är 12. 100% delar på 12 grids = 8.3 - utrymme för gap*/
             gap: 0;
             top: 3px;
             left: 3px;
 
 
-            background-color: #74C0FC;
+            background-color: #74C0FC; /*TAS BORT*/
 
             h1 {
-                color: $client-white;
                 writing-mode: vertical-lr;
                 text-orientation: upright;
                 margin-top: 70px;
-                text-transform: uppercase;
-                font-family: "Jockey One", sans-serif;
                 font-size: 25px;
                 margin-left: 20px;
             }
 
             /***************************MENYKNAPP***************************/
             button {
-                width: 35px;
-                height: 35px;
-                background-color: $client-black;
-                border: 0;
-                position: fixed;
                 left: 25px;
                 top: 20px;
-                z-index: 2;
-                pointer-events: none;
                 align-items: baseline;
             }
 
             button span {
-                display: block;
                 width: 25px;
                 height: 3px;
-                background-color: $client-yellow;
                 border-radius: 6px;
                 margin-bottom: 4px;
             }
@@ -86,59 +73,7 @@ body {
                 height: 35px;
                 opacity: 0;
             }
-
-            input:checked+.meny button span {
-                position: absolute;
-                transition: all 0.3s ease-in-out;
-            }
-
-
-            input:checked+.meny button span:nth-child(2) {
-                opacity: 0;
-            }
-
-            input:checked+.meny button span:nth-child(1) {
-                transform: rotate(45deg);
-            }
-
-            input:checked+.meny button span:nth-child(3) {
-                transform: rotate(-45deg);
-            }
-
-            nav {
-                position: fixed;
-                top: 0;
-                left: 0;
-                background-color: $client-purple;
-                width: 100vw;
-                height: 100vh;
-                opacity: 0;
-                transition: all 1s cubic-bezier(0.075, 0.82, 0.165, 1);
-                visibility: hidden;
-            }
-
-            input:checked+.meny nav {
-                visibility: visible;
-                opacity: 1;
-            }
-
-            ul {
-                margin: 0;
-                padding: 0;
-                list-style-type: none;
-                display: flex;
-                flex-direction: column;
-                height: 100%;
-                justify-content: space-evenly;
-                text-align: center;
-
-                font-size: 3em;
-                text-decoration: none;
-                text-transform: uppercase;
-                font-family: "Jockey One", sans-serif;
-                color: $client-white;
-            }
-        }/**********SLUT MENYKNAPP**********/
+        }/***************SLUT MENYKNAPP***************/
     }/**********SLUT HEADER & Menysidan till vänster**********/
 
     .all_pages {
@@ -171,9 +106,6 @@ body {
                 top: 0;
                 .text {
                     grid-column: span 7;
-                    position: relative;
-                    /*Om tid finns; fundera på att tillgänglighetsanpassa detta och motivera mot kund*/
-                    color: $client-green;
                     padding: 0.5em;
                     margin-top: 0px;
                     top: 0;
@@ -184,42 +116,25 @@ body {
                     grid-column: span 4;
                     position: relative;
                     display: block;
-                    text-transform: uppercase;
-                    font-family: "Jockey One", sans-serif;
-                    font-style: normal;
                     margin: 0px;
                     height: 200px;
-
-
-                    /*display: flex; i mobilversionen kanske påverkar?*/
                     background-color: $client-black;
-
-
 
                     .logo_text_1 {
                         font-size: 5em;
-                        font-weight: bold;
                         position: absolute;
-                        color: $client-green;
                         right: 35px;
                         top: 20px;
-                        z-index: 1;
                     }
 
                     .logo_text_2 {
                         font-size: 1.9em;
-                        font-weight: bold;
-                        position: absolute;
-                        color: $client-purple;
                         right: 39px;
                         top: 15px;
                     }
 
                     .logo_text_3 {
                         font-size: 1.9em;
-                        font-weight: bold;
-                        position: absolute;
-                        color: $client-yellow;
                         right: 95px;
                         top: 92px;
                     }
@@ -240,14 +155,11 @@ body {
                     position: relative;
                     display: block;
 
-                    /*Ska bildstorleken sättas här eller i html?*/
-
                     img {
                         object-fit: cover;
                         width: 100%;
                         height: 100%;
                     }
-
 
                     .arrow {
                         /*pilen i salladen*/
@@ -268,36 +180,16 @@ body {
                 }
 
                 .text {
-                    position: relative;
                     grid-column: span 6;
-                    color: $client-purple;
                     border-left: 0.5em solid $client-yellow;
-                    background-color: $client-pink;
 
                     .explore {
-                        position: relative;
-                        display: flex;
-                        align-items: center;
-                        text-transform: uppercase;
-                        color: black;
-
                         padding-left: 0.5em;
                         padding-right: 0.5em;
-                        font-family: "Jockey One", sans-serif;
                         font-size: 26px;
-
-                        a {
-                            color: black;
-                            text-decoration: none;
-                        }
 
                         a:hover {
                             font-size: 40px;
-                        }
-
-                        img {
-                            display: inline;
-                            align-items: center;
                         }
                     }
                 }
@@ -306,35 +198,25 @@ body {
 
         /**********SIDA 2**********/
         .page_2 {
-            position: relative;
             grid-column: span 11;
-            min-height: 100vh;
             margin-top: 5px;
-            background-color: $client-yellow;
+            padding: 0;
             border-right: 0.5em solid $client-yellow;
             border-left: 0.5em solid $client-yellow;
             border-top: 0.5em solid $client-yellow;
 
+            /*************BILDER**************/
             .pictures {
                 display: grid;
                 grid-template-columns: repeat(11, 1fr);
                 gap: 0.5em;
-                position: relative;
 
                 div {
                     height: 300px;
                 }
 
-                img {
-                    object-fit: cover;
-                    width: 100%;
-                    height: 100%;
-                }
-
                 .pic_1 {
                     grid-column: span 3;
-                    display: block;
-                    width: 100%;
                 }
 
                 .pic_2,
@@ -346,130 +228,47 @@ body {
 
             /*************MATRÄTTER**************/
             .dish_menu {
-                position: relative;
-                display: grid;
                 grid-template-columns: repeat(11, 1fr);
                 padding-top: 0.5em;
 
                 .line_top,
                 .line_bottom {
-                    display: grid;
                     grid-column: span 11;
                     height: 0.25em;
                 }
 
-                .line_top {
-                    border-bottom: solid 1px black;
-                }
-
-                .line_bottom {
-                    border-top: solid 1px black;
-                }
-
                 .dish {
                     grid-column: span 4;
-                    background-color: $client-pink;
-                    text-transform: uppercase;
-                    font-family: "Jockey One", sans-serif;
-                    font-weight: bold;
-                    padding-left: 0.25em;
+                    padding-left: 2px;
                 }
 
                 .description {
                     grid-column: span 6;
-                    font-family: "Roboto Condensed", sans-serif;
-                    background-color: $client-pink;
-                }
-
-                .sales_marker_new {
-                    display: inline-block;
-                    padding-inline: 5px;
-                    text-transform: uppercase;
-                    font-family: serif;
-                    font-size: 10px;
-                    align-items: center;
-                    height: 1, 1em;
-                    background-color: $client-purple;
-                    transform: rotate(3deg);
-                    padding-left: 5px;
-                    padding-right: 5px;
-                    width: 4em;
-
-                    span {
-                        display: inline-block;
-                    }
-                }
-
-                .sales_marker_vegan {
-                    display: inline-block;
-                    padding-inline: 5px;
-                    text-transform: uppercase;
-                    font-family: serif;
-                    font-size: 10px;
-                    align-items: center;
-                    height: 1, 1em;
-                    background-color: $client-green;
-                    transform: rotate(-3deg);
-                    padding-left: 5px;
-                    padding-right: 5px;
-                    width: 4.5em;
-
-                    span {
-                        transform: rotate(3deg);
-                        display: inline-block;
-                    }
-                }
-
-                .sales_marker_popular {
-                    display: inline-block;
-                    padding-inline: 5px;
-                    text-transform: uppercase;
-                    font-family: serif;
-                    font-size: 10px;
-                    align-items: center;
-                    height: 1, 1em;
-                    background-color: $client-yellow-green;
-                    padding-left: 5px;
-                    padding-right: 5px;
-                    width: 6em;
-
-                    span {
-                        display: inline-block;
-                    }
                 }
 
                 .cost {
                     grid-column: span 1;
-                    background-color: $client-pink;
-                    font-family: "Jockey One", sans-serif;
-                    font-weight: bold;
-                    text-align: right;
-                    padding-right: 0.25em;
+                    padding-right: 2px;
                 }
             }/*************SLUT MATRÄTTER**************/
         }/****************SLUT SIDA 2******************/
 
         /****************SIDA 3******************/
         .page_3 {
-            position: relative;
             grid-column: span 12;
-            min-height: 100vh;
-            background-color: $client-green;
-            border-left: 0.5em solid $client-yellow;
-            border-top: 0.5em solid $client-yellow;
+            border-left: 0.5em solid $client-white;
 
             h3 {
                 margin-top: 5%;
                 margin-bottom: 2%;
-                font-size: 30px;
+                font-size: 40px;
             }
 
             .grid {
-                position: relative;
                 display: grid;
                 grid-template-columns: repeat(11, 1fr);
                 gap: 0.5em;
-                margin-top: 8%;
+                margin-top: 1%;
                 padding-left: 1%;
                 margin-bottom: 1%;
 
@@ -485,34 +284,18 @@ body {
                     order: 3;
                 }
 
-
-
                 .booking {
-                    position: relative;
                     grid-column: span 5;
                     gap: 0.5em;
-                    text-transform: uppercase;
-                    font-family: "Jockey One", sans-serif;
-
-                    .cancel_button {
-                        background-color: $client-purple;
-                    }
-
-                    .submit_button {
-                        background-color: $client-yellow;
-                    }
                 }
 
                 .guest_info {
                     grid-column: span 2;
-                    position: relative;
                     padding-bottom: 1em;
                 }
 
                 .guest_input {
                     grid-column: span 3;
-                    position: relative;
-                    float: right;
                     margin-right: 50%;
                     width: 6em;
 
@@ -523,7 +306,6 @@ body {
                 }
 
                 .contakt_information {
-                    position: relative;
                     grid-column: span 6;
                     gap: 0.5em;
                     font-size: 30px;
@@ -531,27 +313,11 @@ body {
                     .arrow {
                         position: absolute;
                         width: fit-content;
-                        height: 50%;
-                        bottom: 30%;
-                        left: 8%;
-                        text-shadow: -2px -2px 1px rgba(0, 0, 0);
-
-                        background-color: rgba(240, 248, 255, 0.332);
-
-                        a {
-                            color: $client-light-blue;
-                            font-family: "Jockey One", sans-serif;
-                        }
 
                         a:hover {
                             position: relative;
                             left: 25px;
                             cursor: pointer;
-                        }
-
-                        img {
-                            display: inline;
-                            align-items: center;
                         }
                     }
                 }
@@ -559,101 +325,46 @@ body {
 
             .cookie {
                 grid-column: span 12;
-                position: relative;
                 margin-top: 5%;
                 background-color: $client-purple;
                 width: 100vw;
                 left: 0;
                 z-index: 1;
 
-                .cookie_text {
-                    position: relative;
+                .cookie_text {    
                     display: flex;
-                    align-items: center;
-                    gap: 45%;
                 }
 
-                .buttons {
-                    position: relative;
+                .buttons {                 
                     display: flex;
-                    align-items: center;
-                    color: black;
-                    font-family: "Jockey One", sans-serif;
-                    text-transform: uppercase;
-
 
                     border: black solid 3px;
                     right: 20px;
 
                     .cancel_button {
                         background-color: $client-yellow;
-
                     }
 
                     .submit_button {
                         background-color: $client-green;
-
                     }
                 }
             }
         }/****************SLUT SIDA 3******************/
 
-        .buttons {
-            .submit_button,
-            .cancel_button {
-                /*omarbetad kod från: 
-                https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/button*/
-                border: 0;
-                line-height: 2.5;
-                padding: 0 20px;
-                margin: 1%;
-                font-size: 1rem;
-                width: 10em;
-                text-align: center;
-                color: #000000;
-                border-radius: 10px;
-                background-image: linear-gradient(to top left,
-                        rgb(0 0 0 / 20%),
-                        rgb(0 0 0 / 20%) 30%,
-                        rgb(0 0 0 / 0%));
-                box-shadow:
-                    inset 2px 2px 3px rgb(255 255 255 / 60%),
-                    inset -2px -2px 3px rgb(0 0 0 / 60%);
-
-                text-transform: uppercase;
-            }
-        }
-
         /****************SIDA 4******************/
         .page_4 {
             height: 100vh;
             background-color: $client-purple;
-
             margin: 0;
+            margin-top: 5px;
             padding-top: 5%;
-            list-style-type: none;
             display: flex;
             flex-direction: column;
-            justify-content: space-evenly;
-            text-align: center;
-
-            a:link {
-                color: $client-white;
-                font-size: 3em;
-                text-decoration: none;
-                text-transform: uppercase;
-                font-family: "Jockey One", sans-serif;
-                margin-bottom: 5%;
-            }
-
-            a:visited {
-                color: $client-white;
-            }
 
             a:hover {
                 font-size: 5em;
             }
         }/****************SLUT SIDA 4******************/
-
     }
 }

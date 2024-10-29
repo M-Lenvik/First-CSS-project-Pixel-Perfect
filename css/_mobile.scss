@@ -127,13 +127,21 @@ header {
             font-family: "Jockey One", sans-serif;
             color: $client-white;
         }
-    }/**********SLUT MENYKNAPP**********/
+    }/***************SLUT MENYKNAPP***************/
 }/**********SLUT HEADER & Menysidan till vänster**********/
 
 
 
 .all_pages {
-
+    
+    .font_style{
+        padding-left: 0.5em;
+        padding-right: 0.5em;
+        font-family: "Jockey One", sans-serif;
+        font-size: 26px;
+        line-height: 1.5;
+    }
+    
     /****************SIDA 1******************/
     .page_1 {
         margin-top: 0;
@@ -142,7 +150,6 @@ header {
             position: relative;
             display: flex;
             flex-direction: column;
-
 
             .page_title:nth-child(1) {
                 order: 2;
@@ -199,6 +206,7 @@ header {
             }
 
             .text {
+                /*Om tid finns; fundera på att tillgänglighetsanpassa detta och motivera mot kund*/
                 color: $client-green;
                 position: relative;
                 top: 50px;
@@ -209,14 +217,16 @@ header {
             position: relative;
 
             .picture {
-                /*Jag väljer att ta bort bilden på salladen i mobilversionen. Jag vill  istället lägga logon mellan de två textblocken.*/
+                /*Jag väljer att ta bort bilden på salladen i mobilversionen 
+                eftersom jag inte upplever att den tillför så mycket här. 
+                Jag väljer att istället lägga logon mellan de två textblocken.*/
                 display: none;
             }
 
             .text {
                 position: relative;
                 background-color: $client-pink;
-                color: rgb(170, 117, 255);
+                color: $client-purple;
 
                 .explore {
                     position: relative;
@@ -246,21 +256,20 @@ header {
                 }
             }
         }
-    }
+    }/**********SLUT SIDA 1**********/
 
-    /****************SLUT SIDA 1******************/
-
-    /****************SIDA 2******************/
+    /**********SIDA 2**********/
     .page_2 {
         grid-column: span 3;
         position: relative;
         min-height: 100vh;
         margin-top: 5px;
         background-color: $client-yellow;
-        border-right: 0.5em solid $client-yellow;
-        border-left: 0.5em solid $client-yellow;
         margin-bottom: 10px;
+        padding-right: 3px;
+        padding-left: 3px;
 
+        /*************BILDER**************/
         .pictures {
             display: block;
             position: relative;
@@ -284,7 +293,7 @@ header {
             .pic_3 {
                 display: none;
             }
-        }
+        }/*************SLUT BILDER**************/
 
         /*************MATRÄTTER**************/
         .dish_menu {
@@ -317,6 +326,7 @@ header {
                 text-transform: uppercase;
                 font-family: "Jockey One", sans-serif;
                 font-weight: bold;
+                padding-left: 1px;
             }
 
             .description {
@@ -388,6 +398,7 @@ header {
                 font-family: "Jockey One", sans-serif;
                 font-weight: bold;
                 text-align: right;
+                padding-right: 1px;
             }
         }/*************SLUT MATRÄTTER**************/
     }/****************SLUT SIDA 2******************/
@@ -399,12 +410,10 @@ header {
         grid-column: span 11;
         min-height: 100vh;
         background-color: $client-green;
-        border-left: 0.5em solid $client-yellow;
-        border-top: 0.5em solid $client-yellow;
 
         h3 {
-            margin-top: 5%;
-            margin-bottom: 2%;
+            margin-top: 3%;
+            margin-bottom: 1%;
             font-size: 30px;
         }
 
@@ -412,7 +421,7 @@ header {
             position: relative;
             display: flex;
             flex-direction: column;
-            margin-top: 8%;
+            margin-top: 1%;
             padding-left: 1%;
             padding-right: 1%;
             margin-bottom: 1%;
@@ -468,7 +477,7 @@ header {
                 position: relative;
                 grid-column: span 6;
                 gap: 0.5em;
-                font-size: xx-large;
+                font-size: 30px;
 
                 .arrow {
                     position: absolute;
@@ -523,48 +532,46 @@ header {
                 }
             }
         }
-    }
-    /****************SLUT SIDA 3******************/
-    .buttons {
 
-        .submit_button,
-        .cancel_button {
-            /*omarbetad kod från: 
-                https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/button*/
-            border: 0;
-            line-height: 2.5;
-            padding: 0 20px;
-            margin: 1%;
-            font-size: 1rem;
-            width: 10em;
-            text-align: center;
-            color: #000000;
-            border-radius: 10px;
-            background-image: linear-gradient(to top left,
-                    rgb(0 0 0 / 20%),
-                    rgb(0 0 0 / 20%) 30%,
-                    rgb(0 0 0 / 0%));
-            box-shadow:
-                inset 2px 2px 3px rgb(255 255 255 / 60%),
-                inset -2px -2px 3px rgb(0 0 0 / 60%);
-
-            text-transform: uppercase;
+        .buttons {
+            .submit_button,
+            .cancel_button {
+                /*omarbetad kod från: 
+                    https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/button*/
+                border: 0;
+                line-height: 2.5;
+                padding: 0 20px;
+                margin: 1%;
+                font-size: 1rem;
+                width: 10em;
+                text-align: center;
+                color: #000000;
+                border-radius: 10px;
+                background-image: linear-gradient(to top left,
+                        rgb(0 0 0 / 20%),
+                        rgb(0 0 0 / 20%) 30%,
+                        rgb(0 0 0 / 0%));
+                box-shadow:
+                    inset 2px 2px 3px rgb(255 255 255 / 60%),
+                    inset -2px -2px 3px rgb(0 0 0 / 60%);
+    
+                text-transform: uppercase;
+            }
         }
-    }
+    }/****************SLUT SIDA 3******************/
+
     /******************SIDA 4********************/
     .page_4 {
         height: 100vh;
         background-color: $client-purple;
-        
         margin: 0;
+        margin-top: 2px;
         padding-top: 5%;
         list-style-type: none;
         display: flex;
         flex-direction: column;
         justify-content: space-evenly;
         text-align: center;
-
-
 
         a:link {
             color: $client-white;
