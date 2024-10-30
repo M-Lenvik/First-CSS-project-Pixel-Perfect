@@ -25,9 +25,10 @@ body {
         position: relative;
         display: flex;
         flex-direction: column;
+        z-index: 2;
 
         border: solid red 2px; /*TAS BORT*/
-
+        
         .side {
             grid-column: span 1;
             position: fixed;
@@ -46,8 +47,11 @@ body {
                 writing-mode: vertical-lr;
                 text-orientation: upright;
                 margin-top: 70px;
-                font-size: 25px;
+                font-size: 35px;
                 margin-left: 20px;
+                word-break: break-all;
+                overflow: hidden;
+                max-width: 40px;
             }
 
             /***************************MENYKNAPP***************************/
@@ -325,11 +329,13 @@ body {
 
             .cookie {
                 grid-column: span 12;
-                margin-top: 5%;
+
                 background-color: $client-purple;
                 width: 100vw;
+                position: fixed;
                 left: 0;
-                z-index: 1;
+                bottom: 0;
+                z-index: 999;
 
                 .cookie_text {    
                     display: flex;
@@ -343,6 +349,25 @@ body {
 
                     .cancel_button {
                         background-color: $client-yellow;
+
+
+                        input {
+                            position: fixed;
+                            top: 2px;
+                            left: 2px;
+                            z-index: 1;
+                            width: 35px;
+                            height: 35px;
+                            opacity: 0;
+                        }
+
+                        
+                        input:checked+.meny nav {
+                            visibility: hidden;
+                            opacity: 0;
+                        }
+
+
                     }
 
                     .submit_button {

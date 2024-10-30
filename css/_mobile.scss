@@ -19,7 +19,7 @@ body {
 /**********HEADER & Menysidan till vänster**********/
 header {
     position: relative;
-    display: fixed;
+    display: flex;
     z-index: 999;
     justify-content: space-between;
 
@@ -134,12 +134,22 @@ header {
 
 .all_pages {
     
-    .font_style{
+    .font_style {
         padding-left: 0.5em;
         padding-right: 0.5em;
         font-family: "Jockey One", sans-serif;
         font-size: 26px;
         line-height: 1.5;
+    }
+
+    h3, h4, h6 {
+        font-family: "Jockey One", sans-serif;
+        font-size: 36px;
+        padding-left: 12px;
+    }
+
+    h5 {
+        visibility: hidden;
     }
     
     /****************SIDA 1******************/
@@ -342,7 +352,7 @@ header {
                 font-family: serif;
                 font-size: 10px;
                 align-items: center;
-                height: 1, 1em;
+                height: 15px;
                 background-color: $client-purple;
                 transform: rotate(3deg);
                 padding-left: 5px;
@@ -361,7 +371,7 @@ header {
                 font-family: serif;
                 font-size: 10px;
                 align-items: center;
-                height: 1, 1em;
+                height: 15px;
                 background-color: $client-green;
                 transform: rotate(-3deg);
                 padding-left: 5px;
@@ -381,7 +391,7 @@ header {
                 font-family: serif;
                 font-size: 10px;
                 align-items: center;
-                height: 1, 1em;
+                height: 15px;
                 background-color: $client-yellow-green;
                 padding-left: 5px;
                 padding-right: 5px;

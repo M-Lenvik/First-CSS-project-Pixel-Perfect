@@ -30,8 +30,8 @@ SLÄNG DETTA NÄR DU VET ATT NEDAN FUNKAR FÖR BÄGGE FONTERNA-->
   <div class="base">
     <header>
       <div class="side">
-        <input type="checkbox"/>
-          <menu class="meny">
+        <input type="checkbox">
+          <div class="meny">
             <!--KOM IHÅG TILLGÄNGLIGHET-->
             <button aria-label="Navigation menu">
               <span></span>
@@ -46,23 +46,25 @@ SLÄNG DETTA NÄR DU VET ATT NEDAN FUNKAR FÖR BÄGGE FONTERNA-->
                 <li>Book table</li>
               </ul>
             </nav>
-          </menu>
+          </div>
         <h1> Tough Cookie</h1>
       </div>
     </header>
 
     <div class="all_pages">
-      <!-------------SIDA 1 --------------->
+      <!--.:*~*:._.:*~*:._.:*~*:._.:*~*:._SIDA 1_.:*~*:._.:*~*:._.:*~*:._.:*~*:.-->
       <main class="page_1" id="page_1">
         <section class="top">
           
-          <article class="page_title">
+          <div class="page_title">
             <h2 class="logo_text_1">Tahini</h2>
             <h2 class="logo_text_2">drizzle</h2>
             <h2 class="logo_text_3">chickpeas</h2>
-          </article>
+          </div>
           
           <article class="text">
+            <!--Lagt till heading för att göra sidan mer tillgänglig, så en skärmläsare vet vad för innehåll som förväntas komma.-->
+            <h3>Tasty Italian main course</h3> 
             <p class="font_style">Main course hemp seeds Southern Italian shiitake mushrooms a delicious meal banana bread lemon
             tahini dressing apple vinaigrette veggie burgers cool cucumbers coconut sugar. Seasonal edamame hummus asian
             pear kale bite sized ghost pepper one bowl mediterranean luxury bowl cayenne Thai sun pepper.
@@ -70,112 +72,116 @@ SLÄNG DETTA NÄR DU VET ATT NEDAN FUNKAR FÖR BÄGGE FONTERNA-->
           </article>
         </section>
 
-        <section class="bottom"> <!--gör bilden responsiv-->
-          <picture class="picture">
+        <div class="bottom"> <!--gör bilden responsiv-->
+          <div class="picture">
             <img src="pictures/lettuce.jpg" width="440" height="352" loading="lazy" alt="head of salad">
             <div class="arrow">
               <a href="#page_2">
-                <img src="assets/icons/arrow.svg">
+                <img src="assets/icons/arrow.svg" alt="clickable arrow">
               </a>
             </div>
-          </picture>
+          </div>
 
           <article class="text">
+            <!--Lagt till heading för att göra sidan mer tillgänglig, så en skärmläsare vet vad för innehåll som förväntas komma.-->
+            <h4>Crispy Caribbean sallad</h4>
             <p class="font_style">Crispy iceberg lettuce Caribbean red habanero blueberry chia seed jam overflowing berries
             roasted butternut squash basmati thyme hummus falafel bowl cozy butternut cilantro lime vinaigrette heat mint
             potato chocolate cookie seeds samosa walnut mushroom tart.
             </p>
             <span class="explore">
               <a href="#page_2">Explore menu
-                <img src="assets/icons/arrow2.svg">
+                <img src="assets/icons/arrow2.svg" alt="clickable arrow">
               </a>
             </span>
           </article>
-        </section>
+        </div>
       </main>
-      <!---------------SLUT SIDA 1--------------->
+      <!--.:*~*:._.:*~*:._.:*~*:._.:*~*:._SLUT SIDA 1_.:*~*:._.:*~*:._.:*~*:._.:*~*:.-->
       
-      <!-----------------SIDA 2------------------>
+      <!--.:*~*:._.:*~*:._.:*~*:._.:*~*:._SIDA 2_.:*~*:._.:*~*:._.:*~*:._.:*~*:.-->
       <div class="page_2" id="page_2">
-        <section class="pictures">
+        <div class="pictures">
           <div class="pic_1"><img src="pictures/salld_kikartor.jpg" width="3751" height="4689" loading="lazy" alt="plate with chickpeas, vegetables and bread"></div>
           <div class="pic_2"><img src="pictures/soppa.jpg" width="2557" height="1976" loading="lazy" alt="plate with soup and some chickpeas and bread on the side"></div>
           <div class="pic_3"><img src="pictures/roror.jpg" width="2920" height="3893" loading="lazy" alt="three different plates of stir-fries and chickpeas"></div>
-        </section>
+        </div>
 
         <section class="dish_menu">
+          <!--Lagt till heading för att göra sidan mer tillgänglig, så en skärmläsare vet vad för innehåll som förväntas komma. Även gjort visibility: hidden;-->
+          <h5>Our tasy menu</h5>
           <div class="line_top"></div>
-          <section class="dish">Halloumi moklieh
+          <div class="dish">Halloumi moklieh
             <span class="sales_marker_new">
               <span>New!</span>
             </span>
-          </section>
+          </div>
 
-          <section class="description">Deep-fried halloumi</section>
-          <section class="cost">195 kr</section>
+          <div class="description">Deep-fried halloumi</div>
+          <div class="cost">195 kr</div>
 
           <div class="line_bottom"></div>
           <div class="line_top"></div>
           
-          <section class="dish">Mojaddara</section>
-          <section class="description">Green lentis with rice and fried onion</section>
-          <section class="cost">135 kr</section>
+          <div class="dish">Mojaddara</div>
+          <div class="description">Green lentis with rice and fried onion</div>
+          <div class="cost">135 kr</div>
 
           <div class="line_bottom"></div>
           <div class="line_top"></div>
 
-          <section class="dish">Chiar & laban</section>
-          <section class="description">Lebanese spicy yoghurt with chopped cucumber</section>
-          <section class="cost">95 kr</section>
+          <div class="dish">Chiar & laban</div>
+          <div class="description">Lebanese spicy yoghurt with chopped cucumber</div>
+          <div class="cost">95 kr</div>
 
           <div class="line_bottom"></div>
           <div class="line_top"></div>
 
-          <section class="dish">Warak inab</section>
-          <section class="description">Rice- and veggie-filled dolma with mint and lemon</section>
-          <section class="cost">85 kr</section>
+          <div class="dish">Warak inab</div>
+          <div class="description">Rice- and veggie-filled dolma with mint and lemon</div>
+          <div class="cost">85 kr</div>
 
           <div class="line_bottom"></div>
           <div class="line_top"></div>
 
-          <section class="dish">Moutabbal batinzian
+          <div class="dish">Moutabbal batinzian
             <span class="sales_marker_vegan">
               <span>Vegan</span>
             </span>
-          </section>
+          </div>
 
-          <section class="description">Smoked chopped aubergine, sesame paste, garlic and lemon</section>
-          <section class="cost">175 kr</section>
+          <div class="description">Smoked chopped aubergine, sesame paste, garlic and lemon</div>
+          <div class="cost">175 kr</div>
 
           <div class="line_bottom"></div>
           <div class="line_top"></div>
 
-          <section class="dish">Ardishoki
+          <div class="dish">Ardishoki
             <span class="sales_marker_popular">
               <span>Popular</span>
             </span>
-          </section>
-          <section class="description">Artichoke with lemon and garlic marinade</section>
-          <section class="cost">99 kr</section>
+          </div>
+          <div class="description">Artichoke with lemon and garlic marinade</div>
+          <div class="cost">99 kr</div>
 
           <div class="line_bottom"></div>
           <div class="line_top"></div>
 
-          <section class="dish">Mhamara</section>
-          <section class="description">Spicy bell pepper relish with crushed walnuts and pomegranate syrup</section>
-          <section class="cost">123 kr</section>
+          <div class="dish">Mhamara</div>
+          <div class="description">Spicy bell pepper relish with crushed walnuts and pomegranate syrup</div>
+          <div class="cost">123 kr</div>
 
           <div class="line_bottom"></div>
         </section>
       </div>
-      <!---------------SLUT SIDA 2--------------->
+      <!--.:*~*:._.:*~*:._.:*~*:._.:*~*:._SLUT SIDA 2_.:*~*:._.:*~*:._.:*~*:._.:*~*:.-->
       
-      <!-----------------SIDA 3------------------>
+      <!--.:*~*:._.:*~*:._.:*~*:._.:*~*:._SIDA 3_.:*~*:._.:*~*:._.:*~*:._.:*~*:.-->
       <div class="page_3" id="page_3">
         <div class="grid">
 
-          <section class="booking">
-            <h3>Book your table</h3>
+          <form class="booking">
+            <h6>Book your table</h6>
 
             <div class="guest_info">
               <label> Name </label>          
@@ -201,7 +207,7 @@ SLÄNG DETTA NÄR DU VET ATT NEDAN FUNKAR FÖR BÄGGE FONTERNA-->
             <div class="guest_info">
               <label> Date </label>             
               <span class="guest_input">
-                <input type="date" placeholder="Date"><br>
+                <input type="date"><br>
               </span>
             </div>
           
@@ -219,14 +225,11 @@ SLÄNG DETTA NÄR DU VET ATT NEDAN FUNKAR FÖR BÄGGE FONTERNA-->
               </span>
             </div>
 
-            <section class="buttons">
+            <div class="buttons">
               <input class="cancel_button" type="button" value="Cancel">
-              </input>
-
               <input class="submit_button" type="button" value="Request">
-              </input>
-            </section>
-          </section>
+            </div>
+          </form>
 
           <section class="contakt_information">
             <img src="pictures/table.jpg" width="552" height="440" loading="lazy" alt="dinnertable with glasses, silverware and menues">
@@ -234,17 +237,17 @@ SLÄNG DETTA NÄR DU VET ATT NEDAN FUNKAR FÖR BÄGGE FONTERNA-->
             <div class="arrow">
               <p>
                 <a href="tel:+4681234567">
-                  <img src="pictures/phone.png" width="30" height="auto" loading="lazy">
+                  <img src="pictures/phone.png" width="30" height="30" loading="lazy" alt="phone symbol">
                   +46 8 123 45 67
                 </a><br>
                   
                 <a href="mailto:book@toughcookie.com">
-                  <img src="pictures/email.png" width="30" height="auto" loading="lazy">
+                  <img src="pictures/email.png" width="30" height="30" loading="lazy" alt="@ symbol">
                   book@toughcookie.com
                 </a><br>
 
-                <a href="adress:Brända Tomten 111 31 Stockholm">
-                  <img src="pictures/location.png" width="30" height="auto" loading="lazy">
+                <a href="https://www.google.com/maps/place/Br%C3%A4nda+Tomten/@59.3248417,18.0723333,19z/data=!4m7!3m6!1s0x465f77e296fd9293:0xffaeadac4409144c!4b1!8m2!3d59.3248279!4d18.0729757!16s%2Fg%2F11bw3xwn3q?entry=ttu&g_ep=EgoyMDI0MTAyNy4wIKXMDSoASAFQAw%3D%3D" target="_blank">
+                  <img src="pictures/location.png" width="30" height="30" loading="lazy" alt="location symbol">
                   Brända Tomten 111 31 Stockholm
                 </a>
               </p>
@@ -252,29 +255,26 @@ SLÄNG DETTA NÄR DU VET ATT NEDAN FUNKAR FÖR BÄGGE FONTERNA-->
           </section>
         </div>
 
-        <section class="cookie">
-          <section class="cookie_text">
+        <div class="cookie">
+          <div class="cookie_text">
             <p>You should accept cookies.</p>
           
             <span class="buttons">
-              <input class="cancel_button"type="button" value="Decline">
-              </input>
-
-              <input class="submit_button"type="button" value="Accept">
-              </input>
+              <input class="cancel_button" type="button" value="Decline">
+              <input class="submit_button" type="button" value="Accept">
             </span>
-          </section>
-        </section>
+          </div>
+        </div>
       </div>
-      <!---------------SLUT SIDA 3--------------->
+      <!--.:*~*:._.:*~*:._.:*~*:._.:*~*:._SLUT SIDA 3_.:*~*:._.:*~*:._.:*~*:._.:*~*:.-->
       
-      <!-----------------SIDA 4------------------>
-      <menu class="page_4">
-        <a href="#page_1">Home</a><br />
-        <a href="#page_2">Menu</a><br />
-        <a href="#page_3">Book table</a><br />
-      </menu>
-      <!---------------SLUT SIDA 4--------------->
+      <!--.:*~*:._.:*~*:._.:*~*:._.:*~*:._SIDA 4_.:*~*:._.:*~*:._.:*~*:._.:*~*:.-->
+      <div class="page_4">
+        <a href="#page_1">Home</a>
+        <a href="#page_2">Menu</a>
+        <a href="#page_3">Book table</a>
+      </div>
+      <!--.:*~*:._.:*~*:._.:*~*:._.:*~*:._SLUT SIDA 4_.:*~*:._.:*~*:._.:*~*:._.:*~*:.-->
     </div>
   </div>
 
