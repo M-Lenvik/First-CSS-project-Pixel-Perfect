@@ -6,9 +6,10 @@ $client-pink: rgb(255, 220, 220);
 $client-light-blue: rgb(116, 192, 252);
 $client-white: rgb(250, 235, 215);
 $client-black: rgb(0, 0, 0);
-/****RÄCKER MED I MOBILE***/
 
-
+@function rem($size) {
+    @return calc($size / 16) * 1rem;
+ }
 
 
 body {
@@ -26,8 +27,6 @@ body {
         display: flex;
         flex-direction: column;
         z-index: 2;
-
-        border: solid red 2px; /*TAS BORT*/
         
         .side {
             grid-column: span 1;
@@ -40,15 +39,12 @@ body {
             top: 3px;
             left: 3px;
 
-
-            background-color: #74C0FC; /*TAS BORT*/
-
             h1 {
                 writing-mode: vertical-lr;
                 text-orientation: upright;
                 margin-top: 70px;
-                font-size: 35px;
-                margin-left: 20px;
+                font-size: rem(35);
+                margin-left: 25px;
                 word-break: break-all;
                 overflow: hidden;
                 max-width: 40px;
@@ -56,7 +52,7 @@ body {
 
             /***************************MENYKNAPP***************************/
             button {
-                left: 25px;
+                left: 35px;
                 top: 20px;
                 align-items: baseline;
             }
@@ -125,20 +121,20 @@ body {
                     background-color: $client-black;
 
                     .logo_text_1 {
-                        font-size: 5em;
+                        font-size: rem(80);
                         position: absolute;
                         right: 35px;
                         top: 20px;
                     }
 
                     .logo_text_2 {
-                        font-size: 1.9em;
+                        font-size: rem(30.4);
                         right: 39px;
                         top: 15px;
                     }
 
                     .logo_text_3 {
-                        font-size: 1.9em;
+                        font-size: rem(30.4);
                         right: 95px;
                         top: 92px;
                     }
@@ -190,10 +186,10 @@ body {
                     .explore {
                         padding-left: 0.5em;
                         padding-right: 0.5em;
-                        font-size: 26px;
+                        font-size: rem(26);
 
                         a:hover {
-                            font-size: 40px;
+                            font-size: rem(35);
                         }
                     }
                 }
@@ -262,10 +258,10 @@ body {
             grid-column: span 12;
             border-left: 0.5em solid $client-white;
 
-            h3 {
+            h6 {
                 margin-top: 5%;
                 margin-bottom: 2%;
-                font-size: 40px;
+                font-size: rem(40);
             }
 
             .grid {
@@ -312,7 +308,7 @@ body {
                 .contakt_information {
                     grid-column: span 6;
                     gap: 0.5em;
-                    font-size: 30px;
+                    font-size: rem(30);
 
                     .arrow {
                         position: absolute;
@@ -320,7 +316,7 @@ body {
 
                         a:hover {
                             position: relative;
-                            left: 25px;
+                            left: rem(25);
                             cursor: pointer;
                         }
                     }
@@ -388,7 +384,7 @@ body {
             flex-direction: column;
 
             a:hover {
-                font-size: 5em;
+                font-size: rem(80);
             }
         }/****************SLUT SIDA 4******************/
     }

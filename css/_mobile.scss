@@ -7,6 +7,10 @@ $client-light-blue: rgb(116, 192, 252);
 $client-white: rgb(250, 235, 215);
 $client-black: rgb(0, 0, 0);
 
+@function rem($size) {
+    @return calc($size / 16) * 1rem;
+ }
+
 
 body {
     background-color: $client-black;
@@ -41,7 +45,7 @@ header {
             text-transform: uppercase;
             margin-left: 40px;
             font-family: "Jockey One", sans-serif;
-            font-size: 25px;
+            font-size: rem(45);
         }
 
         /***************************MENYKNAPP***************************/
@@ -52,7 +56,7 @@ header {
             border: 0;
             position: fixed;
             left: 2px;
-            top: 2px;
+            top: 20px;
             z-index: 2;
             pointer-events: none;
         }
@@ -121,7 +125,7 @@ header {
             justify-content: space-evenly;
             text-align: center;
 
-            font-size: 3em;
+            font-size: rem(48);
             text-decoration: none;
             text-transform: uppercase;
             font-family: "Jockey One", sans-serif;
@@ -138,13 +142,14 @@ header {
         padding-left: 0.5em;
         padding-right: 0.5em;
         font-family: "Jockey One", sans-serif;
-        font-size: 26px;
+        font-size: rem(26);
         line-height: 1.5;
     }
 
-    h3, h4, h6 {
+    h3, h4 {
+        text-transform: uppercase;
         font-family: "Jockey One", sans-serif;
-        font-size: 36px;
+        font-size: rem(36);
         padding-left: 12px;
     }
 
@@ -154,7 +159,7 @@ header {
     
     /****************SIDA 1******************/
     .page_1 {
-        margin-top: 0;
+        margin-top: 30px;
 
         .top {
             position: relative;
@@ -181,7 +186,7 @@ header {
                 margin: 50px 0 50px 0;
 
                 .logo_text_1 {
-                    font-size: 4em;
+                    font-size: rem(64);
                     font-weight: bold;
                     color: $client-green;
                     width: auto;
@@ -193,7 +198,7 @@ header {
                 }
 
                 .logo_text_2 {
-                    font-size: 1.9em;
+                    font-size: rem(30.4);
                     font-weight: bold;
                     color: $client-purple;
                     width: auto;
@@ -204,7 +209,7 @@ header {
                 }
 
                 .logo_text_3 {
-                    font-size: 2em;
+                    font-size: rem(32);
                     font-weight: bold;
                     color: $client-yellow;
                     width: auto;
@@ -251,7 +256,7 @@ header {
                     padding-left: 0.5em;
                     padding-right: 0.5em;
                     font-family: "Jockey One", sans-serif;
-                    font-size: 26px;
+                    font-size: rem(26);
 
                     a {
                         color: black;
@@ -350,7 +355,7 @@ header {
                 padding-inline: 5px;
                 text-transform: uppercase;
                 font-family: serif;
-                font-size: 10px;
+                font-size: rem(10);
                 align-items: center;
                 height: 15px;
                 background-color: $client-purple;
@@ -369,7 +374,7 @@ header {
                 padding-inline: 5px;
                 text-transform: uppercase;
                 font-family: serif;
-                font-size: 10px;
+                font-size: rem(10);
                 align-items: center;
                 height: 15px;
                 background-color: $client-green;
@@ -389,7 +394,7 @@ header {
                 padding-inline: 5px;
                 text-transform: uppercase;
                 font-family: serif;
-                font-size: 10px;
+                font-size: rem(10);
                 align-items: center;
                 height: 15px;
                 background-color: $client-yellow-green;
@@ -421,10 +426,10 @@ header {
         min-height: 100vh;
         background-color: $client-green;
 
-        h3 {
+        h6 {
             margin-top: 3%;
             margin-bottom: 1%;
-            font-size: 30px;
+            font-size: rem(30);
         }
 
         .grid {
@@ -487,7 +492,7 @@ header {
                 position: relative;
                 grid-column: span 6;
                 gap: 0.5em;
-                font-size: 30px;
+                font-size: rem(30);
 
                 .arrow {
                     position: absolute;
@@ -552,7 +557,7 @@ header {
                 line-height: 2.5;
                 padding: 0 20px;
                 margin: 1%;
-                font-size: 1rem;
+                font-size: rem(16);
                 width: 10em;
                 text-align: center;
                 color: #000000;
@@ -585,7 +590,7 @@ header {
 
         a:link {
             color: $client-white;
-            font-size: 3em;
+            font-size: rem(48);
             text-decoration: none;
             text-transform: uppercase;
             font-family: "Jockey One", sans-serif;
@@ -595,5 +600,5 @@ header {
         a:visited {
             color: $client-white;
         }
-    }/****************SLUT SIDA 3******************/
+    }/****************SLUT SIDA 4******************/
 }
