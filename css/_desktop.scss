@@ -65,11 +65,6 @@ body {
             }
 
             
-            button span:hover {
-                position: relative;
-                left: 2px;
-                cursor: pointer;
-            }
 
             input {
                 position: fixed;
@@ -80,7 +75,10 @@ body {
                 height: 35px;
                 opacity: 0;
             }
-        
+
+            input:hover + .meny button span:nth-child(odd) { 
+                transform: translateX(2px);
+            }
         }/*~*:._.:*~*:._.:*~*:._.:*~*:._SLUT MENYKNAPP_.:*~*:._.:*~*:._.:*~*:._.:*~*/
     }/*~*:._.:*~*:._.:*~*:._.:*~*:._SLUT HEADER & Menysidan till vänster_.:*~*:._.:*~*:._.:*~*:._.:*~*/
 

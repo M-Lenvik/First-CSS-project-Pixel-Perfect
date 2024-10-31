@@ -1,0 +1,3 @@
+Jag får en varning i valideringen på HTML <section class="contakt_information">. 
+Validatorn påstår att jag måste sätta en rubrik på section, men det funkar inte heller. 
+Jag har valt att bortse från varningen (eftersom det "bara" är en varning och inte ett error) eftersom det enda sättet jag får bort varningen på är att göra om section till en div, och det känns inte som en bra lösning.
