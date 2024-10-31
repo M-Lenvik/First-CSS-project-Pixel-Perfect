@@ -20,7 +20,7 @@ body {
     display: block;
 }
 
-/**********HEADER & Menysidan till vänster**********/
+/*~*:._.:*~*:._.:*~*:._.:*~*:._HEADER & Menysidan till vänster_.:*~*:._.:*~*:._.:*~*:._.:*~*/
 header {
     position: relative;
     display: flex;
@@ -48,7 +48,7 @@ header {
             font-size: rem(45);
         }
 
-        /***************************MENYKNAPP***************************/
+        /*~*:._.:*~*:._.:*~*:._.:*~*:._MENYKNAPP_.:*~*:._.:*~*:._.:*~*:._.:*~*/
         button {
             width: 35px;
             height: 35px;
@@ -131,10 +131,8 @@ header {
             font-family: "Jockey One", sans-serif;
             color: $client-white;
         }
-    }/***************SLUT MENYKNAPP***************/
-}/**********SLUT HEADER & Menysidan till vänster**********/
-
-
+    }/*~*:._.:*~*:._.:*~*:._.:*~*:._SLUT MENYKNAPP_.:*~*:._.:*~*:._.:*~*:._.:*~*/
+}/*~*:._.:*~*:._.:*~*:._.:*~*:._SLUT HEADER & Menysidan till vänster_.:*~*:._.:*~*:._.:*~*:._.:*~*/
 
 .all_pages {
     
@@ -157,7 +155,7 @@ header {
         visibility: hidden;
     }
     
-    /****************SIDA 1******************/
+    /*~*:._.:*~*:._.:*~*:._.:*~*:._PAGE_1_.:*~*:._.:*~*:._.:*~*:._.:*~*/
     .page_1 {
         margin-top: 30px;
 
@@ -221,7 +219,6 @@ header {
             }
 
             .text {
-                /*Om tid finns; fundera på att tillgänglighetsanpassa detta och motivera mot kund*/
                 color: $client-green;
                 position: relative;
                 top: 50px;
@@ -271,9 +268,9 @@ header {
                 }
             }
         }
-    }/**********SLUT SIDA 1**********/
+    }/*~*:._.:*~*:._.:*~*:._.:*~*:._SLUT PAGE_1_.:*~*:._.:*~*:._.:*~*:._.:*~*/
 
-    /**********SIDA 2**********/
+    /*~*:._.:*~*:._.:*~*:._.:*~*:._PAGE_2_.:*~*:._.:*~*:._.:*~*:._.:*~*/
     .page_2 {
         grid-column: span 3;
         position: relative;
@@ -284,7 +281,7 @@ header {
         padding-right: 3px;
         padding-left: 3px;
 
-        /*************BILDER**************/
+        /*~*:._.:*~*:._.:*~*:._.:*~*:._BILDER_.:*~*:._.:*~*:._.:*~*:._.:*~*/
         .pictures {
             display: block;
             position: relative;
@@ -304,19 +301,22 @@ header {
                 width: 100%;
             }
 
+            /*Jag väljer att bara visa en bild i mobilversionen eftersom jag tycker 
+            att det blir lite rörigt med förmånga bilder när det finns så förhållandevis lite text.*/
             .pic_2,
             .pic_3 {
                 display: none;
             }
-        }/*************SLUT BILDER**************/
+        }/*~*:._.:*~*:._.:*~*:._.:*~*:._SLUT BILDER_.:*~*:._.:*~*:._.:*~*:._.:*~*/
 
-        /*************MATRÄTTER**************/
+        /*~*:._.:*~*:._.:*~*:._.:*~*:._MATRÄTTER_.:*~*:._.:*~*:._.:*~*:._.:*~*/
         .dish_menu {
             grid-template-columns: 30% 60% 10%;
             display: grid;
             gap: 0;
             position: relative;
             padding-top: 0.5em;
+            font-size: rem(22);
 
             .line_top,
             .line_bottom {
@@ -324,8 +324,6 @@ header {
                 grid-column: span 3;
                 height: 0.25em;
             }
-
-            /***************************/
 
             .line_top {
                 border-bottom: solid 1px black;
@@ -415,11 +413,10 @@ header {
                 text-align: right;
                 padding-right: 1px;
             }
-        }/*************SLUT MATRÄTTER**************/
-    }/****************SLUT SIDA 2******************/
+        }/*~*:._.:*~*:._.:*~*:._.:*~*:._SLUT MATRÄTTER_.:*~*:._.:*~*:._.:*~*:._.:*~*/
+    }/*~*:._.:*~*:._.:*~*:._.:*~*:._SLUT PAGE_2_.:*~*:._.:*~*:._.:*~*:._.:*~*/
 
-
-    /****************SIDA 3******************/
+    /*~*:._.:*~*:._.:*~*:._.:*~*:._PAGE_3_.:*~*:._.:*~*:._.:*~*:._.:*~*/
     .page_3 {
         position: relative;
         grid-column: span 11;
@@ -496,32 +493,40 @@ header {
 
                 .arrow {
                     position: absolute;
-                    width: fit-content;
+                    width: 100%;
                     height: 50%;
                     bottom: 30%;
                     left: 8%;
                     text-shadow: -2px -2px 1px rgba(0, 0, 0);
 
-                    background-color: rgba(240, 248, 255, 0.332);
-
                     a {
                         color: $client-light-blue;
                         font-family: "Jockey One", sans-serif;
+                        img { 
+                            filter: none;
+                        }
                     }
+                }
 
-                    img{
-                        display: inline;
-                        align-items: center;
-                    }
+                img{
+                    display: inline;
+                    align-items: center;
+                    filter: grayscale(0.4) blur(2px);
                 }
             }
         }
 
+        /*~*:._.:*~*:._.:*~*:._.:*~*:._COOKIES_.:*~*:._.:*~*:._.:*~*:._.:*~*/
         .cookie {
             position: relative;
             grid-column: span 1;
             margin-top: 5%;
             background-color: $client-purple;
+            width: 100vw;
+            position: fixed;
+            left: 0;
+            bottom: 0;
+            z-index: 999;
 
             .cookie_text {
                 position: relative;
@@ -546,7 +551,7 @@ header {
                     background-color: $client-green;
                 }
             }
-        }
+        }/*~*:._.:*~*:._.:*~*:._.:*~*:._SLUT COOKIES_.:*~*:._.:*~*:._.:*~*:._.:*~*/
 
         .buttons {
             .submit_button,
@@ -573,32 +578,5 @@ header {
                 text-transform: uppercase;
             }
         }
-    }/****************SLUT SIDA 3******************/
-
-    /******************SIDA 4********************/
-    .page_4 {
-        height: 100vh;
-        background-color: $client-purple;
-        margin: 0;
-        margin-top: 2px;
-        padding-top: 5%;
-        list-style-type: none;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-evenly;
-        text-align: center;
-
-        a:link {
-            color: $client-white;
-            font-size: rem(48);
-            text-decoration: none;
-            text-transform: uppercase;
-            font-family: "Jockey One", sans-serif;
-            margin-bottom: 5%;
-        }
-
-        a:visited {
-            color: $client-white;
-        }
-    }/****************SLUT SIDA 4******************/
+    }/*~*:._.:*~*:._.:*~*:._.:*~*:._SLUT PAGE_3_.:*~*:._.:*~*:._.:*~*:._.:*~*/
 }

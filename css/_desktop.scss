@@ -21,7 +21,7 @@ body {
     grid-template-columns: repeat(12, 1fr);
     gap: 1em;
 
-    /**********HEADER & Menysidan till vänster**********/
+    /*~*:._.:*~*:._.:*~*:._.:*~*:._HEADER & Menysidan till vänster_.:*~*:._.:*~*:._.:*~*:._.:*~*/
     header {
         position: relative;
         display: flex;
@@ -50,7 +50,7 @@ body {
                 max-width: 40px;
             }
 
-            /***************************MENYKNAPP***************************/
+            /*~*:._.:*~*:._.:*~*:._.:*~*:.MENYKNAPP.:*~*:._.:*~*:._.:*~*:._.:*~*/
             button {
                 left: 35px;
                 top: 20px;
@@ -64,17 +64,25 @@ body {
                 margin-bottom: 4px;
             }
 
+            
+            button span:hover {
+                position: relative;
+                left: 2px;
+                cursor: pointer;
+            }
+
             input {
                 position: fixed;
                 top: 20px;
-                left: 20px;
+                left: 35px;
                 z-index: 1;
                 width: 35px;
                 height: 35px;
                 opacity: 0;
             }
-        }/***************SLUT MENYKNAPP***************/
-    }/**********SLUT HEADER & Menysidan till vänster**********/
+        
+        }/*~*:._.:*~*:._.:*~*:._.:*~*:._SLUT MENYKNAPP_.:*~*:._.:*~*:._.:*~*:._.:*~*/
+    }/*~*:._.:*~*:._.:*~*:._.:*~*:._SLUT HEADER & Menysidan till vänster_.:*~*:._.:*~*:._.:*~*:._.:*~*/
 
     .all_pages {
         grid-column: span 11;
@@ -82,7 +90,7 @@ body {
         min-height: 100vh;
         width: auto;
 
-        /****************SIDA 1******************/
+        /*~*:._.:*~*:._.:*~*:._.:*~*:._PAGE_1_.:*~*:._.:*~*:._.:*~*:._.:*~*/
         .page_1 {
             grid-column: span 11;
             position: relative;
@@ -111,7 +119,7 @@ body {
                     top: 0;
                 }
 
-                /************Stycke för textlogon******************/
+                /*~*:._.:*~*:._.:*~*:._.:*~*:._STYCKE FÖR TEXTLOGO_.:*~*:._.:*~*:._.:*~*:._.:*~*/
                 .page_title {
                     grid-column: span 4;
                     position: relative;
@@ -138,8 +146,8 @@ body {
                         right: 95px;
                         top: 92px;
                     }
-                }/**********SLUT Stycke för textlogon**********/
-            
+                }
+
                 .page_title:nth-child(1) {
                     order: 1;
                 }
@@ -147,6 +155,7 @@ body {
                 .text:nth-child(2) {
                     order: 2;
                 }
+            /*~*:._.:*~*:._.:*~*:._.:*~*:._SLUT STYCKE FÖR TEXTLOGO_.:*~*:._.:*~*:._.:*~*:._.:*~*/
             }
 
             .bottom {
@@ -194,9 +203,9 @@ body {
                     }
                 }
             }
-        }/**********SLUT SIDA 1**********/
+        }/*~*:._.:*~*:._.:*~*:._.:*~*:._SLUT PAGE_1_.:*~*:._.:*~*:._.:*~*:._.:*~*/
 
-        /**********SIDA 2**********/
+        /*~*:._.:*~*:._.:*~*:._.:*~*:._PAGE_2_.:*~*:._.:*~*:._.:*~*:._.:*~*/
         .page_2 {
             grid-column: span 11;
             margin-top: 5px;
@@ -205,7 +214,7 @@ body {
             border-left: 0.5em solid $client-yellow;
             border-top: 0.5em solid $client-yellow;
 
-            /*************BILDER**************/
+            /*~*:._.:*~*:._.:*~*:._.:*~*:._BILDER_.:*~*:._.:*~*:._.:*~*:._.:*~*/
             .pictures {
                 display: grid;
                 grid-template-columns: repeat(11, 1fr);
@@ -224,9 +233,10 @@ body {
                     grid-column: span 4;
                     display: block;
                 }
-            }/*************SLUT BILDER**************/
+            }/*~*:._.:*~*:._.:*~*:._.:*~*:._SLUT BILDER_.:*~*:._.:*~*:._.:*~*:._.:*~*/
+            
 
-            /*************MATRÄTTER**************/
+            /*~*:._.:*~*:._.:*~*:._.:*~*:._MATRÄTTER_.:*~*:._.:*~*:._.:*~*:._.:*~*/
             .dish_menu {
                 grid-template-columns: repeat(11, 1fr);
                 padding-top: 0.5em;
@@ -250,10 +260,10 @@ body {
                     grid-column: span 1;
                     padding-right: 2px;
                 }
-            }/*************SLUT MATRÄTTER**************/
-        }/****************SLUT SIDA 2******************/
+            }/*~*:._.:*~*:._.:*~*:._.:*~*:._SLUT MATRÄTTER_.:*~*:._.:*~*:._.:*~*:._.:*~*/
+        }/*~*:._.:*~*:._.:*~*:._.:*~*:._SLUT PAGE_2_.:*~*:._.:*~*:._.:*~*:._.:*~*/
 
-        /****************SIDA 3******************/
+        /*~*:._.:*~*:._.:*~*:._.:*~*:._PAGE_3_.:*~*:._.:*~*:._.:*~*:._.:*~*/
         .page_3 {
             grid-column: span 12;
             border-left: 0.5em solid $client-white;
@@ -325,7 +335,6 @@ body {
 
             .cookie {
                 grid-column: span 12;
-
                 background-color: $client-purple;
                 width: 100vw;
                 position: fixed;
@@ -357,13 +366,10 @@ body {
                             opacity: 0;
                         }
 
-                        
                         input:checked+.meny nav {
                             visibility: hidden;
                             opacity: 0;
                         }
-
-
                     }
 
                     .submit_button {
@@ -371,21 +377,6 @@ body {
                     }
                 }
             }
-        }/****************SLUT SIDA 3******************/
-
-        /****************SIDA 4******************/
-        .page_4 {
-            height: 100vh;
-            background-color: $client-purple;
-            margin: 0;
-            margin-top: 5px;
-            padding-top: 5%;
-            display: flex;
-            flex-direction: column;
-
-            a:hover {
-                font-size: rem(80);
-            }
-        }/****************SLUT SIDA 4******************/
+        }/*~*:._.:*~*:._.:*~*:._.:*~*:._SLUT PAGE_3_.:*~*:._.:*~*:._.:*~*:._.:*~*/
     }
 }
