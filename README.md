@@ -15,10 +15,11 @@ https://github.com/M-Lenvik
    1. [Krav](#krav)
       1. [För G](#för-g)
       2. [För VG](#för-vg)
+      3. [Slutbetyg](#slutbetyg)
 
 
 ## Beskrivning av sidan
-<p>Uppgiften var att skapa en pixel perfect webbsida med CSS. Utförlig uppgiftsbeskringvning finns längr ned. Titta gärna på sidan live, men här kommer ett smakprov på hur den ser ut. <br>
+<p>Uppgiften var att skapa en pixel perfect webbsida med CSS. Utförlig uppgiftsbeskringvning finns längre ned. Titta gärna på sidan live, men här kommer ett smakprov på hur den ser ut. <br>
 Webbsidan: [https://m-lenvik.github.io/First-javascript-project-webshop/](https://m-lenvik.github.io/First-CSS-project-Pixel-Perfect/) </p>
 <img width="415" alt="image" src="https://github.com/user-attachments/assets/d94af384-5fd6-4135-ae0b-792005e2629b" />
 
@@ -116,6 +117,6 @@ Hälsningar Karin PS. Kundens kompanjon kör webben utan CSS så kolla att sidan
 *  Ha optimerat resurser och laddningstid på sajten.
 *  Konsekvent kod: namngivning, indentering, struktur.
 
+### Slutbetyg
+<img width="332" alt="image" src="https://github.com/user-attachments/assets/7da818a4-65b8-4441-b297-ac14fe64342f" />
 
-
-[![Review Assignment Due Date](https://classroom.github.com/assets/deadline-readme-button-22041afd0340ce965d47ae6ef1cefeee28c7c493a6346c4f15d667ab976d596c.svg)](https://classroom.github.com/a/3GX3QKax)
