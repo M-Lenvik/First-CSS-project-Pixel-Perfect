@@ -19,8 +19,9 @@ https://github.com/M-Lenvik
 
 
 ## Beskrivning av sidan
-<p>Uppgiften var att skapa en pixel perfect webbsida med CSS. Utförlig uppgiftsbeskringvning finns längre ned. Titta gärna på sidan live, men här kommer ett smakprov på hur den ser ut. <br>
-Webbsidan: [https://m-lenvik.github.io/First-javascript-project-webshop/](https://m-lenvik.github.io/First-CSS-project-Pixel-Perfect/) </p>
+<p>Uppgiften var att skapa en pixel perfect webbsida med CSS på fyra veckor. OBS att detta är introduktion till CSS! <br>
+Utförlig uppgiftsbeskringvning finns längre ned. Titta gärna på sidan live, men här kommer ett smakprov på hur den ser ut. <br>
+Webbsidan: https://m-lenvik.github.io/First-javascript-project-webshop/</p>
 <img width="415" alt="image" src="https://github.com/user-attachments/assets/d94af384-5fd6-4135-ae0b-792005e2629b" />
 
 
