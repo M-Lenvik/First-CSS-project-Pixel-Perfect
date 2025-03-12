@@ -1,4 +1,5 @@
 # Kurs: HTML och CSS grundkurs
+## Utbildning till Frontend developer på Medieinstitutet
 Detta är den första CSS uppgift jag gjort på Medieinstitutet. Se uppgiftsbeskrivning nedan.
 
 Skapad av **Marie Lenvik** <br>
