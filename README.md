@@ -20,7 +20,7 @@ https://github.com/M-Lenvik
 
 
 ## Beskrivning av sidan
-<p>Uppgiften var att skapa en pixel perfect webbsida med CSS på fyra veckor. OBS att detta är introduktion till CSS! <br>
+<p>Uppgiften var att skapa en pixel perfect webbsida med CSS. OBS att detta är introduktion till CSS! <br>
 Utförlig uppgiftsbeskringvning finns längre ned. Titta gärna på sidan live, men här kommer ett smakprov på hur den ser ut. <br>
 Webbsidan: https://m-lenvik.github.io/First-javascript-project-webshop/</p>
 <img width="415" alt="image" src="https://github.com/user-attachments/assets/d94af384-5fd6-4135-ae0b-792005e2629b" />
@@ -43,7 +43,8 @@ Inget särskilt behöver göras. Bara att köra igång
 
 
 ## Uppgift: Kundprojekt
-<p>I denna inlämning ska ni utgå från en s.k. "brief" från en kund, och ta fram en webbplats utifrån en given design.</p>
+<p>I denna inlämning ska ni utgå från en s.k. "brief" från en kund, och ta fram en webbplats utifrån en given design. <br>
+Sidan ska vara en s.k. "onepager", dvs. du ska bara scrolla upp och ner på sidan för att komma till sida 2. Du ska inte skapa nya HTML-filer för respektive sida.</p>
 
 ### Brief/bakgrund
 <p> Du har precis fått jobb på webbyrån Justin Time AB. Byråns kund Kantarella Löwenskog har gett dig i uppdrag att ta fram en webbplats åt hennes nya företag, och webbplatsens design tas fram av kunden själv. 🤦 Kantarella har precis blivit klar med sitt designarbete och tagit semester, liksom byråns projektledare Karin, så det är ju just typiskt. Du får helt enkelt improvisera på de bitar som är otydliga i briefen angående designen. </p>
